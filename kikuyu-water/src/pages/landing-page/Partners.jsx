@@ -1,59 +1,63 @@
 const Partners = () => {
   return (
-    <section id="partners-regulators" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-black text-gray-900 mb-4">
+    <section id="partners-regulators" className="py-16 sm:py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
+        <div className="text-center mb-10 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-3 sm:mb-4">
             Our Partners & Regulators
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
             Working together to deliver quality services
           </p>
         </div>
-        <div className="grid grid-cols-4 gap-8 items-center">
-          <div
-            id="partner-1"
-            className="bg-neutral rounded-xl p-8 text-center hover:shadow-lg transition"
-          >
-            <div className="bg-white w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
-              <i className="fa-solid fa-water text-primary text-3xl"></i>
+
+        {/* Partners Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
+          {/* Partner 1 */}
+          <div className="bg-neutral rounded-xl p-6 sm:p-8 text-center hover:shadow-lg transition">
+            <div className="bg-white w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-md">
+              <i className="fa-solid fa-water text-primary text-2xl sm:text-3xl"></i>
             </div>
-            <h4 className="font-bold text-gray-900">WASREB</h4>
-            <p className="text-sm text-gray-600 mt-2">
+            <h4 className="font-bold text-gray-900 text-lg sm:text-xl">
+              WASREB
+            </h4>
+            <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
               Water Services Regulatory Board
             </p>
           </div>
-          <div
-            id="partner-2"
-            className="bg-neutral rounded-xl p-8 text-center hover:shadow-lg transition"
-          >
-            <div className="bg-white w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
-              <i className="fa-solid fa-landmark text-primary text-3xl"></i>
+
+          {/* Partner 2 */}
+          <div className="bg-neutral rounded-xl p-6 sm:p-8 text-center hover:shadow-lg transition">
+            <div className="bg-white w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-md">
+              <i className="fa-solid fa-landmark text-primary text-2xl sm:text-3xl"></i>
             </div>
-            <h4 className="font-bold text-gray-900">County Government</h4>
-            <p className="text-sm text-gray-600 mt-2">Kiambu County</p>
+            <h4 className="font-bold text-gray-900 text-lg sm:text-xl">
+              County Government
+            </h4>
+            <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
+              Kiambu County
+            </p>
           </div>
-          <div
-            id="partner-3"
-            className="bg-neutral rounded-xl p-8 text-center hover:shadow-lg transition"
-          >
-            <div className="bg-white w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
-              <i className="fa-solid fa-flask text-primary text-3xl"></i>
+
+          {/* Partner 3 */}
+          <div className="bg-neutral rounded-xl p-6 sm:p-8 text-center hover:shadow-lg transition">
+            <div className="bg-white w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-md">
+              <i className="fa-solid fa-flask text-primary text-2xl sm:text-3xl"></i>
             </div>
-            <h4 className="font-bold text-gray-900">KEBS</h4>
-            <p className="text-sm text-gray-600 mt-2">
+            <h4 className="font-bold text-gray-900 text-lg sm:text-xl">KEBS</h4>
+            <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
               Kenya Bureau of Standards
             </p>
           </div>
-          <div
-            id="partner-4"
-            className="bg-neutral rounded-xl p-8 text-center hover:shadow-lg transition"
-          >
-            <div className="bg-white w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
-              <i className="fa-solid fa-leaf text-primary text-3xl"></i>
+
+          {/* Partner 4 */}
+          <div className="bg-neutral rounded-xl p-6 sm:p-8 text-center hover:shadow-lg transition">
+            <div className="bg-white w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-md">
+              <i className="fa-solid fa-leaf text-primary text-2xl sm:text-3xl"></i>
             </div>
-            <h4 className="font-bold text-gray-900">NEMA</h4>
-            <p className="text-sm text-gray-600 mt-2">
+            <h4 className="font-bold text-gray-900 text-lg sm:text-xl">NEMA</h4>
+            <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
               National Environment Authority
             </p>
           </div>
