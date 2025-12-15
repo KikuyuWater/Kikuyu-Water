@@ -15,7 +15,7 @@ const HeroSection = () => {
           <div>
             <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4 sm:mb-6">
               <span className="text-sm sm:text-base font-bold">
-                Serving Kikuyu Community Since 2003
+                Serving Kikuyu Community Since 2004
               </span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4 sm:mb-6">
@@ -23,10 +23,10 @@ const HeroSection = () => {
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-6 sm:mb-8 leading-relaxed">
               Serving households and businesses in Kikuyu with safe, affordable,
-              and sustainable water services.
+              and sustainable water and sewerage services.
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="bg-white text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg w-full sm:w-auto text-center">
+              <button className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition w-full sm:w-auto text-center">
                 Apply for New Connection
               </button>
               <button className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition w-full sm:w-auto text-center">
@@ -38,7 +38,7 @@ const HeroSection = () => {
                 <i className="fa-solid fa-phone text-2xl mr-3"></i>
                 <div>
                   <p className="text-sm text-blue-200">24/7 Emergency</p>
-                  <p className="font-bold text-lg">0800 724 724</p>
+                  <p className="font-bold text-lg"> 0758 578 098 </p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -74,14 +74,14 @@ const HeroSection = () => {
                 </div>
                 <div className="bg-white/20 backdrop-blur-sm p-4 sm:p-6 rounded-xl">
                   <i className="fa-solid fa-water text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
-                  <p className="text-2xl sm:text-3xl font-black mb-1">8</p>
+                  <p className="text-2xl sm:text-3xl font-black mb-1">10</p>
                   <p className="text-xs sm:text-sm text-blue-100">
                     Water Sources
                   </p>
                 </div>
                 <div className="bg-white/20 backdrop-blur-sm p-4 sm:p-6 rounded-xl">
                   <i className="fa-solid fa-shield-halved text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
-                  <p className="text-2xl sm:text-3xl font-black mb-1">99.8%</p>
+                  <p className="text-2xl sm:text-3xl font-black mb-1">99.9%</p>
                   <p className="text-xs sm:text-sm text-blue-100">
                     Water Quality
                   </p>

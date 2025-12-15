@@ -40,8 +40,7 @@ const Faq = () => {
                   What payment methods do you accept?
                 </h4>
                 <p className="text-gray-700">
-                  We accept M-Pesa, bank transfers, credit/debit cards, and cash
-                  payments at our offices. You can also set up automatic
+                  We accept M-Pesa, bank transfers, and credit/debit cards. You can also set up automatic
                   payments through your bank.
                 </p>
               </div>
@@ -59,7 +58,7 @@ const Faq = () => {
                   How do I report a water leak?
                 </h4>
                 <p className="text-gray-700">
-                  Call our 24/7 emergency line at 0800 724 724 or report through
+                  Call our 24/7 emergency line at 0758 578 089 or report through
                   the customer portal. For burst pipes, we respond within 2
                   hours.
                 </p>
@@ -98,7 +97,7 @@ const Faq = () => {
                 </h4>
                 <p className="text-gray-700">
                   Yes, our water is treated and tested regularly to meet WHO and
-                  KEBS standards. We publish monthly water quality reports on
+                  KEBS standards. We publish water quality reports on
                   our website.
                 </p>
               </div>

@@ -15,7 +15,7 @@ const Cta = () => {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-          <button className="w-full sm:w-auto bg-white text-primary px-8 sm:px-10 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-xl">
+          <button className="w-full sm:w-auto border-2 border-white text-white px-8 sm:px-10 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition">
             Apply for Connection
           </button>
           <button className="w-full sm:w-auto border-2 border-white text-white px-8 sm:px-10 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition">
@@ -28,7 +28,7 @@ const Cta = () => {
           <div className="flex flex-col items-center">
             <i className="fa-solid fa-phone text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
             <p className="font-bold mb-1 text-sm sm:text-base">Call Us</p>
-            <p className="text-blue-100 text-sm sm:text-base">0800 724 724</p>
+            <p className="text-blue-100 text-sm sm:text-base">+254 758 578 098</p>
           </div>
           <div className="flex flex-col items-center">
             <i className="fa-solid fa-envelope text-3xl sm:text-4xl mb-2 sm:mb-3"></i>

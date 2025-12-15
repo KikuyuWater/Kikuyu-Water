@@ -14,8 +14,8 @@ const Statistics = () => {
             <p className="text-3xl sm:text-5xl font-black mb-1 sm:mb-2">
               120 km²
             </p>
-            <p className="text-lg sm:text-lg text-blue-100">Coverage Area</p>
-            <p className="text-xs sm:text-sm text-blue-200 mt-1 sm:mt-2">
+            <p className="text-lg sm:text-lg text-SlateBlue-100">Coverage Area</p>
+            <p className="text-xs sm:text-sm text-SlateBlue-200 mt-1 sm:mt-2">
               Serving entire Kikuyu region
             </p>
           </div>

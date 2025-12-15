@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
             <p className="text-gray-400 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
               Providing clean water and reliable sewerage services to the Kikuyu
-              community since 2003.
+              community since 2004.
             </p>
             <div className="flex space-x-3 sm:space-x-4">
               <a
@@ -109,7 +109,7 @@ const Footer = () => {
               <div className="flex items-start">
                 <i className="fa-solid fa-phone text-primary mr-2 sm:mr-3 mt-1"></i>
                 <div>
-                  <p>0800 724 724</p>
+                  <p>0758 578 098</p>
                   <p className="text-xs sm:text-sm">24/7 Emergency Line</p>
                 </div>
               </div>
@@ -121,7 +121,7 @@ const Footer = () => {
                 <i className="fa-solid fa-clock text-primary mr-2 sm:mr-3 mt-1"></i>
                 <div>
                   <p>Mon-Fri: 8:00 AM - 5:00 PM</p>
-                  <p className="text-xs sm:text-sm">Sat: 8:00 AM - 12:00 PM</p>
+                  <p className="text-xs sm:text-sm"></p>
                 </div>
               </div>
             </div>
@@ -132,7 +132,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-6 sm:pt-8">
           <div className="flex flex-col sm:flex-row items-center justify-between space-y-3 sm:space-y-0">
             <p className="text-gray-400 text-xs sm:text-sm">
-              © 2024 Kikuyu Water and Sewerage Company. All rights reserved.
+              © 2025 Kikuyu Water and Sewerage Company. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center sm:justify-end space-x-3 sm:space-x-6 text-xs sm:text-sm">
               {["Privacy Policy", "Terms of Service", "Sitemap"].map((link) => (

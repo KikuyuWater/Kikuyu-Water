@@ -11,10 +11,11 @@ const Header = () => {
             <i className="fa-solid fa-droplet text-primary text-3xl sm:text-4xl mr-2 sm:mr-3"></i>
             <div>
               <h1 className="text-lg sm:text-xl font-bold text-gray-900">
-                Kikuyu Water & Sewerage
+                  KIKUYU WATER AND 
+                  SEWERAGE COMPANY
               </h1>
               <p className="text-xs sm:text-sm text-gray-600">
-                Clean Water, Healthy Community
+                KUBORESHA HUDUMA YA MAJI 
               </p>
             </div>
           </div>
