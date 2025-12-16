@@ -1,13 +1,8 @@
 import "./App.css";
-
+import LandingPage from "./pages/landing-page/LandingPage";
 
 function App() {
-  return (
-      <div>
-            <h1>Error 404: Page Not Found</h1>
-            <p>The page you are looking for does not exist.</p>
-        </div>
-  )
+  return <LandingPage />;
 }
 
 export default App;
