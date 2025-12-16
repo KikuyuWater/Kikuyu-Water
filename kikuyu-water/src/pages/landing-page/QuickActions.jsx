@@ -18,7 +18,7 @@ const QuickActions = () => {
               <i className="fa-solid fa-file-signature text-primary text-xl sm:text-2xl"></i>
             </div>
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-              Apply for Connection
+              Apply for Connection.
             </h3>
             <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
               Get connected to our reliable water supply network. Complete your

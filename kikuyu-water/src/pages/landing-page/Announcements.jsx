@@ -73,7 +73,7 @@ const Announcements = () => {
                 </span>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
-                Water Conservation Campaign Launch
+                Water Conservation Campaign Launch in Ondiri
               </h3>
               <p className="text-gray-600 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed flex-1">
                 Join our community-wide water conservation campaign. Learn

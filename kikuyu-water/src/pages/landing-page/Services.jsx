@@ -24,13 +24,13 @@ const Services = () => {
               Water Supply
             </h3>
             <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
-              Clean, safe, and reliable water supply to residential, commercial,
+              Clean, safe, and reliable water supply and sewerage to residential, commercial,
               and industrial customers throughout Kikuyu.
             </p>
             <ul className="space-y-1 sm:space-y-2 mb-4 sm:mb-6">
               <li className="flex items-center text-gray-700 text-sm sm:text-base">
                 <i className="fa-solid fa-check-circle text-primary mr-2"></i>
-                <span>Treated drinking water</span>
+                <span>Safe drinking water</span>
               </li>
               <li className="flex items-center text-gray-700 text-sm sm:text-base">
                 <i className="fa-solid fa-check-circle text-primary mr-2"></i>

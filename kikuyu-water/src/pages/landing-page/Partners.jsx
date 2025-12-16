@@ -58,7 +58,7 @@ const Partners = () => {
             </div>
             <h4 className="font-bold text-gray-900 text-lg sm:text-xl">NEMA</h4>
             <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
-              National Environment Authority
+              National Environment Authority 
             </p>
           </div>
         </div>
