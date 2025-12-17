@@ -28,7 +28,11 @@ const Cta = () => {
           <div className="flex flex-col items-center">
             <i className="fa-solid fa-phone text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
             <p className="font-bold mb-1 text-sm sm:text-base">Call Us</p>
-            <p className="text-blue-100 text-sm sm:text-base">
+            {/* Mobile: tap to call; Desktop: plain text */}
+            <a href="tel:+254758578098" aria-label="Call Kikuyu Water" className="text-blue-100 text-sm sm:text-base block sm:hidden">
+              +254 758 578 098
+            </a>
+            <p className="text-blue-100 text-sm sm:text-base hidden sm:block">
               +254 758 578 098
             </p>
           </div>
