@@ -39,9 +39,9 @@ const Cta = () => {
           <div className="flex flex-col items-center">
             <i className="fa-solid fa-envelope text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
             <p className="font-bold mb-1 text-sm sm:text-base">Email Us</p>
-            <p className="text-blue-100 text-sm sm:text-base">
+            <a href="mailto:info@kikuyuwater.co.ke" aria-label="Email Kikuyu Water" className="text-blue-100 text-sm sm:text-base hover:underline">
               info@kikuyuwater.co.ke
-            </p>
+            </a>
           </div>
           <div className="flex flex-col items-center">
             <i className="fa-solid fa-map-marker-alt text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
