@@ -46,7 +46,15 @@ const Cta = () => {
           <div className="flex flex-col items-center">
             <i className="fa-solid fa-map-marker-alt text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
             <p className="font-bold mb-1 text-sm sm:text-base">Visit Us</p>
-            <p className="text-blue-100 text-sm sm:text-base">Kikuyu Town</p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=QM46%2BF8X%2C%20Ivory%20Towers%20Street%2C%20Rungiri"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open location in Google Maps"
+              className="text-blue-100 text-sm sm:text-base hover:underline"
+            >
+              QM46+F8X, Ivory Towers Street, Rungiri
+            </a>
           </div>
         </div>
       </div>
