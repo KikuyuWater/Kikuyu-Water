@@ -1,4 +1,8 @@
+import React, { useState } from 'react';
+
 const QuickActions = () => {
+  const [showSupervisors, setShowSupervisors] = useState(false);
+
   return (
     <section id="quick-actions" className="py-16 bg-neutral">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -118,9 +122,50 @@ const QuickActions = () => {
                 </span>
               </li>
             </ul>
-            <button className="w-full bg-orange-600 text-white py-3 rounded-lg font-bold hover:bg-orange-700 transition">
+            <button
+              className="w-full bg-orange-600 text-white py-3 rounded-lg font-bold hover:bg-orange-700 transition"
+              onClick={() => setShowSupervisors((s) => !s)}
+              aria-expanded={showSupervisors}
+              aria-controls="supervisors-list"
+            >
               Report Issue
             </button>
+
+            {showSupervisors && (
+              <div id="supervisors-list" className="mt-4 bg-white p-4 rounded-lg shadow-sm border">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">Contact Supervisors</h4>
+                <p className="text-sm text-gray-600 mb-3">Choose your zone to contact the supervisor directly.</p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div className="p-3 rounded border">
+                    <p className="font-semibold">Muguga</p>
+                    <p className="text-sm text-gray-600">Supervisor</p>
+                    <div className="mt-2 flex items-center space-x-3">
+                      <a href="tel:+254758578091" aria-label="Call Muguga supervisor at +254 758 578 091" className="text-primary font-medium">Call</a>
+                      <a href="mailto:supervisor-muguga@kikuyuwater.co.ke" aria-label="Email Muguga supervisor" className="text-primary font-medium">Email</a>
+                    </div>
+                  </div>
+                  <div className="p-3 rounded border">
+                    <p className="font-semibold">Karai</p>
+                    <p className="text-sm text-gray-600">Supervisor</p>
+                    <div className="mt-2 flex items-center space-x-3">
+                      <a href="tel:+254758578092" aria-label="Call Karai supervisor at +254 758 578 092" className="text-primary font-medium">Call</a>
+                      <a href="mailto:supervisor-karai@kikuyuwater.co.ke" aria-label="Email Karai supervisor" className="text-primary font-medium">Email</a>
+                    </div>
+                  </div>
+                  <div className="p-3 rounded border">
+                    <p className="font-semibold">Wangige</p>
+                    <p className="text-sm text-gray-600">Supervisor</p>
+                    <div className="mt-2 flex items-center space-x-3">
+                      <a href="tel:+254758578093" aria-label="Call Wangige supervisor at +254 758 578 093" className="text-primary font-medium">Call</a>
+                      <a href="mailto:supervisor-wangige@kikuyuwater.co.ke" aria-label="Email Wangige supervisor" className="text-primary font-medium">Email</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-3 text-right">
+                  <button className="text-sm text-gray-600 underline" onClick={() => setShowSupervisors(false)}>Close</button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
