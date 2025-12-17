@@ -15,14 +15,14 @@ const HeroSection = () => {
           <div>
             <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4 sm:mb-6">
               <span className="text-sm sm:text-base font-bold">
-                Serving Kikuyu Community Since 2004
+                Serving Kenyans Since 2004
               </span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4 sm:mb-6">
               Clean Water and Reliable Sewerage Services for Kikuyu
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-6 sm:mb-8 leading-relaxed">
-              Serving households and businesses in Kikuyu with safe, affordable,
+              Serving households and businesses in with safe, affordable,
               and sustainable water and sewerage services.
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">

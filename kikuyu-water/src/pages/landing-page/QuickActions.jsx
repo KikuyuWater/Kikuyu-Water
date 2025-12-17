@@ -44,7 +44,7 @@ const QuickActions = () => {
                 </span>
               </li>
             </ul>
-            <button class="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+            <button className="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
               Apply Now
             </button>
           </div>
@@ -81,7 +81,7 @@ const QuickActions = () => {
                 </span>
               </li>
             </ul>
-            <button class="w-full bg-green-600 text-white py-3 rounded-lg font-bold hover:bg-green-700 transition">
+            <button className="w-full bg-green-600 text-white py-3 rounded-lg font-bold hover:bg-green-700 transition">
               Pay Bill
             </button>
           </div>
@@ -118,7 +118,7 @@ const QuickActions = () => {
                 </span>
               </li>
             </ul>
-            <button class="w-full bg-orange-600 text-white py-3 rounded-lg font-bold hover:bg-orange-700 transition">
+            <button className="w-full bg-orange-600 text-white py-3 rounded-lg font-bold hover:bg-orange-700 transition">
               Report Issue
             </button>
           </div>

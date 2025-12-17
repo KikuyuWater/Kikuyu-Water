@@ -9,14 +9,14 @@ const Footer = () => {
             <div className="flex items-center mb-4 sm:mb-6">
               <i className="fa-solid fa-droplet text-primary text-2xl sm:text-3xl mr-2 sm:mr-3"></i>
               <div>
-                <h3 className="text-lg sm:text-xl font-bold">Kikuyu Water</h3>
+                <h3 className="text-lg sm:text-xl font-bold">Kikuyu Water & Sewerage Company</h3>
                 <p className="text-xs sm:text-sm text-gray-400">
                   & Sewerage Company
                 </p>
               </div>
             </div>
             <p className="text-gray-400 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
-              Providing clean water and reliable sewerage services to the Kikuyu
+              Providing clean water and reliable sewerage services to Kenyans
               community since 2004.
             </p>
             <div className="flex space-x-3 sm:space-x-4">
