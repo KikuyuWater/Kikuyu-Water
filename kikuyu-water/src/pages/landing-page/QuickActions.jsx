@@ -153,11 +153,11 @@ const QuickActions = () => {
                     </div>
                   </div>
                   <div className="p-3 rounded border">
-                    <p className="font-semibold">Wangige</p>
+                    <p className="font-semibold">Kikuyu</p>
                     <p className="text-sm text-gray-600">Supervisor</p>
                     <div className="mt-2 flex items-center space-x-3">
-                      <a href="tel:+254758578093" aria-label="Call Wangige supervisor at +254 758 578 093" className="text-primary font-medium">Call</a>
-                      <a href="mailto:supervisor-wangige@kikuyuwater.co.ke" aria-label="Email Wangige supervisor" className="text-primary font-medium">Email</a>
+                      <a href="tel:+254758578093" aria-label="Call Kikuyu supervisor at +254 758 578 093" className="text-primary font-medium">Call</a>
+                      <a href="mailto:supervisor-kikuyu@kikuyuwater.co.ke" aria-label="Email Kikuyu supervisor" className="text-primary font-medium">Email</a>
                     </div>
                   </div>
                 </div>

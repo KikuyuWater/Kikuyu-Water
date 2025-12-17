@@ -19,7 +19,7 @@ test('shows supervisors when Report Issue clicked and contact links are correct'
   expect(karai).toBeInTheDocument();
   expect(karai).toHaveAttribute('href', 'tel:+254758578092');
 
-  const wangige = screen.getByRole('link', { name: /call wangige supervisor at \+254 758 578 093/i });
-  expect(wangige).toBeInTheDocument();
-  expect(wangige).toHaveAttribute('href', 'tel:+254758578093');
+  const kikuyu = screen.getByRole('link', { name: /call kikuyu supervisor at \+254 758 578 093/i });
+  expect(kikuyu).toBeInTheDocument();
+  expect(kikuyu).toHaveAttribute('href', 'tel:+254758578093');
 });
