@@ -1,4 +1,6 @@
-const Header = () => {
+import React from "react";
+
+const Navigation = () => {
   return (
     <header
       id="header"
@@ -11,11 +13,10 @@ const Header = () => {
             <i className="fa-solid fa-droplet text-primary text-3xl sm:text-4xl mr-2 sm:mr-3"></i>
             <div>
               <h1 className="text-lg sm:text-xl font-bold text-gray-900">
-                  KIKUYU WATER AND 
-                  SEWERAGE COMPANY
+                KIKUYU WATER AND SEWERAGE COMPANY
               </h1>
               <p className="text-xs sm:text-sm text-gray-600">
-                KUBORESHA HUDUMA YA MAJI 
+                KUBORESHA HUDUMA YA MAJI
               </p>
             </div>
           </div>
@@ -24,11 +25,14 @@ const Header = () => {
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             <a
               href="/"
-              className="text-primary font-bold border-b-2 border-primary pb-1"
+              className="text-gray-700 hover:text-primary transition   "
             >
               Home
             </a>
-            <a href="/" className="text-gray-700 hover:text-primary transition">
+            <a
+              href="/about"
+              className="text-gray-700 hover:text-primary transition"
+            >
               About
             </a>
             <a href="/" className="text-gray-700 hover:text-primary transition">
@@ -40,12 +44,12 @@ const Header = () => {
             <a href="/" className="text-gray-700 hover:text-primary transition">
               Departments
             </a>
-            <a href="/" className="text-gray-700 hover:text-primary transition">
+            {/* <a href="/" className="text-gray-700 hover:text-primary transition">
               Media
-            </a>
-            <a href="/" className="text-gray-700 hover:text-primary transition">
+            </a> */}
+            {/* <a href="/" className="text-gray-700 hover:text-primary transition">
               FAQs
-            </a>
+            </a> */}
           </nav>
 
           {/* Customer Portal & Mobile Menu */}
@@ -131,4 +135,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navigation;

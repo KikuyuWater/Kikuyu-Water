@@ -28,7 +28,9 @@ const Cta = () => {
           <div className="flex flex-col items-center">
             <i className="fa-solid fa-phone text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
             <p className="font-bold mb-1 text-sm sm:text-base">Call Us</p>
-            <p className="text-blue-100 text-sm sm:text-base">+254 758 578 098</p>
+            <p className="text-blue-100 text-sm sm:text-base">
+              +254 758 578 098
+            </p>
           </div>
           <div className="flex flex-col items-center">
             <i className="fa-solid fa-envelope text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
