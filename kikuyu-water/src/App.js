@@ -4,26 +4,16 @@ import Navigation from "./layouts/Navigation";
 import AboutPage from "./pages/about-page";
 import LandingPage from "./pages/landing-page/LandingPage";
 import Maintenance from "./components/Error";
+import ServicePage from "./pages/service-page";
 
 function App() {
-  // Temporary force flag for immediate maintenance mode. Set to `false` to disable.
-  // NOTE: This temporary flag was used for maintenance. Set to `false` to restore the site.
-  // For production toggling prefer setting REACT_APP_MAINTENANCE in the hosting environment.
-  const FORCE_MAINTENANCE = false;
-
-  const isMaintenance = FORCE_MAINTENANCE || process.env.REACT_APP_MAINTENANCE === 'true';
-
-  if (isMaintenance) {
-    // Render the maintenance page for all routes when maintenance mode is enabled
-    return <Maintenance />;
-  }
-
   return (
     <>
       <Navigation />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/service" element={<ServicePage />} />
         <Route path="*" element={<Maintenance />} />
       </Routes>
     </>
