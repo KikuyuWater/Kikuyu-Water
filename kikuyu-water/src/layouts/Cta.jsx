@@ -1,4 +1,26 @@
+import './Cta.css';
+
 const Cta = () => {
+  const createRipple = (e) => {
+    const target = e.currentTarget;
+    const rect = target.getBoundingClientRect();
+    const diameter = Math.max(rect.width, rect.height);
+    const radius = diameter / 2;
+    const circle = document.createElement('span');
+    const clientX = e.clientX ?? (e.touches && e.touches[0].clientX);
+    const clientY = e.clientY ?? (e.touches && e.touches[0].clientY);
+    const x = clientX - rect.left - radius;
+    const y = clientY - rect.top - radius;
+    circle.style.width = circle.style.height = diameter + 'px';
+    circle.style.left = x + 'px';
+    circle.style.top = y + 'px';
+    circle.className = 'ripple';
+    const existing = target.getElementsByClassName('ripple')[0];
+    if (existing) existing.remove();
+    target.appendChild(circle);
+    setTimeout(() => { circle.remove(); }, 600);
+  }
+
   return (
     <section
       id="cta-section"
@@ -25,12 +47,12 @@ const Cta = () => {
 
         {/* Contact Info */}
         <div className="mt-10 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto">
-          <a href="tel:+254758578098" role="link" aria-label="Call Kikuyu Water at +254 758 578 098" className="flex flex-col items-center no-underline hover:underline">
+          <a href="tel:+254758578098" role="link" aria-label="Call Kikuyu Water at +254 758 578 098" className="flex flex-col items-center no-underline hover:underline relative overflow-hidden active:scale-95 active:opacity-80 transform transition duration-150" onMouseDown={createRipple} onTouchStart={createRipple}>
             <i className="fa-solid fa-phone text-3xl sm:text-4xl mb-2 sm:mb-3" aria-hidden="true"></i>
             <p className="font-bold mb-1 text-sm sm:text-base">Call Us</p>
             <span className="text-blue-100 text-sm sm:text-base">+254 758 578 098</span>
           </a>
-          <a href="mailto:info@kikuyuwater.co.ke" role="link" aria-label="Email Kikuyu Water" className="flex flex-col items-center no-underline hover:underline">
+          <a href="mailto:info@kikuyuwater.co.ke" role="link" aria-label="Email Kikuyu Water" className="flex flex-col items-center no-underline hover:underline relative overflow-hidden active:scale-95 active:opacity-80 transform transition duration-150" onMouseDown={createRipple} onTouchStart={createRipple}>
             <i className="fa-solid fa-envelope text-3xl sm:text-4xl mb-2 sm:mb-3" aria-hidden="true"></i>
             <p className="font-bold mb-1 text-sm sm:text-base">Email Us</p>
             <span className="text-blue-100 text-sm sm:text-base">info@kikuyuwater.co.ke</span>
@@ -41,7 +63,9 @@ const Cta = () => {
             rel="noopener noreferrer"
             role="link"
             aria-label="Open Kikuyu Water location in Google Maps: QM46 plus F8X, Ivory Towers Street, Rungiri"
-            className="flex flex-col items-center no-underline hover:underline"
+            className="flex flex-col items-center no-underline hover:underline relative overflow-hidden active:scale-95 active:opacity-80 transform transition duration-150"
+            onMouseDown={createRipple}
+            onTouchStart={createRipple}
           >
             <i className="fa-solid fa-map-marker-alt text-3xl sm:text-4xl mb-2 sm:mb-3" aria-hidden="true"></i>
             <p className="font-bold mb-1 text-sm sm:text-base">Visit Us</p>
