@@ -1,7 +1,7 @@
 import wasrebLogo from '../../WASREB-LOGO-2b.png';
 import kebsLogo from '../../kebs_logo.png';
 import nemaLogo from '../../logo-nema.png';
-import kiambuLogo from '../../kiambu_logo.svg';
+import kiambuLogo from '../../County_Government_of_Kiambu_Logo.png';
 
 const Partners = () => {
   return (
