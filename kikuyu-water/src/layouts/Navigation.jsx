@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../kikuyu water logo.jpg";
 
 const Navigation = () => {
   return (
@@ -10,7 +11,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between py-3 sm:py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <i className="fa-solid fa-droplet text-primary text-3xl sm:text-4xl mr-2 sm:mr-3"></i>
+            <img src={logo} alt="Kikuyu Water logo" className="w-10 h-10 sm:w-12 sm:h-12 mr-3 object-contain" />
             <div>
               <h1 className="text-lg sm:text-xl font-bold text-gray-900">
                 KIKUYU WATER AND SEWERAGE COMPANY

@@ -1,3 +1,7 @@
+import wasrebLogo from '../../WASREB-LOGO-2b.png';
+import kebsLogo from '../../kebs_logo.png';
+import nemaLogo from '../../logo-nema.png';
+
 const Partners = () => {
   return (
     <section id="partners-regulators" className="py-16 sm:py-20 bg-white">
@@ -17,7 +21,7 @@ const Partners = () => {
           {/* Partner 1 */}
           <div className="bg-neutral rounded-xl p-6 sm:p-8 text-center hover:shadow-lg transition">
             <div className="bg-white w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-md">
-              <i className="fa-solid fa-water text-primary text-2xl sm:text-3xl"></i>
+              <img src={wasrebLogo} alt="WASREB logo" className="w-12 h-12 sm:w-16 sm:h-16 object-contain" />
             </div>
             <h4 className="font-bold text-gray-900 text-lg sm:text-xl">
               WASREB
@@ -43,7 +47,7 @@ const Partners = () => {
           {/* Partner 3 */}
           <div className="bg-neutral rounded-xl p-6 sm:p-8 text-center hover:shadow-lg transition">
             <div className="bg-white w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-md">
-              <i className="fa-solid fa-flask text-primary text-2xl sm:text-3xl"></i>
+              <img src={kebsLogo} alt="KEBS logo" className="w-12 h-12 sm:w-16 sm:h-16 object-contain" />
             </div>
             <h4 className="font-bold text-gray-900 text-lg sm:text-xl">KEBS</h4>
             <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
@@ -54,7 +58,7 @@ const Partners = () => {
           {/* Partner 4 */}
           <div className="bg-neutral rounded-xl p-6 sm:p-8 text-center hover:shadow-lg transition">
             <div className="bg-white w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-md">
-              <i className="fa-solid fa-leaf text-primary text-2xl sm:text-3xl"></i>
+              <img src={nemaLogo} alt="NEMA logo" className="w-12 h-12 sm:w-16 sm:h-16 object-contain" />
             </div>
             <h4 className="font-bold text-gray-900 text-lg sm:text-xl">NEMA</h4>
             <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
