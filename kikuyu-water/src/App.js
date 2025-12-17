@@ -7,9 +7,9 @@ import Maintenance from "./components/Error";
 
 function App() {
   // Temporary force flag for immediate maintenance mode. Set to `false` to disable.
-  // NOTE: This is a temporary change to take the site into maintenance instantly.
-  // Remove or set to `false` after maintenance is done.
-  const FORCE_MAINTENANCE = true;
+  // NOTE: This temporary flag was used for maintenance. Set to `false` to restore the site.
+  // For production toggling prefer setting REACT_APP_MAINTENANCE in the hosting environment.
+  const FORCE_MAINTENANCE = false;
 
   const isMaintenance = FORCE_MAINTENANCE || process.env.REACT_APP_MAINTENANCE === 'true';
 
