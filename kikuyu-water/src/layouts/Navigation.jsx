@@ -11,8 +11,8 @@ const Navigation = () => {
         <div className="flex items-center justify-between py-3 sm:py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={logo} alt="Kikuyu Water logo" className="w-10 h-10 sm:w-12 sm:h-12 mr-3 object-contain" />
-            <div>
+            <img src={logo} alt="Kikuyu Water logo" className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mr-4 object-contain" />
+            <div className="leading-tight">
               <h1 className="text-lg sm:text-xl font-bold text-gray-900">
                 KIKUYU WATER AND SEWERAGE COMPANY
               </h1>
