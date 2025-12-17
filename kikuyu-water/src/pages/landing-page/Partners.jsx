@@ -1,6 +1,7 @@
 import wasrebLogo from '../../WASREB-LOGO-2b.png';
 import kebsLogo from '../../kebs_logo.png';
 import nemaLogo from '../../logo-nema.png';
+import kiambuLogo from '../../kiambu_logo.svg';
 
 const Partners = () => {
   return (
@@ -34,7 +35,7 @@ const Partners = () => {
           {/* Partner 2 */}
           <div className="bg-neutral rounded-xl p-6 sm:p-8 text-center hover:shadow-lg transition">
             <div className="bg-white w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-md">
-              <i className="fa-solid fa-landmark text-primary text-2xl sm:text-3xl"></i>
+              <img src={kiambuLogo} alt="Kiambu County logo" className="w-12 h-12 sm:w-16 sm:h-16 object-contain" />
             </div>
             <h4 className="font-bold text-gray-900 text-lg sm:text-xl">
               County Government
