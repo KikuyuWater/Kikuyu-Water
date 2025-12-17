@@ -22,3 +22,23 @@ test('shows maintenance on unknown route', () => {
   const maintenanceHeading = screen.getByRole('heading', { name: /404 — Website Under Maintenance/i });
   expect(maintenanceHeading).toBeInTheDocument();
 });
+
+test('renders maintenance for all routes when REACT_APP_MAINTENANCE is true', () => {
+  // Ensure module uses the env variable by resetting modules before require
+  jest.resetModules();
+  process.env.REACT_APP_MAINTENANCE = 'true';
+  const { default: AppWithMaintenance } = require('./App');
+
+  render(
+    <BrowserRouter>
+      <AppWithMaintenance />
+    </BrowserRouter>
+  );
+
+  const maintenanceHeading = screen.getByRole('heading', { name: /404 — Website Under Maintenance/i });
+  expect(maintenanceHeading).toBeInTheDocument();
+
+  // cleanup
+  delete process.env.REACT_APP_MAINTENANCE;
+  jest.resetModules();
+});
