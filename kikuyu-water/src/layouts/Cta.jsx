@@ -26,13 +26,13 @@ const Cta = () => {
         {/* Contact Info */}
         <div className="mt-10 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto">
           <div className="flex flex-col items-center">
-            <i className="fa-solid fa-phone text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
+            <i className="fa-solid fa-phone text-3xl sm:text-4xl mb-2 sm:mb-3" aria-hidden="true"></i>
             <p className="font-bold mb-1 text-sm sm:text-base">Call Us</p>
             {/* Mobile: tap to call; Desktop: plain text */}
-            <a href="tel:+254758578098" aria-label="Call Kikuyu Water" className="text-blue-100 text-sm sm:text-base block sm:hidden">
+            <a href="tel:+254758578098" role="link" aria-label="Call Kikuyu Water at +254 758 578 098" className="text-blue-100 text-sm sm:text-base block sm:hidden">
               +254 758 578 098
             </a>
-            <p className="text-blue-100 text-sm sm:text-base hidden sm:block">
+            <p aria-label="Phone number +254 758 578 098" className="text-blue-100 text-sm sm:text-base hidden sm:block">
               +254 758 578 098
             </p>
           </div>
@@ -50,7 +50,8 @@ const Cta = () => {
               href="https://www.google.com/maps/search/?api=1&query=QM46%2BF8X%2C%20Ivory%20Towers%20Street%2C%20Rungiri"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Open location in Google Maps"
+              role="link"
+              aria-label="Open Kikuyu Water location in Google Maps: QM46 plus F8X, Ivory Towers Street, Rungiri"
               className="text-blue-100 text-sm sm:text-base hover:underline"
             >
               QM46+F8X, Ivory Towers Street, Rungiri
