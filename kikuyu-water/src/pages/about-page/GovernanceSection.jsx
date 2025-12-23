@@ -26,11 +26,11 @@ const GovernanceSection = () => {
                   className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary"
                 />
                 <h4 className="font-bold text-gray-900 text-lg">
-                  Hon. James Kariuki
+                  XXXXXXXX
                 </h4>
                 <p className="text-primary font-bold mb-2">Board Chairperson</p>
                 <p className="text-gray-600 text-sm">
-                  MBA, 15+ years governance experience
+                  XXXXXXXXX
                 </p>
               </div>
               <div id="board-member-2" className="text-center">
@@ -40,11 +40,11 @@ const GovernanceSection = () => {
                   className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary"
                 />
                 <h4 className="font-bold text-gray-900 text-lg">
-                  Dr. Sarah Wambui
+                  XXXXXXXXXX
                 </h4>
                 <p className="text-primary font-bold mb-2">Board Member</p>
                 <p className="text-gray-600 text-sm">
-                  PhD Environmental Science
+                  XXXXXXXXX
                 </p>
               </div>
               <div id="board-member-3" className="text-center">
@@ -54,7 +54,7 @@ const GovernanceSection = () => {
                   className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary"
                 />
                 <h4 className="font-bold text-gray-900 text-lg">
-                  CPA John Maina
+                  XXXXXXXXXX
                 </h4>
                 <p className="text-primary font-bold mb-2">Board Member</p>
                 <p className="text-gray-600 text-sm">Finance & Audit Expert</p>
@@ -74,8 +74,8 @@ const GovernanceSection = () => {
                 alt="CEO"
                 className="w-24 h-24 rounded-full mx-auto mb-3 border-2 border-primary"
               />
-              <h4 className="font-bold text-gray-900">Eng. Peter Mwangi</h4>
-              <p className="text-primary text-sm font-bold">CEO</p>
+              <h4 className="font-bold text-gray-900">XXXXXX</h4>
+              <p className="text-primary text-sm font-bold">XXX</p>
             </div>
             <div id="management-2" className="text-center">
               <img
@@ -83,8 +83,8 @@ const GovernanceSection = () => {
                 alt="COO"
                 className="w-24 h-24 rounded-full mx-auto mb-3 border-2 border-primary"
               />
-              <h4 className="font-bold text-gray-900">Mary Njeri</h4>
-              <p className="text-primary text-sm font-bold">COO</p>
+              <h4 className="font-bold text-gray-900">XXXXXXXX</h4>
+              <p className="text-primary text-sm font-bold">XXXXXX</p>
             </div>
             <div id="management-3" className="text-center">
               <img
@@ -92,8 +92,8 @@ const GovernanceSection = () => {
                 alt="CFO"
                 className="w-24 h-24 rounded-full mx-auto mb-3 border-2 border-primary"
               />
-              <h4 className="font-bold text-gray-900">David Kamau</h4>
-              <p className="text-primary text-sm font-bold">CFO</p>
+              <h4 className="font-bold text-gray-900"><XXXXXX></XXXXXX></h4>
+              <p className="text-primary text-sm font-bold">XXXXXXXXX</p>
             </div>
             <div id="management-4" className="text-center">
               <img
@@ -101,9 +101,9 @@ const GovernanceSection = () => {
                 alt="Technical Director"
                 className="w-24 h-24 rounded-full mx-auto mb-3 border-2 border-primary"
               />
-              <h4 className="font-bold text-gray-900">Grace Wanjiku</h4>
+              <h4 className="font-bold text-gray-900">XXXXXXXXXXX</h4>
               <p className="text-primary text-sm font-bold">
-                Technical Director
+                XXXXXXXXX
               </p>
             </div>
           </div>

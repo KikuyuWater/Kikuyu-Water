@@ -127,7 +127,7 @@ const Navigation = () => {
               href="/"
               className="bg-primary text-white py-2 px-3 rounded-lg font-bold hover:bg-blue-700 transition"
             >
-              Customer Portal
+              GET OUR APP
             </a>
           </nav>
         </div>

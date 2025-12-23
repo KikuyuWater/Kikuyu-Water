@@ -34,8 +34,8 @@ const LeadershipSection = () => {
               provider.
             </p>
             <div className="mb-8">
-              <p className="text-2xl font-bold mb-1">Eng. Peter K. Mwangi</p>
-              <p className="text-blue-100">Chief Executive Officer</p>
+              <p className="text-2xl font-bold mb-1">XXXXXXXX</p>
+              <p className="text-blue-100">XXXXXXXXX</p>
             </div>
             <button className="bg-white text-primary px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition flex items-center">
               <i className="fa-solid fa-download mr-3"></i>

@@ -10,7 +10,7 @@ const HistorySection = () => {
             History & Background
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Two decades of dedicated service to the Kikuyu community
+            More than two decades of dedicated service to the Kikuyu community
           </p>
         </div>
 
@@ -18,7 +18,7 @@ const HistorySection = () => {
           <div className="space-y-12">
             <div id="history-item-1" className="flex items-start">
               <div className="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center font-black text-xl mr-8 flex-shrink-0">
-                2003
+                2004
               </div>
               <div className="flex-1">
                 <div className="bg-neutral rounded-2xl p-8 hover:shadow-lg transition">
@@ -28,7 +28,7 @@ const HistorySection = () => {
                   <p className="text-gray-700 leading-relaxed">
                     Kikuyu Water and Sewerage Company was officially established
                     as a public utility company under the Water Act 2002.
-                    Starting with a modest coverage area and 5,000 connections,
+                    Starting with a modest coverage area and few connections,
                     our primary goal was to provide reliable water services to
                     the rapidly growing Kikuyu town and its environs.
                   </p>
@@ -47,9 +47,9 @@ const HistorySection = () => {
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
                     Major infrastructure development phase began with the
-                    construction of new water treatment plants and extension of
+                    drilling of boreholes and the extension of
                     the distribution network. This expansion enabled us to serve
-                    15,000 additional households and businesses, significantly
+                    additional households and businesses, significantly
                     improving water access in previously underserved areas.
                   </p>
                 </div>
@@ -78,7 +78,7 @@ const HistorySection = () => {
 
             <div id="history-item-4" className="flex items-start">
               <div className="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center font-black text-xl mr-8 flex-shrink-0">
-                2018
+                2023
               </div>
               <div className="flex-1">
                 <div className="bg-neutral rounded-2xl p-8 hover:shadow-lg transition">
@@ -98,7 +98,7 @@ const HistorySection = () => {
 
             <div id="history-item-5" className="flex items-start">
               <div className="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center font-black text-xl mr-8 flex-shrink-0">
-                2021
+                2024
               </div>
               <div className="flex-1">
                 <div className="bg-neutral rounded-2xl p-8 hover:shadow-lg transition">
@@ -107,10 +107,9 @@ const HistorySection = () => {
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
                     Completed major sewerage infrastructure upgrade project,
-                    including construction of modern wastewater treatment plants
-                    and extension of sewer lines to 20 additional zones. This
-                    project significantly improved environmental protection and
-                    public health outcomes.
+                    including construction of modern wastewater treatment plant
+                    and extension of sewer lines. This project significantly 
+                    improved environmental protection and public health outcomes.
                   </p>
                 </div>
               </div>

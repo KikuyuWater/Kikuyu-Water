@@ -17,7 +17,7 @@ const HeroSection = () => {
         </h1>
         <p className="text-xl text-blue-100 max-w-3xl">
           Committed to providing clean, safe, and affordable water services to
-          our community since 2003
+          our community since 2004
         </p>
       </div>
     </section>
