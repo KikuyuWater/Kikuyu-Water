@@ -52,7 +52,10 @@ const Navigation = () => {
             >
               Tariffs
             </a>
-            <a href="/" className="text-gray-700 hover:text-primary transition">
+            <a
+              href="/departments"
+              className="text-gray-700 hover:text-primary transition"
+            >
               Departments
             </a>
             {/* <a href="/" className="text-gray-700 hover:text-primary transition">

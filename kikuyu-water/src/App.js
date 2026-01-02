@@ -6,6 +6,7 @@ import LandingPage from "./pages/landing-page/LandingPage";
 import Maintenance from "./components/Error";
 import ServicePage from "./pages/service-page";
 import Tariff from "./pages/tariff-page";
+import DepartmentPage from "./pages/department-page/DepartmentPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/service" element={<ServicePage />} />
         <Route path="/tarrif" element={<Tariff />} />
+        <Route path="/departments" element={<DepartmentPage />} />
         <Route path="*" element={<Maintenance />} />
       </Routes>
     </>
