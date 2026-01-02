@@ -6,6 +6,7 @@ import HistorySection from "./HistorySection";
 import Infrustructure from "./Infrustructure";
 import OverviewSection from "./OverviewSection";
 import PlanSection from "./PlanSection";
+import ServiceAreaSection from "./ServiceAreaSection";
 import SourcesSection from "./SourcesSection";
 import VisionSection from "./VisionSection";
 
@@ -14,6 +15,7 @@ const AboutPage = () => {
     <>
       <HeroSection />
       <OverviewSection />
+      <ServiceAreaSection />
       <VisionSection />
       <HistorySection />
       <Infrustructure />

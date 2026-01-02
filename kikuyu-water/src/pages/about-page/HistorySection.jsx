@@ -57,19 +57,18 @@ const HistorySection = () => {
 
             <div id="history-item-3" className="flex items-start">
               <div className="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center font-black text-xl mr-8 flex-shrink-0">
-                2015
+                2018
               </div>
               <div className="flex-1">
                 <div className="bg-neutral rounded-2xl p-8 hover:shadow-lg transition">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                    ISO Certification Achievement
+                    Sewer System Development
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Achieved ISO 9001:2015 certification for Quality Management
-                    Systems, demonstrating our commitment to international
-                    standards. This milestone marked our transformation into a
-                    modern, customer-focused organization with robust
-                    operational procedures and quality assurance mechanisms.
+                    In 2018, KIWACO secured funds from the African Development Bank (AFDB) 
+                    and the Kenya Urban Support Programme (KUSP) for constructing a sewer 
+                    system in Kikuyu town, Kidfarmaco, Thogoto, and Kinoo areas. The 
+                    projects became fully complete and Operational from July 2023
                   </p>
                 </div>
               </div>

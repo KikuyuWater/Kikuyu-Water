@@ -22,9 +22,8 @@ const VisionSection = () => {
               Our Vision
             </h3>
             <p className="text-gray-700 text-center leading-relaxed text-lg">
-              To be the leading water and sewerage service provider in Kenya,
-              recognized for excellence, innovation, and sustainable service
-              delivery to all communities within our jurisdiction.
+              To be the leading company in the provision of quality, reliable, 
+              and affordable water services in the region and beyond.
             </p>
             <div className="mt-8 pt-6 border-t border-gray-200">
               <div className="flex items-center justify-center">
@@ -47,9 +46,8 @@ const VisionSection = () => {
               Our Mission
             </h3>
             <p className="text-gray-700 text-center leading-relaxed text-lg">
-              To provide sustainable, affordable, and quality water and sewerage
-              services through innovative solutions, community engagement, and
-              environmental stewardship for the wellbeing of our customers.
+              To consistently provide excellent water services within our area of jurisdiction to 
+              the absolute satisfaction of our esteemed customers throughout the year.
             </p>
             <div className="mt-8 pt-6 border-t border-gray-200">
               <div className="flex items-center justify-center">
@@ -86,7 +84,7 @@ const VisionSection = () => {
               </li>
               <li className="flex items-start">
                 <i className="fa-solid fa-check-circle text-orange-600 mr-3 mt-1"></i>
-                <span className="text-gray-700 font-bold">Innovation</span>
+                <span className="text-gray-700 font-bold">Our Employees</span>
               </li>
               <li className="flex items-start">
                 <i className="fa-solid fa-check-circle text-orange-600 mr-3 mt-1"></i>

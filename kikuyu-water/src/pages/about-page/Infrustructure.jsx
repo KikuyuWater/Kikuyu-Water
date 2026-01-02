@@ -26,20 +26,20 @@ const Infrustructure = () => {
             <div className="space-y-6">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-lg font-bold">Treatment Plants</span>
-                  <span className="text-2xl font-black">8</span>
+                  <span className="text-lg font-bold">Boreholes</span>
+                  <span className="text-2xl font-black">31</span>
                 </div>
                 <p className="text-blue-100 text-sm">
-                  Combined capacity: 25,000 m³/day
+                  Combined capacity: 11,000 m³/day
                 </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-lg font-bold">Storage Reservoirs</span>
-                  <span className="text-2xl font-black">12</span>
+                  <span className="text-2xl font-black">41</span>
                 </div>
                 <p className="text-blue-100 text-sm">
-                  Total capacity: 15,000 m³
+                  Total capacity: 5,108 m³
                 </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
@@ -47,14 +47,14 @@ const Infrustructure = () => {
                   <span className="text-lg font-bold">
                     Distribution Network
                   </span>
-                  <span className="text-2xl font-black">450 km</span>
+                  <span className="text-2xl font-black">560 km</span>
                 </div>
                 <p className="text-blue-100 text-sm">Pipeline infrastructure</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-lg font-bold">Booster Stations</span>
-                  <span className="text-2xl font-black">18</span>
+                  <span className="text-lg font-bold">Consumer connections</span>
+                  <span className="text-2xl font-black">18,836</span>
                 </div>
                 <p className="text-blue-100 text-sm">
                   Ensuring optimal pressure
@@ -76,31 +76,31 @@ const Infrustructure = () => {
             <div className="space-y-6">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-lg font-bold">Treatment Plants</span>
+                  <span className="text-lg font-bold">Area Served</span>
                   <span className="text-2xl font-black">4</span>
                 </div>
                 <p className="text-green-100 text-sm">
-                  Combined capacity: 12,000 m³/day
+                  Kikuyu Town, Kidfarmaco, Thogoto, and Kinoo areas.
                 </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-lg font-bold">Sewer Lines</span>
-                  <span className="text-2xl font-black">280 km</span>
+                  <span className="text-2xl font-black">44.2 km</span>
                 </div>
                 <p className="text-green-100 text-sm">Collection network</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-lg font-bold">Pumping Stations</span>
-                  <span className="text-2xl font-black">14</span>
+                  <span className="text-lg font-bold">Connections</span>
+                  <span className="text-2xl font-black">679</span>
                 </div>
                 <p className="text-green-100 text-sm">Strategic locations</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-lg font-bold">Manholes</span>
-                  <span className="text-2xl font-black">3,500+</span>
+                  <span className="text-2xl font-black">1,233</span>
                 </div>
                 <p className="text-green-100 text-sm">
                   Maintenance access points
@@ -126,9 +126,9 @@ const Infrustructure = () => {
             className="bg-neutral rounded-xl p-6 text-center hover:shadow-lg transition"
           >
             <i className="fa-solid fa-microchip text-primary text-3xl mb-4"></i>
-            <h4 className="font-bold text-gray-900 mb-2">Smart Meters</h4>
+            <h4 className="font-bold text-gray-900 mb-2">Meters</h4>
             <p className="text-gray-600 text-sm">
-              15,000+ digital meters installed
+              18,000+  meters installed
             </p>
           </div>
           <div
