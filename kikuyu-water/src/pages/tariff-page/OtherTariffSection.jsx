@@ -1,5 +1,3 @@
-import React from "react";
-
 const OtherTariffSection = () => {
   return (
     <section id="other-tariffs" className="py-16 bg-white">
