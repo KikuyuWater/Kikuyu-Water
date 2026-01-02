@@ -92,8 +92,8 @@ const GovernanceSection = () => {
                 alt="CFO"
                 className="w-24 h-24 rounded-full mx-auto mb-3 border-2 border-primary"
               />
-              <h4 className="font-bold text-gray-900"><XXXXXX></XXXXXX></h4>
-              <p className="text-primary text-sm font-bold">XXXXXXXXX</p>
+              <h4 className="font-bold text-gray-900">David Kamau</h4>
+              <p className="text-primary text-sm font-bold">CFO</p>
             </div>
             <div id="management-4" className="text-center">
               <img
