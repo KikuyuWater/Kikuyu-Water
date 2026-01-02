@@ -18,7 +18,7 @@ const HistorySection = () => {
           <div className="space-y-12">
             <div id="history-item-1" className="flex items-start">
               <div className="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center font-black text-xl mr-8 flex-shrink-0">
-                2004
+                2006
               </div>
               <div className="flex-1">
                 <div className="bg-neutral rounded-2xl p-8 hover:shadow-lg transition">
@@ -26,11 +26,10 @@ const HistorySection = () => {
                     Company Establishment
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Kikuyu Water and Sewerage Company was officially established
-                    as a public utility company under the Water Act 2002.
-                    Starting with a modest coverage area and few connections,
-                    our primary goal was to provide reliable water services to
-                    the rapidly growing Kikuyu town and its environs.
+                    Kikuyu Water Company Limited (KIWACO), established in 2006, is one of the 
+                    eight water utilities in Kiambu County licensed by Water Sector Regulatory
+                     Board (WASREB) to provide quality and affordable water and sewerage 
+                     services in Kikuyu and Kabete Sub-counties.
                   </p>
                 </div>
               </div>
