@@ -46,7 +46,10 @@ const Navigation = () => {
             >
               Services
             </a>
-            <a href="/" className="text-gray-700 hover:text-primary transition">
+            <a
+              href="/tarrif"
+              className="text-gray-700 hover:text-primary transition"
+            >
               Tariffs
             </a>
             <a href="/" className="text-gray-700 hover:text-primary transition">
