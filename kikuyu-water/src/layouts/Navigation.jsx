@@ -11,7 +11,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between py-3 sm:py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={logo} alt="Kikuyu Water logo" className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mr-4 object-contain" />
+            <img
+              src={logo}
+              alt="Kikuyu Water logo"
+              className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mr-4 object-contain"
+            />
             <div className="leading-tight">
               <h1 className="text-lg sm:text-xl font-bold text-gray-900">
                 KIKUYU WATER AND SEWERAGE COMPANY
@@ -36,7 +40,10 @@ const Navigation = () => {
             >
               About
             </a>
-            <a href="/" className="text-gray-700 hover:text-primary transition">
+            <a
+              href="/service"
+              className="text-gray-700 hover:text-primary transition"
+            >
               Services
             </a>
             <a href="/" className="text-gray-700 hover:text-primary transition">
@@ -91,7 +98,7 @@ const Navigation = () => {
               href="/"
               className="text-gray-700 hover:text-primary transition py-2 px-3 rounded"
             >
-              Services
+              Service
             </a>
             <a
               href="/"
