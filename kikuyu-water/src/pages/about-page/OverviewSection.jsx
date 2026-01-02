@@ -8,31 +8,27 @@ const OverviewSection = () => {
               <span className="text-primary font-bold text-sm">WHO WE ARE</span>
             </div>
             <h2 className="text-4xl font-black text-gray-900 mb-6 leading-tight">
-              Serving Kikuyu and Kabete with Quality Water Services
+              Serving the Kikuyu Community with Excellence
             </h2>
-            <div className="text-lg text-gray-700 mb-8 leading-relaxed space-y-4">
-              <p>
-                ─	Kikuyu Water Company Limited (KIWACO), established in 2006, is one of the eight water utilities in Kiambu County licensed by Water Sector Regulatory Board (WASREB) to provide quality and affordable water and sewerage services in Kikuyu and Kabete Sub-counties.
-              </p>
-              <p>
-                ─	The company is fully owned by the County Government of Kiambu.
-              </p>
-              <p>
-                ─	Its service area is approximately 250km² covering 10 wards incl. Nachu, Karai, Kikuyu, Kinoo, Sigona, Muguga, Gitaru, Kabete, Nyathuna and Uthiru.
-              </p>
-              <p>
-                ─	Currently, there are about 436,232 people out of which nearly 240,900 people are served by utility which is about 55% of the population.
-              </p>
-              <p>
-                ─	The 420,262 persons generate a daily water demand of 42,026m³/day against a daily supply of 11,000m³/day. This lead to a daily deficit of 31,026m³/day.
-              </p>
-              <p>
-                ─	NB: This daily water supply of 11,000m³/day is not constant due to down times caused by power interruptions and mechanical breakdowns
-              </p>
-              <p>
-                ─	The deficit in demand is met partly through the community water projects and Private boreholes. However, there is no verifiable data for these.
-              </p>
-            </div>
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              Kikuyu Water and Sewerage Company is a public utility mandated to
+              provide clean water and sewerage services to residents and
+              businesses in Kikuyu and surrounding areas. Established in 2003,
+              we have grown to become one of the most reliable water service
+              providers in the region.
+            </p>
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              Our commitment extends beyond mere service delivery. We are
+              dedicated to sustainable water resource management, environmental
+              conservation, and community empowerment through education and
+              engagement programs.
+            </p>
+            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              Regulated by the Water Services Regulatory Board (WASREB) and
+              working in close partnership with Kiambu County Government, we
+              uphold the highest standards of service quality, transparency, and
+              accountability in all our operations.
+            </p>
             <div className="flex items-center space-x-4">
               <button className="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition">
                 Download Company Profile
