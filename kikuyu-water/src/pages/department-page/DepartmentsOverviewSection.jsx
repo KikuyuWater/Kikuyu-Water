@@ -1,6 +1,17 @@
 import { Departments } from "../../data";
 
 const DepartmentsOverviewSection = () => {
+  const textColorMap = {
+    primary: "text-primary",
+    "green-500": "text-green-500",
+    "purple-500": "text-purple-500",
+    "orange-500": "text-orange-500",
+    "blue-500": "text-blue-500",
+    "teal-500": "text-teal-500",
+    "red-500": "text-red-500",
+    "indigo-500": "text-indigo-500",
+  };
+
   const displayDepartments = () => {
     const results = Departments.map((dept) => {
       return (
@@ -12,7 +23,9 @@ const DepartmentsOverviewSection = () => {
           <div className="p-8">
             <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 transition-all">
               <i
-                className={`fa-solid ${dept.icon} text-${dept.theme.color} text-3xl group-hover:text-white transition`}
+                className={`fa-solid ${dept.icon} text-${
+                  textColorMap[dept.theme.color]
+                } text-3xl group-hover:text-white transition`}
               ></i>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -24,7 +37,9 @@ const DepartmentsOverviewSection = () => {
             <div className="space-y-3 mb-6">
               {dept.features.map((service, index) => (
                 <div className="flex items-center text-gray-700" key={index}>
-                  <i className="fa-solid fa-check-circle text-primary mr-3"></i>
+                  <i
+                    className={`fa-solid fa-check-circle text-${dept.theme.color} mr-3`}
+                  ></i>
                   <span>{service}</span>
                 </div>
               ))}
