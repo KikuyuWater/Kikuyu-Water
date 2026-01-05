@@ -120,53 +120,7 @@ const Services = () => {
 
         {/* Second Row: 2 Horizontal Service Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-          {/* Water Quality Testing */}
-          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition">
-            <div className="flex items-start">
-              <div className="bg-primary/10 w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mr-4 sm:mr-6">
-                <i className="fa-solid fa-vial text-primary text-xl sm:text-xl"></i>
-              </div>
-              <div className="flex-1">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
-                  Water Quality Testing
-                </h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-2 sm:mb-4">
-                  Regular testing and monitoring to ensure water meets national
-                  and international quality standards.
-                </p>
-                <a
-                  href="/"
-                  className="text-primary font-bold flex items-center hover:underline text-sm sm:text-base"
-                >
-                  View Reports <i className="fa-solid fa-arrow-right ml-2"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Customer Education */}
-          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition">
-            <div className="flex items-start">
-              <div className="bg-primary/10 w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mr-4 sm:mr-6">
-                <i className="fa-solid fa-graduation-cap text-primary text-xl sm:text-xl"></i>
-              </div>
-              <div className="flex-1">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
-                  Customer Education
-                </h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-2 sm:mb-4">
-                  Programs to educate customers on water conservation, proper
-                  usage, and environmental protection.
-                </p>
-                <a
-                  href="/"
-                  className="text-primary font-bold flex items-center hover:underline text-sm sm:text-base"
-                >
-                  Join Programs <i className="fa-solid fa-arrow-right ml-2"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

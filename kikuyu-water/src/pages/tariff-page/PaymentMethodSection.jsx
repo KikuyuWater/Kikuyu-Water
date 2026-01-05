@@ -10,7 +10,7 @@ const PaymentMethodSection = () => {
             Multiple ways to pay your water bill
           </p>
         </div>
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid grid-cols-3 gap-8">
           <div
             id="payment-method-1"
             className="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-2xl transition"
@@ -65,25 +65,6 @@ const PaymentMethodSection = () => {
             <div className="bg-neutral p-3 rounded-lg">
               <p className="text-sm text-gray-700">Pay online via</p>
               <p className="text-sm font-bold text-gray-700">Customer Portal</p>
-            </div>
-          </div>
-
-          <div
-            id="payment-method-4"
-            className="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-2xl transition"
-          >
-            <div className="bg-orange-600/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-              <i className="fa-solid fa-money-bill text-orange-600 text-3xl"></i>
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
-              Cash Payment
-            </h3>
-            <p className="text-gray-600 mb-4">Visit our offices</p>
-            <div className="bg-neutral p-3 rounded-lg">
-              <p className="text-sm text-gray-700">
-                <span className="font-bold">Hours:</span> Mon-Fri
-              </p>
-              <p className="text-sm text-gray-700">8:00 AM - 5:00 PM</p>
             </div>
           </div>
         </div>

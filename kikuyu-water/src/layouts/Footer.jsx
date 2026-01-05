@@ -102,14 +102,23 @@ const Footer = () => {
               <div className="flex items-start">
                 <i className="fa-solid fa-map-marker-alt text-primary mr-2 sm:mr-3 mt-1"></i>
                 <div>
-                  <p>Kikuyu Town</p>
+                  <p>Head Office: Kikuyu Town</p>
                   <p>Kiambu County, Kenya</p>
+                  <a
+                    href="https://maps.app.goo.gl/zDMBWXx73o3dr4727"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-2 px-3 py-1.5 bg-primary text-white text-xs rounded hover:bg-blue-700 transition"
+                  >
+                    <i className="fa-solid fa-location-dot mr-1"></i>
+                    Get Directions
+                  </a>
                 </div>
               </div>
               <div className="flex items-start">
                 <i className="fa-solid fa-phone text-primary mr-2 sm:mr-3 mt-1"></i>
                 <div>
-                  <p>0758 578 098</p>
+                  <p>+254728578098</p>
                   <p className="text-xs sm:text-sm">24/7 Emergency Line</p>
                 </div>
               </div>

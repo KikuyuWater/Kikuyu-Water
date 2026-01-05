@@ -50,7 +50,7 @@ const Cta = () => {
           <a href="tel:+254758578098" role="link" aria-label="Call Kikuyu Water at +254 758 578 098" className="flex flex-col items-center no-underline hover:underline relative overflow-hidden active:scale-95 active:opacity-80 transform transition duration-150" onMouseDown={createRipple} onTouchStart={createRipple}>
             <i className="fa-solid fa-phone text-3xl sm:text-4xl mb-2 sm:mb-3" aria-hidden="true"></i>
             <p className="font-bold mb-1 text-sm sm:text-base">Call Us</p>
-            <span className="text-blue-100 text-sm sm:text-base">+254 758 578 098</span>
+            <span className="text-blue-100 text-sm sm:text-base">+254728578098</span>
           </a>
           <a href="mailto:kikuyuwater@yahoo.com" role="link" aria-label="Email Kikuyu Water" className="flex flex-col items-center no-underline hover:underline relative overflow-hidden active:scale-95 active:opacity-80 transform transition duration-150" onMouseDown={createRipple} onTouchStart={createRipple}>
             <i className="fa-solid fa-envelope text-3xl sm:text-4xl mb-2 sm:mb-3" aria-hidden="true"></i>

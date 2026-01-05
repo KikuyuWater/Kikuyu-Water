@@ -24,7 +24,7 @@ const HeroSection = () => {
           <div className="flex items-center justify-center space-x-6">
             <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
               <i className="fa-solid fa-calendar-alt mr-2"></i>
-              <span className="font-bold">Effective: January 2024</span>
+              <span className="font-bold">Effective: June 2024</span>
             </div>
             <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
               <i className="fa-solid fa-shield-halved mr-2"></i>
