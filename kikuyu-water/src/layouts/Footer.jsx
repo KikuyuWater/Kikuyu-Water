@@ -52,6 +52,7 @@ const Footer = () => {
                 "Our Services",
                 "Tariffs",
                 "Departments",
+                "Gallery",
                 "Careers",
                 "Tenders",
               ].map((link) => (
