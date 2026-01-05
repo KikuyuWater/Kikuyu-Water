@@ -1,3 +1,5 @@
+import React from "react";
+
 const CompanyHighlights = () => {
   return (
     <section id="company-highlights" className="py-16 sm:py-20 bg-white">
@@ -28,19 +30,6 @@ const CompanyHighlights = () => {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
-              <div className="flex items-start">
-                <div className="bg-primary/10 p-2 sm:p-3 rounded-lg mr-3 sm:mr-4">
-                  <i className="fa-solid fa-award text-primary text-lg sm:text-xl"></i>
-                </div>
-                <div>
-                  <p className="font-bold text-gray-900 text-base sm:text-lg">
-                    ISO Certified
-                  </p>
-                  <p className="text-gray-600 text-xs sm:text-sm">
-                    Quality management systems
-                  </p>
-                </div>
-              </div>
               <div className="flex items-start">
                 <div className="bg-primary/10 p-2 sm:p-3 rounded-lg mr-3 sm:mr-4">
                   <i className="fa-solid fa-leaf text-primary text-lg sm:text-xl"></i>

@@ -115,7 +115,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start">
                 <i className="fa-solid fa-envelope text-primary mr-2 sm:mr-3 mt-1"></i>
-                <p>info@kikuyuwater.co.ke</p>
+                <p>kikuyuwater@yahoo.com</p>
               </div>
               <div className="flex items-start">
                 <i className="fa-solid fa-clock text-primary mr-2 sm:mr-3 mt-1"></i>

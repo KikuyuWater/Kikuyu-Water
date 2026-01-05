@@ -141,7 +141,7 @@ const QuickActions = () => {
                     <p className="text-sm text-gray-600">Supervisor</p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254758578091" aria-label="Call Muguga supervisor at +254 758 578 091" className="text-primary font-medium">Call</a>
-                      <a href="mailto:supervisor-muguga@kikuyuwater.co.ke" aria-label="Email Muguga supervisor" className="text-primary font-medium">Email</a>
+                      <a href="mailto:kikuyuwater@yahoo.com" aria-label="Email Muguga supervisor" className="text-primary font-medium">Email</a>
                     </div>
                   </div>
                   <div className="p-3 rounded border">
@@ -149,7 +149,7 @@ const QuickActions = () => {
                     <p className="text-sm text-gray-600">Supervisor</p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254758578092" aria-label="Call Karai supervisor at +254 758 578 092" className="text-primary font-medium">Call</a>
-                      <a href="mailto:supervisor-karai@kikuyuwater.co.ke" aria-label="Email Karai supervisor" className="text-primary font-medium">Email</a>
+                      <a href="mailto:kikuyuwater@yahoo.com" aria-label="Email Karai supervisor" className="text-primary font-medium">Email</a>
                     </div>
                   </div>
                   <div className="p-3 rounded border">
@@ -157,7 +157,7 @@ const QuickActions = () => {
                     <p className="text-sm text-gray-600">Supervisor</p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254758578093" aria-label="Call Kikuyu supervisor at +254 758 578 093" className="text-primary font-medium">Call</a>
-                      <a href="mailto:supervisor-kikuyu@kikuyuwater.co.ke" aria-label="Email Kikuyu supervisor" className="text-primary font-medium">Email</a>
+                      <a href="mailto:kikuyuwater@yahoo.com" aria-label="Email Kikuyu supervisor" className="text-primary font-medium">Email</a>
                     </div>
                   </div>
                 </div>

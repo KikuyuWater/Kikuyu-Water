@@ -15,7 +15,7 @@ const HeroSection = () => {
           <div>
             <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4 sm:mb-6">
               <span className="text-sm sm:text-base font-bold">
-                Serving Kenyans Since 2004
+                Serving Kenyans Since 2006
               </span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4 sm:mb-6">
@@ -38,7 +38,7 @@ const HeroSection = () => {
                 <i className="fa-solid fa-phone text-2xl mr-3"></i>
                 <div>
                   <p className="text-sm text-blue-200">24/7 Emergency</p>
-                  <p className="font-bold text-lg"> 0758 578 098 </p>
+                  <p className="font-bold text-lg"> 0728 578 098 </p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -57,7 +57,7 @@ const HeroSection = () => {
                 <div className="bg-white/20 backdrop-blur-sm p-4 sm:p-6 rounded-xl">
                   <i className="fa-solid fa-users text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
                   <p className="text-2xl sm:text-3xl font-black mb-1">
-                    45,000+
+                    18,000+
                   </p>
                   <p className="text-xs sm:text-sm text-blue-100">
                     Active Connections
@@ -66,7 +66,7 @@ const HeroSection = () => {
                 <div className="bg-white/20 backdrop-blur-sm p-4 sm:p-6 rounded-xl">
                   <i className="fa-solid fa-map-marked-alt text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
                   <p className="text-2xl sm:text-3xl font-black mb-1">
-                    120 km²
+                    250 km²
                   </p>
                   <p className="text-xs sm:text-sm text-blue-100">
                     Coverage Area
@@ -74,7 +74,7 @@ const HeroSection = () => {
                 </div>
                 <div className="bg-white/20 backdrop-blur-sm p-4 sm:p-6 rounded-xl">
                   <i className="fa-solid fa-water text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
-                  <p className="text-2xl sm:text-3xl font-black mb-1">10</p>
+                  <p className="text-2xl sm:text-3xl font-black mb-1">31</p>
                   <p className="text-xs sm:text-sm text-blue-100">
                     Water Sources
                   </p>

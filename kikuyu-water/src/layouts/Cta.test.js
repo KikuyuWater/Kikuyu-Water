@@ -6,11 +6,11 @@ test('contact links exist with correct hrefs', () => {
 
   const tel = screen.getByRole('link', { name: /call kikuyu water at \+254 758 578 098/i });
   expect(tel).toBeInTheDocument();
-  expect(tel).toHaveAttribute('href', 'tel:+254758578098');
+  expect(tel).toHaveAttribute('href', 'tel:+254728578098');
 
   const mail = screen.getByRole('link', { name: /email kikuyu water/i });
   expect(mail).toBeInTheDocument();
-  expect(mail).toHaveAttribute('href', 'mailto:info@kikuyuwater.co.ke');
+  expect(mail).toHaveAttribute('href', 'mailto:kikuyuwater@yahoo.com');
 
   const map = screen.getByRole('link', { name: /open kikuyu water location in google maps/i });
   expect(map).toBeInTheDocument();

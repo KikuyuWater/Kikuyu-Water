@@ -56,21 +56,6 @@ const OverviewSection = () => {
                 alt="modern water treatment facility with blue pipes and filtration systems, professional industrial photography"
               />
             </div>
-            <div className="absolute -bottom-8 -left-8 bg-white rounded-2xl shadow-2xl p-8 max-w-xs">
-              <div className="flex items-center mb-4">
-                <div className="bg-primary/10 p-3 rounded-lg mr-4">
-                  <i className="fa-solid fa-award text-primary text-2xl"></i>
-                </div>
-                <div>
-                  <p className="text-3xl font-black text-gray-900">ISO 9001</p>
-                  <p className="text-sm text-gray-600">Certified Since 2015</p>
-                </div>
-              </div>
-              <p className="text-gray-700 text-sm">
-                Committed to quality management systems and continuous
-                improvement
-              </p>
-            </div>
           </div>
         </div>
       </div>

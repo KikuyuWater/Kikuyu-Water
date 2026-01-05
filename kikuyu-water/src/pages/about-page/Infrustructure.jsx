@@ -118,7 +118,7 @@ const Infrustructure = () => {
             <i className="fa-solid fa-flask text-primary text-3xl mb-4"></i>
             <h4 className="font-bold text-gray-900 mb-2">Water Quality Lab</h4>
             <p className="text-gray-600 text-sm">
-              ISO 17025 accredited testing facility
+              Advanced water testing facility
             </p>
           </div>
           <div

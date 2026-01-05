@@ -91,7 +91,7 @@ const ContactDepartments = () => {
                   <i className="fa-solid fa-envelope text-primary text-xl mr-4 mt-1"></i>
                   <div>
                     <p className="font-bold text-gray-900">Email</p>
-                    <p className="text-gray-600">info@kikuyuwater.co.ke</p>
+                    <p className="text-gray-600">kikuyuwater@yahoo.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
