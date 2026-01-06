@@ -78,7 +78,7 @@ const Footer = () => {
                 { label: "Customer Portal", path: "/" },
                 { label: "Apply for Connection", path: "/" },
                 { label: "Pay Bill", path: "/" },
-                { label: "Report Issue", path: "/" },
+                { label: "Report Issue", path: "/#report-issue" },
                 { label: "Service Charter", path: "/charter" },
                 { label: "FAQs", path: "/" },
                 { label: "Contact Us", path: "/" },

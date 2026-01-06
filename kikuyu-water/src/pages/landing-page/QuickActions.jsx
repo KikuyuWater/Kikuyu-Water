@@ -101,7 +101,7 @@ const QuickActions = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 sm:p-8 border-t-4 border-orange-500">
+          <div id="report-issue" className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 sm:p-8 border-t-4 border-orange-500">
             <div className="bg-orange-500/10 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6">
               <i className="fa-solid fa-exclamation-triangle text-orange-600 text-xl sm:text-2xl"></i>
             </div>
@@ -151,7 +151,7 @@ const QuickActions = () => {
                     <p className="text-sm text-gray-600">Supervisor Mr Kitheka</p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254758578091" aria-label="Call Muguga supervisor at +254 758 578 091" className="text-primary font-medium">Call</a>
-                      <a href="mailto:kikuyuwater@yahoo.com" aria-label="Email Muguga supervisor" className="text-primary font-medium">Email</a>
+                      <a href="mailto:kikuyuwater@yahoo.com?subject=[MUGUGA]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Muguga" aria-label="Email Muguga supervisor" className="text-primary font-medium">Email</a>
                     </div>
                   </li>
                   <li className="p-3 rounded border hover:bg-gray-50 transition">
@@ -159,7 +159,7 @@ const QuickActions = () => {
                     <p className="text-sm text-gray-600">Supervisor Mr Peter</p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254758578092" aria-label="Call Karai supervisor at +254 758 578 092" className="text-primary font-medium">Call</a>
-                      <a href="mailto:kikuyuwater@yahoo.com" aria-label="Email Karai supervisor" className="text-primary font-medium">Email</a>
+                      <a href="mailto:kikuyuwater@yahoo.com?subject=[KARAI]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Karai" aria-label="Email Karai supervisor" className="text-primary font-medium">Email</a>
                     </div>
                   </li>
                   <li className="p-3 rounded border hover:bg-gray-50 transition">
@@ -167,7 +167,7 @@ const QuickActions = () => {
                     <p className="text-sm text-gray-600">Superviso </p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254758578093" aria-label="Call Kikuyu supervisor at +254 758 578 093" className="text-primary font-medium">Call</a>
-                      <a href="mailto:kikuyuwater@yahoo.com" aria-label="Email Kikuyu supervisor" className="text-primary font-medium">Email</a>
+                      <a href="mailto:kikuyuwater@yahoo.com?subject=[KIKUYU]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Kikuyu" aria-label="Email Kikuyu supervisor" className="text-primary font-medium">Email</a>
                     </div>
                   </li>
                   <li className="p-3 rounded border hover:bg-gray-50 transition">
@@ -175,7 +175,7 @@ const QuickActions = () => {
                     <p className="text-sm text-gray-600">Supervisor Mr Ngatia</p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254758578094" aria-label="Call Wangige supervisor at +254 758 578 094" className="text-primary font-medium">Call</a>
-                      <a href="mailto:kikuyuwater@yahoo.com" aria-label="Email Wangige supervisor" className="text-primary font-medium">Email</a>
+                      <a href="mailto:kikuyuwater@yahoo.com?subject=[WANGIGE]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Wangige" aria-label="Email Wangige supervisor" className="text-primary font-medium">Email</a>
                     </div>
                   </li>
                 </ul>
