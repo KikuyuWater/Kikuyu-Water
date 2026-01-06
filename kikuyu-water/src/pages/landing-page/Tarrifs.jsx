@@ -8,7 +8,7 @@ const Tarrifs = () => {
             Transparent Pricing
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-            Fair and affordable tariffs approved by WASREB
+            Fair and affordable tariffs approved by WASREB (Effective: 15th July 2025 - 14th July 2026)
           </p>
         </div>
 
@@ -28,10 +28,10 @@ const Tarrifs = () => {
             <div className="space-y-3 sm:space-y-4">
               <div className="flex justify-between items-center py-2 sm:py-3 border-b">
                 <span className="text-gray-700 text-sm sm:text-base">
-                  0-6 m³
+                  1-6 m³
                 </span>
                 <span className="font-bold text-gray-900 text-sm sm:text-base">
-                  KSh 53/m³
+                  KSh 128/m³
                 </span>
               </div>
               <div className="flex justify-between items-center py-2 sm:py-3 border-b">
@@ -39,7 +39,7 @@ const Tarrifs = () => {
                   7-20 m³
                 </span>
                 <span className="font-bold text-gray-900 text-sm sm:text-base">
-                  KSh 65/m³
+                  KSh 138/m³
                 </span>
               </div>
               <div className="flex justify-between items-center py-2 sm:py-3 border-b">
@@ -47,21 +47,21 @@ const Tarrifs = () => {
                   21-50 m³
                 </span>
                 <span className="font-bold text-gray-900 text-sm sm:text-base">
-                  KSh 75/m³
+                  KSh 154/m³
                 </span>
               </div>
               <div className="flex justify-between items-center py-2 sm:py-3">
                 <span className="text-gray-700 text-sm sm:text-base">
-                  Above 50 m³
+                  51-100 m³
                 </span>
                 <span className="font-bold text-gray-900 text-sm sm:text-base">
-                  KSh 85/m³
+                  KSh 164/m³
                 </span>
               </div>
             </div>
-            <button className="w-full mt-4 sm:mt-6 border-2 border-primary text-primary py-2.5 sm:py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition">
+            <a href="/tarrif" className="block w-full mt-4 sm:mt-6 border-2 border-primary text-primary py-2.5 sm:py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition text-center">
               View Full Tariff
-            </button>
+            </a>
           </div>
 
           {/* Commercial */}
@@ -78,10 +78,10 @@ const Tarrifs = () => {
             <div className="space-y-3 sm:space-y-4">
               <div className="flex justify-between items-center py-2 sm:py-3 border-b">
                 <span className="text-gray-700 text-sm sm:text-base">
-                  0-50 m³
+                  1-50 m³
                 </span>
                 <span className="font-bold text-gray-900 text-sm sm:text-base">
-                  KSh 95/m³
+                  KSh 154/m³
                 </span>
               </div>
               <div className="flex justify-between items-center py-2 sm:py-3 border-b">
@@ -89,79 +89,79 @@ const Tarrifs = () => {
                   51-100 m³
                 </span>
                 <span className="font-bold text-gray-900 text-sm sm:text-base">
-                  KSh 105/m³
+                  KSh 164/m³
                 </span>
               </div>
               <div className="flex justify-between items-center py-2 sm:py-3 border-b">
                 <span className="text-gray-700 text-sm sm:text-base">
-                  Above 100 m³
+                  101-300 m³
                 </span>
                 <span className="font-bold text-gray-900 text-sm sm:text-base">
-                  KSh 115/m³
+                  KSh 174/m³
                 </span>
               </div>
               <div className="flex justify-between items-center py-2 sm:py-3">
                 <span className="text-gray-700 text-sm sm:text-base">
-                  Fixed charge
+                  Above 300 m³
                 </span>
                 <span className="font-bold text-gray-900 text-sm sm:text-base">
-                  KSh 500
+                  KSh 184/m³
                 </span>
               </div>
             </div>
-            <button className="w-full mt-4 sm:mt-6 border-2 border-green-600 text-green-600 py-2.5 sm:py-3 rounded-lg font-bold hover:bg-green-600 hover:text-white transition">
+            <a href="/tarrif" className="block w-full mt-4 sm:mt-6 border-2 border-green-600 text-green-600 py-2.5 sm:py-3 rounded-lg font-bold hover:bg-green-600 hover:text-white transition text-center">
               View Full Tariff
-            </button>
+            </a>
           </div>
 
-          {/* Industrial */}
+          {/* Special Categories */}
           <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border-t-4 border-orange-500">
             <div className="text-center mb-6">
-              <i className="fa-solid fa-industry text-orange-600 text-3xl sm:text-4xl mb-3 sm:mb-4"></i>
+              <i className="fa-solid fa-store text-orange-600 text-3xl sm:text-4xl mb-3 sm:mb-4"></i>
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                Industrial
+                Special Categories
               </h3>
               <p className="text-gray-600 mt-1 sm:mt-2 text-sm sm:text-base">
-                Large scale users
+                Kiosks & Schools
               </p>
             </div>
             <div className="space-y-3 sm:space-y-4">
               <div className="flex justify-between items-center py-2 sm:py-3 border-b">
                 <span className="text-gray-700 text-sm sm:text-base">
-                  All consumption
+                  Water Kiosks
                 </span>
                 <span className="font-bold text-gray-900 text-sm sm:text-base">
-                  KSh 125/m³
+                  KSh 50/m³
                 </span>
               </div>
               <div className="flex justify-between items-center py-2 sm:py-3 border-b">
                 <span className="text-gray-700 text-sm sm:text-base">
-                  Fixed charge
+                  Schools (1-600 m³)
                 </span>
                 <span className="font-bold text-gray-900 text-sm sm:text-base">
-                  KSh 1,000
+                  KSh 154/m³
                 </span>
               </div>
               <div className="flex justify-between items-center py-2 sm:py-3 border-b">
                 <span className="text-gray-700 text-sm sm:text-base">
-                  Bulk discount
+                  Bulk Supply
                 </span>
                 <span className="font-bold text-gray-900 text-sm sm:text-base">
-                  Available
+                  KSh 123/m³
                 </span>
               </div>
               <div className="flex justify-between items-center py-2 sm:py-3">
                 <span className="text-gray-700 text-sm sm:text-base">
-                  Custom plans
+                  MDUs/Gated
                 </span>
                 <span className="font-bold text-gray-900 text-sm sm:text-base">
-                  Contact us
+                  KSh 154/m³
                 </span>
               </div>
             </div>
-            <button className="w-full mt-4 sm:mt-6 border-2 border-orange-600 text-orange-600 py-2.5 sm:py-3 rounded-lg font-bold hover:bg-orange-600 hover:text-white transition">
+            <a href="/tarrif" className="block w-full mt-4 sm:mt-6 border-2 border-orange-600 text-orange-600 py-2.5 sm:py-3 rounded-lg font-bold hover:bg-orange-600 hover:text-white transition text-center">
               View Full Tariff
-            </button>
+            </a>
           </div>
         </div>
 
@@ -171,33 +171,32 @@ const Tarrifs = () => {
             <i className="fa-solid fa-info-circle text-primary text-2xl sm:text-3xl mt-1 flex-shrink-0"></i>
             <div className="flex-1">
               <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
-                Additional Charges
+                Additional Information
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="space-y-2 text-gray-700 text-sm sm:text-base">
                   <p>
-                    <span className="font-bold">Sewerage Charge:</span> 75% of
-                    water bill
+                    <span className="font-bold">Official Notice:</span> Kenya Gazette No. 9724
                   </p>
                   <p>
-                    <span className="font-bold">Meter Rent:</span> KSh 75/month
+                    <span className="font-bold">Regulator:</span> WASREB Certified
                   </p>
                   <p>
-                    <span className="font-bold">Connection Fee:</span> From KSh
-                    15,000
+                    <span className="font-bold">Validity:</span> 15th July 2025 - 14th July 2026
                   </p>
                 </div>
                 <div className="space-y-2 text-gray-700 text-sm sm:text-base">
                   <p>
-                    <span className="font-bold">Reconnection Fee:</span> KSh
-                    1,000
+                    <span className="font-bold">Tariff Calculator:</span> Available online
                   </p>
                   <p>
-                    <span className="font-bold">Inspection Fee:</span> KSh 500
+                    <span className="font-bold">PDF Download:</span> Full tariff schedule
                   </p>
                   <p>
-                    <span className="font-bold">Late Payment:</span> 1% per
-                    month
+                    <span className="font-bold">More Details:</span>{" "}
+                    <a href="/tarrif" className="text-primary hover:underline font-bold">
+                      View complete tariff breakdown
+                    </a>
                   </p>
                 </div>
               </div>

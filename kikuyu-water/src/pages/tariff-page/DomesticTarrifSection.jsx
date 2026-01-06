@@ -4,59 +4,53 @@ const DomesticTarrifSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-10">
           <h2 className="text-4xl font-black text-gray-900 mb-3">
-            Domestic Tariff
+            Domestic / Residential Tariff
           </h2>
           <p className="text-xl text-gray-600">
-            Residential water and sewerage charges for households
+            Official water charges for households (Effective: 15th July 2025 - 14th July 2026)
           </p>
         </div>
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="bg-primary text-white p-6">
-            <div className="grid grid-cols-5 gap-4 font-bold text-lg">
-              <div className="col-span-2">Consumption Range</div>
-              <div>Water Charge</div>
-              <div>Sewerage Charge</div>
-              <div>Total per m³</div>
+            <div className="grid grid-cols-3 gap-4 font-bold text-lg">
+              <div className="col-span-2">Consumption Block</div>
+              <div>Approved Tariff</div>
             </div>
           </div>
           <div className="divide-y divide-gray-200">
-            <div className="grid grid-cols-5 gap-4 p-6 hover:bg-neutral transition">
-              <div className="col-span-2 font-bold text-gray-900">0 - 6 m³</div>
-              <div className="text-gray-700">KSh 53.00</div>
-              <div className="text-gray-700">KSh 39.75</div>
-              <div className="font-bold text-primary text-lg">KSh 92.75</div>
+            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
+              <div className="col-span-2 font-bold text-gray-900">1 - 6 m³</div>
+              <div className="font-bold text-primary text-lg">KSh 128.00 / m³</div>
             </div>
-            <div className="grid grid-cols-5 gap-4 p-6 hover:bg-neutral transition">
+            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
               <div className="col-span-2 font-bold text-gray-900">
                 7 - 20 m³
               </div>
-              <div className="text-gray-700">KSh 65.00</div>
-              <div className="text-gray-700">KSh 48.75</div>
-              <div className="font-bold text-primary text-lg">KSh 113.75</div>
+              <div className="font-bold text-primary text-lg">KSh 138.00 / m³</div>
             </div>
-            <div className="grid grid-cols-5 gap-4 p-6 hover:bg-neutral transition">
+            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
               <div className="col-span-2 font-bold text-gray-900">
                 21 - 50 m³
               </div>
-              <div className="text-gray-700">KSh 75.00</div>
-              <div className="text-gray-700">KSh 56.25</div>
-              <div className="font-bold text-primary text-lg">KSh 131.25</div>
+              <div className="font-bold text-primary text-lg">KSh 154.00 / m³</div>
             </div>
-            <div className="grid grid-cols-5 gap-4 p-6 hover:bg-neutral transition">
+            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
               <div className="col-span-2 font-bold text-gray-900">
                 51 - 100 m³
               </div>
-              <div className="text-gray-700">KSh 85.00</div>
-              <div className="text-gray-700">KSh 63.75</div>
-              <div className="font-bold text-primary text-lg">KSh 148.75</div>
+              <div className="font-bold text-primary text-lg">KSh 164.00 / m³</div>
             </div>
-            <div className="grid grid-cols-5 gap-4 p-6 hover:bg-neutral transition">
+            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
               <div className="col-span-2 font-bold text-gray-900">
-                Above 100 m³
+                101 - 300 m³
               </div>
-              <div className="text-gray-700">KSh 95.00</div>
-              <div className="text-gray-700">KSh 71.25</div>
-              <div className="font-bold text-primary text-lg">KSh 166.25</div>
+              <div className="font-bold text-primary text-lg">KSh 174.00 / m³</div>
+            </div>
+            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
+              <div className="col-span-2 font-bold text-gray-900">
+                Above 300 m³
+              </div>
+              <div className="font-bold text-primary text-lg">KSh 184.00 / m³</div>
             </div>
           </div>
           <div className="bg-gray-50 p-6 border-t-2 border-primary">
@@ -64,20 +58,12 @@ const DomesticTarrifSection = () => {
               <div>
                 <h4 className="font-bold text-gray-900 mb-3 flex items-center">
                   <i className="fa-solid fa-info-circle text-primary mr-2"></i>
-                  Additional Charges
+                  Special Categories
                 </h4>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex justify-between">
-                    <span>Meter Rent (per month)</span>
-                    <span className="font-bold">KSh 75.00</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>Fixed Charge</span>
-                    <span className="font-bold">KSh 150.00</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>Late Payment Penalty</span>
-                    <span className="font-bold">1% per month</span>
+                    <span>MDUs / Gated Communities</span>
+                    <span className="font-bold">KSh 154.00 / m³</span>
                   </li>
                 </ul>
               </div>
