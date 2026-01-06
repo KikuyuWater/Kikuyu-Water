@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Human Resource Department">
+  <defs>
+    <linearGradient id="gradHR" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" fill="url(#gradHR)" />
+  <circle cx="92" cy="86" r="46" fill="rgba(255,255,255,0.18)" />
+  <circle cx="226" cy="216" r="62" fill="rgba(255,255,255,0.14)" />
+  <circle cx="160" cy="148" r="46" fill="rgba(255,255,255,0.95)" />
+  <circle cx="160" cy="132" r="24" fill="#0ea5e9" />
+  <rect x="126" y="168" width="68" height="36" rx="14" fill="#6366f1" />
+  <text x="160" y="240" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="28" font-weight="700" fill="#eef2ff">PEOPLE</text>
+  <text x="160" y="266" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" font-weight="600" fill="#e0f2fe">Care & Growth</text>
+</svg>

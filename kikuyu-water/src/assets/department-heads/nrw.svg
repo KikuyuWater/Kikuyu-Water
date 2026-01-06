@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Non-Revenue Water Department">
+  <defs>
+    <linearGradient id="gradNRW" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" fill="url(#gradNRW)" />
+  <circle cx="88" cy="88" r="48" fill="rgba(255,255,255,0.18)" />
+  <circle cx="230" cy="220" r="62" fill="rgba(255,255,255,0.14)" />
+  <path d="M160 98c-26 32-38 56-38 74a38 38 0 1 0 76 0c0-18-12-42-38-74z" fill="rgba(255,255,255,0.95)" />
+  <path d="M160 114c-14 18-22 32-22 46a22 22 0 0 0 44 0c0-14-8-28-22-46z" fill="#ef4444" />
+  <text x="160" y="242" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="28" font-weight="700" fill="#fff1f2">NRW</text>
+  <text x="160" y="268" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="14" font-weight="600" fill="#ffe4e6">Leak Control</text>
+</svg>

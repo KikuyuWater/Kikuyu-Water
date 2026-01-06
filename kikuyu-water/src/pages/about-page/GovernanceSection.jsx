@@ -62,52 +62,6 @@ const GovernanceSection = () => {
             </div>
           </div>
         </div>
-
-        <div className="bg-white rounded-2xl p-10 shadow-lg">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-            Management Team
-          </h3>
-          <div className="grid grid-cols-4 gap-6">
-            <div id="management-1" className="text-center">
-              <img
-                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg"
-                alt="CEO"
-                className="w-24 h-24 rounded-full mx-auto mb-3 border-2 border-primary"
-              />
-              <h4 className="font-bold text-gray-900">XXXXXX</h4>
-              <p className="text-primary text-sm font-bold">XXX</p>
-            </div>
-            <div id="management-2" className="text-center">
-              <img
-                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg"
-                alt="COO"
-                className="w-24 h-24 rounded-full mx-auto mb-3 border-2 border-primary"
-              />
-              <h4 className="font-bold text-gray-900">XXXXXXXX</h4>
-              <p className="text-primary text-sm font-bold">XXXXXX</p>
-            </div>
-            <div id="management-3" className="text-center">
-              <img
-                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg"
-                alt="CFO"
-                className="w-24 h-24 rounded-full mx-auto mb-3 border-2 border-primary"
-              />
-              <h4 className="font-bold text-gray-900">David Kamau</h4>
-              <p className="text-primary text-sm font-bold">CFO</p>
-            </div>
-            <div id="management-4" className="text-center">
-              <img
-                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-7.jpg"
-                alt="Technical Director"
-                className="w-24 h-24 rounded-full mx-auto mb-3 border-2 border-primary"
-              />
-              <h4 className="font-bold text-gray-900">XXXXXXXXXXX</h4>
-              <p className="text-primary text-sm font-bold">
-                XXXXXXXXX
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

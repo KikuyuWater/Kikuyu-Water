@@ -1,4 +1,5 @@
 import { Departments } from "../../data";
+import { Link } from "react-router-dom";
 
 const DepartmentsOverviewSection = () => {
   const textColorMap = {
@@ -49,9 +50,12 @@ const DepartmentsOverviewSection = () => {
                 <i className="fa-solid fa-user-tie text-gray-400 mr-2"></i>
                 <span className="text-sm text-gray-600">Head: {dept.head}</span>
               </div>
-              <button className="text-primary font-bold flex items-center hover:underline">
+              <Link
+                to={`/departments/${dept.id}`}
+                className="text-primary font-bold flex items-center hover:underline"
+              >
                 View Details <i className="fa-solid fa-arrow-right ml-2"></i>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

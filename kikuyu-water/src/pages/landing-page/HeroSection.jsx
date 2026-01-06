@@ -1,4 +1,6 @@
 import React from "react";
+import applicationForm from "../../assets/department-heads/New Connection Application  Form.pdf";
+import heroVideo from "../../assets/Slow Motion Water Droplet Falling Breaks Surface Tension and Makes Ripples in HD YouTube Video View - stepvideolabs (1080p, h264).mp4";
 
 const HeroSection = () => {
   return (
@@ -6,6 +8,18 @@ const HeroSection = () => {
       id="hero-section"
       className="bg-gradient-to-br from-primary to-blue-800 text-white relative overflow-hidden"
     >
+      {/* Background video */}
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          className="w-full h-full object-cover"
+          src={heroVideo}
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/70 to-blue-900/70"></div>
+      </div>
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
@@ -26,9 +40,13 @@ const HeroSection = () => {
               and sustainable water and sewerage services.
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition w-full sm:w-auto text-center">
+              <a
+                href={applicationForm}
+                download="New Connection Application Form.pdf"
+                className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition w-full sm:w-auto text-center inline-block"
+              >
                 Apply for New Connection
-              </button>
+              </a>
               <button className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition w-full sm:w-auto text-center">
                 Pay Your Water Bill
               </button>

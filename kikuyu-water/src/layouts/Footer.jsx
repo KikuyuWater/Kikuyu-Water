@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
             <p className="text-gray-400 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
               Providing clean water and reliable sewerage services to Kenyans
-              community since 2004.
+              since 2006.
             </p>
             <div className="flex space-x-3 sm:space-x-4">
               <a
@@ -48,20 +48,20 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base">
               {[
-                "About Us",
-                "Our Services",
-                "Tariffs",
-                "Departments",
-                "Gallery",
-                "Careers",
-                "Tenders",
+                { label: "About Us", path: "/about" },
+                { label: "Services", path: "/service" },
+                { label: "Tariffs", path: "/tarrif" },
+                { label: "Departments", path: "/departments" },
+                { label: "Gallery", path: "/" },
+                { label: "Careers", path: "/" },
+                { label: "Tenders", path: "/" },
               ].map((link) => (
-                <li key={link}>
+                <li key={link.label}>
                   <a
-                    href="/"
+                    href={link.path}
                     className="text-gray-400 hover:text-white transition"
                   >
-                    {link}
+                    {link.label}
                   </a>
                 </li>
               ))}
@@ -75,19 +75,20 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base">
               {[
-                "Customer Portal",
-                "Apply for Connection",
-                "Pay Bill",
-                "Report Issue",
-                "FAQs",
-                "Contact Us",
+                { label: "Customer Portal", path: "/" },
+                { label: "Apply for Connection", path: "/" },
+                { label: "Pay Bill", path: "/" },
+                { label: "Report Issue", path: "/" },
+                { label: "Service Charter", path: "/charter" },
+                { label: "FAQs", path: "/" },
+                { label: "Contact Us", path: "/" },
               ].map((link) => (
-                <li key={link}>
+                <li key={link.label}>
                   <a
-                    href="/"
+                    href={link.path}
                     className="text-gray-400 hover:text-white transition"
                   >
-                    {link}
+                    {link.label}
                   </a>
                 </li>
               ))}
@@ -100,6 +101,17 @@ const Footer = () => {
               Contact Information
             </h4>
             <div className="space-y-3 sm:space-y-4 text-sm sm:text-base">
+              <div className="flex items-start">
+                <i className="fa-brands fa-whatsapp text-primary mr-2 sm:mr-3 mt-1"></i>
+                <a
+                  href="https://wa.me/254728578098?text=Hello%20Kikuyu%20Water%2C%20I%20have%20a%20service%20inquiry."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition"
+                >
+                  WhatsApp: +254 728 578 098
+                </a>
+              </div>
               <div className="flex items-start">
                 <i className="fa-solid fa-map-marker-alt text-primary mr-2 sm:mr-3 mt-1"></i>
                 <div>
@@ -134,6 +146,42 @@ const Footer = () => {
                   <p className="text-xs sm:text-sm"></p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Branch Offices */}
+          <div className="lg:col-span-2">
+            <h4 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6">
+              Branch Offices
+            </h4>
+            <div className="flex flex-col sm:flex-row gap-4 text-sm sm:text-base">
+              {[
+                {
+                  name: "Muguga Office",
+                  url: "https://maps.app.goo.gl/Noau1yQfiQ9J1L5X6",
+                },
+                {
+                  name: "Karai Office",
+                  url: "https://maps.app.goo.gl/g4RRZYykyS48dLQT6",
+                },
+                {
+                  name: "Wangige Office",
+                  url: "https://maps.app.goo.gl/KKKv9ciKzprbUFts5",
+                },
+              ].map((office) => (
+                <a
+                  key={office.name}
+                  href={office.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 px-4 py-3 bg-gray-800 rounded text-gray-400 hover:text-white hover:bg-primary/20 transition flex items-center justify-center text-center"
+                >
+                  <div className="flex flex-col items-center">
+                    <i className="fa-solid fa-location-dot text-primary mr-2 mb-1"></i>
+                    <span>{office.name}</span>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </div>

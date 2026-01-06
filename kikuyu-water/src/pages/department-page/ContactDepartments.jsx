@@ -50,7 +50,6 @@ const ContactDepartments = () => {
                   <option>Finance Department</option>
                   <option>Procurement Department</option>
                   <option>Human Resource</option>
-                  <option>ICT Department</option>
                   <option>Non-Revenue Water</option>
                   <option>Internal Audit</option>
                 </select>
@@ -84,7 +83,7 @@ const ContactDepartments = () => {
                   <i className="fa-solid fa-phone text-primary text-xl mr-4 mt-1"></i>
                   <div>
                     <p className="font-bold text-gray-900">Main Office</p>
-                    <p className="text-gray-600">0800 724 724</p>
+                    <p className="text-gray-600">+254728578098</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -104,38 +103,6 @@ const ContactDepartments = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
-              <h4 className="text-xl font-bold text-gray-900 mb-4">
-                Department Extensions
-              </h4>
-              <div className="space-y-3">
-                <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                  <span className="text-gray-700">Technical</span>
-                  <span className="font-bold text-gray-900">Ext. 101</span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                  <span className="text-gray-700">Commercial</span>
-                  <span className="font-bold text-gray-900">Ext. 102</span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                  <span className="text-gray-700">Finance</span>
-                  <span className="font-bold text-gray-900">Ext. 103</span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                  <span className="text-gray-700">Procurement</span>
-                  <span className="font-bold text-gray-900">Ext. 104</span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                  <span className="text-gray-700">Human Resource</span>
-                  <span className="font-bold text-gray-900">Ext. 105</span>
-                </div>
-                <div className="flex justify-between items-center py-2">
-                  <span className="text-gray-700">ICT</span>
-                  <span className="font-bold text-gray-900">Ext. 106</span>
-                </div>
-              </div>
-            </div>
-
             <div className="bg-primary rounded-2xl p-6 text-white">
               <h4 className="text-xl font-bold mb-4">Office Hours</h4>
               <div className="space-y-3">
@@ -145,7 +112,7 @@ const ContactDepartments = () => {
                 </div>
                 <div className="flex justify-between items-center">
                   <span>Saturday</span>
-                  <span className="font-bold">8:00 AM - 12:00 PM</span>
+                  <span className="font-bold">Closed</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span>Sunday</span>

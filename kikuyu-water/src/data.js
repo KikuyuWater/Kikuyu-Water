@@ -1,3 +1,9 @@
+import technicalPortrait from "./assets/department-heads/Paul Gichuki, Technical manager.jpg";
+import commercialPortrait from "./assets/department-heads/Mary Mbugua, Commercial Manager.jpg";
+import financePortrait from "./assets/department-heads/David Kimani, Finance Manager.jpg";
+import procurementPortrait from "./assets/department-heads/Stephen Nderi, Procurement Officer.jpg";
+import auditPortrait from "./assets/department-heads/Jenifer Chebet, Internal Auditor.jpg";
+
 const Departments = [
   {
     id: "technical",
@@ -11,13 +17,14 @@ const Departments = [
       iconHoverBg: "bg-primary",
     },
     icon: "fa-wrench",
+    photo: technicalPortrait,
     features: [
       "Water distribution network",
       "Infrastructure maintenance",
       "Emergency repairs",
       "Quality assurance",
     ],
-    head: "Eng. John Mwangi",
+    head: "Paul Gichuki",
   },
   {
     id: "commercial",
@@ -31,13 +38,14 @@ const Departments = [
       iconHoverBg: "bg-green-500",
     },
     icon: "fa-briefcase",
+    photo: commercialPortrait,
     features: [
       "Customer service",
       "Billing & collections",
       "New connections",
       "Meter reading",
     ],
-    head: "Mary Wanjiru",
+    head: "Mary Mbugua",
   },
   {
     id: "finance",
@@ -51,13 +59,14 @@ const Departments = [
       iconHoverBg: "bg-purple-500",
     },
     icon: "fa-chart-line",
+    photo: financePortrait,
     features: [
       "Financial planning",
       "Budget management",
       "Accounting & reporting",
       "Revenue management",
     ],
-    head: "CPA David Kamau",
+    head: "David Kimani",
   },
   {
     id: "procurement",
@@ -71,13 +80,14 @@ const Departments = [
       iconHoverBg: "bg-orange-500",
     },
     icon: "fa-shopping-cart",
+    photo: procurementPortrait,
     features: [
       "Tender management",
       "Supplier relations",
       "Contract management",
       "Inventory control",
     ],
-    head: "James Omondi",
+    head: "Stephen Nderi",
   },
   {
     id: "hr",
@@ -97,28 +107,9 @@ const Departments = [
       "Employee welfare",
       "Performance management",
     ],
-    head: "Grace Njeri",
+    head: "Florence Wanjohi",
   },
-  {
-    id: "ict",
-    title: "ICT Department",
-    description:
-      "Manages information systems, technology infrastructure, digital transformation, and ensures secure data management.",
-    theme: {
-      color: "teal-500",
-      border: "border-teal-500",
-      iconBg: "bg-teal-500/10",
-      iconHoverBg: "bg-teal-500",
-    },
-    icon: "fa-laptop-code",
-    features: [
-      "IT infrastructure",
-      "System management",
-      "Cybersecurity",
-      "Digital services",
-    ],
-    head: "Peter Kariuki",
-  },
+
   {
     id: "nrw",
     title: "Non-Revenue Water",
@@ -137,7 +128,7 @@ const Departments = [
       "Meter management",
       "Network optimization",
     ],
-    head: "Eng. Sarah Mutua",
+    head: "Stephen Mwaniki",
   },
   {
     id: "audit",
@@ -151,13 +142,14 @@ const Departments = [
       iconHoverBg: "bg-indigo-500",
     },
     icon: "fa-shield-halved",
+    photo: auditPortrait,
     features: [
       "Compliance monitoring",
       "Risk assessment",
       "Internal controls",
       "Audit reporting",
     ],
-    head: "CPA Anne Kimani",
+    head: "Jenifer Chebet",
   },
 ];
 

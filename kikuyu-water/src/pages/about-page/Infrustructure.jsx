@@ -110,46 +110,7 @@ const Infrustructure = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-4 gap-6">
-          <div
-            id="infra-feature-1"
-            className="bg-neutral rounded-xl p-6 text-center hover:shadow-lg transition"
-          >
-            <i className="fa-solid fa-flask text-primary text-3xl mb-4"></i>
-            <h4 className="font-bold text-gray-900 mb-2">Water Quality Lab</h4>
-            <p className="text-gray-600 text-sm">
-              Advanced water testing facility
-            </p>
-          </div>
-          <div
-            id="infra-feature-2"
-            className="bg-neutral rounded-xl p-6 text-center hover:shadow-lg transition"
-          >
-            <i className="fa-solid fa-microchip text-primary text-3xl mb-4"></i>
-            <h4 className="font-bold text-gray-900 mb-2">Meters</h4>
-            <p className="text-gray-600 text-sm">
-              18,000+  meters installed
-            </p>
-          </div>
-          <div
-            id="infra-feature-3"
-            className="bg-neutral rounded-xl p-6 text-center hover:shadow-lg transition"
-          >
-            <i className="fa-solid fa-satellite-dish text-primary text-3xl mb-4"></i>
-            <h4 className="font-bold text-gray-900 mb-2">SCADA System</h4>
-            <p className="text-gray-600 text-sm">
-              Real-time monitoring and control
-            </p>
-          </div>
-          <div
-            id="infra-feature-4"
-            className="bg-neutral rounded-xl p-6 text-center hover:shadow-lg transition"
-          >
-            <i className="fa-solid fa-mobile text-primary text-3xl mb-4"></i>
-            <h4 className="font-bold text-gray-900 mb-2">Mobile Apps</h4>
-            <p className="text-gray-600 text-sm">Customer service on the go</p>
-          </div>
-        </div>
+
       </div>
     </section>
   );

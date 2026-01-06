@@ -7,6 +7,8 @@ import Maintenance from "./components/Error";
 import ServicePage from "./pages/service-page";
 import Tariff from "./pages/tariff-page";
 import DepartmentPage from "./pages/department-page/DepartmentPage";
+import DepartmentDetailPage from "./pages/department-page/DepartmentDetailPage";
+import CustomerServiceCharter from "./pages/CustomerServiceCharter";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/service" element={<ServicePage />} />
         <Route path="/tarrif" element={<Tariff />} />
         <Route path="/departments" element={<DepartmentPage />} />
+        <Route path="/departments/:id" element={<DepartmentDetailPage />} />
+        <Route path="/charter" element={<CustomerServiceCharter />} />
         <Route path="*" element={<Maintenance />} />
       </Routes>
     </>

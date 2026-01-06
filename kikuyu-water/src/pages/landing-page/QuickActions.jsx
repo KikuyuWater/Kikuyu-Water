@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import applicationForm from '../../assets/department-heads/New Connection Application  Form.pdf';
 
 const QuickActions = () => {
   const [showSupervisors, setShowSupervisors] = useState(false);
@@ -48,8 +49,17 @@ const QuickActions = () => {
                 </span>
               </li>
             </ul>
-            <button className="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
-              Apply Now
+            <button 
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = applicationForm;
+                link.download = 'New Connection Application Form.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              className="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+              Download Form
             </button>
           </div>
 
@@ -135,32 +145,40 @@ const QuickActions = () => {
               <div id="supervisors-list" className="mt-4 bg-white p-4 rounded-lg shadow-sm border">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">Contact Supervisors</h4>
                 <p className="text-sm text-gray-600 mb-3">Choose your zone to contact the supervisor directly.</p>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                  <div className="p-3 rounded border">
+                <ul className="space-y-3">
+                  <li className="p-3 rounded border hover:bg-gray-50 transition">
                     <p className="font-semibold">Muguga</p>
-                    <p className="text-sm text-gray-600">Supervisor</p>
+                    <p className="text-sm text-gray-600">Supervisor Mr Kitheka</p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254758578091" aria-label="Call Muguga supervisor at +254 758 578 091" className="text-primary font-medium">Call</a>
                       <a href="mailto:kikuyuwater@yahoo.com" aria-label="Email Muguga supervisor" className="text-primary font-medium">Email</a>
                     </div>
-                  </div>
-                  <div className="p-3 rounded border">
+                  </li>
+                  <li className="p-3 rounded border hover:bg-gray-50 transition">
                     <p className="font-semibold">Karai</p>
-                    <p className="text-sm text-gray-600">Supervisor</p>
+                    <p className="text-sm text-gray-600">Supervisor Mr Peter</p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254758578092" aria-label="Call Karai supervisor at +254 758 578 092" className="text-primary font-medium">Call</a>
                       <a href="mailto:kikuyuwater@yahoo.com" aria-label="Email Karai supervisor" className="text-primary font-medium">Email</a>
                     </div>
-                  </div>
-                  <div className="p-3 rounded border">
+                  </li>
+                  <li className="p-3 rounded border hover:bg-gray-50 transition">
                     <p className="font-semibold">Kikuyu</p>
-                    <p className="text-sm text-gray-600">Supervisor</p>
+                    <p className="text-sm text-gray-600">Superviso </p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254758578093" aria-label="Call Kikuyu supervisor at +254 758 578 093" className="text-primary font-medium">Call</a>
                       <a href="mailto:kikuyuwater@yahoo.com" aria-label="Email Kikuyu supervisor" className="text-primary font-medium">Email</a>
                     </div>
-                  </div>
-                </div>
+                  </li>
+                  <li className="p-3 rounded border hover:bg-gray-50 transition">
+                    <p className="font-semibold">Wangige</p>
+                    <p className="text-sm text-gray-600">Supervisor Mr Ngatia</p>
+                    <div className="mt-2 flex items-center space-x-3">
+                      <a href="tel:+254758578094" aria-label="Call Wangige supervisor at +254 758 578 094" className="text-primary font-medium">Call</a>
+                      <a href="mailto:kikuyuwater@yahoo.com" aria-label="Email Wangige supervisor" className="text-primary font-medium">Email</a>
+                    </div>
+                  </li>
+                </ul>
                 <div className="mt-3 text-right">
                   <button className="text-sm text-gray-600 underline" onClick={() => setShowSupervisors(false)}>Close</button>
                 </div>

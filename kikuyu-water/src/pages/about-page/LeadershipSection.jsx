@@ -17,7 +17,9 @@ const LeadershipSection = () => {
           </div>
           <div>
             <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-              <span className="text-sm font-bold">MESSAGE FROM THE CEO</span>
+              <span className="text-sm font-bold">MESSAGE FROM THE 
+                Managing Director
+              </span>
             </div>
             <h2 className="text-4xl font-black mb-6">Leadership Statement</h2>
             <p className="text-xl text-blue-100 mb-6 leading-relaxed">

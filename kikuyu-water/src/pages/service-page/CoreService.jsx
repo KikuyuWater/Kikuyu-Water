@@ -312,7 +312,7 @@ const CoreService = () => {
               <div className="flex justify-between items-center mb-2">
                 <span className="text-gray-700 font-bold">Emergency Line:</span>
                 <span className="text-red-600 font-black text-lg">
-                  0800 724 724
+                  +254728578098
                 </span>
               </div>
               <p className="text-sm text-gray-600">

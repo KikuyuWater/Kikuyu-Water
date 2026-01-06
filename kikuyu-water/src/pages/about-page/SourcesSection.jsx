@@ -25,7 +25,7 @@ const SourcesSection = () => {
                   Surface Water Sources
                 </h3>
                 <p className="text-gray-600">
-                  Rivers and springs from the Aberdare ranges
+                  KIkuyu Springs
                 </p>
               </div>
             </div>

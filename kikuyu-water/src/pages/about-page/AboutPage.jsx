@@ -9,18 +9,22 @@ import PlanSection from "./PlanSection";
 import ServiceAreaSection from "./ServiceAreaSection";
 import SourcesSection from "./SourcesSection";
 import VisionSection from "./VisionSection";
+import ManagementTeam from "./ManagementTeam";
+import ManagingDirectorMessage from "./ManagingDirectorMessage";
 
 const AboutPage = () => {
   return (
     <>
       <HeroSection />
       <OverviewSection />
+      <ManagingDirectorMessage />
       <ServiceAreaSection />
       <VisionSection />
       <HistorySection />
       <Infrustructure />
       <SourcesSection />
       <GovernanceSection />
+      <ManagementTeam />
       <PlanSection />
       <Cta />
       <Footer />
