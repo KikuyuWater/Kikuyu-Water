@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Departments } from "../../data";
 
 const ManagementTeam = () => {
@@ -16,8 +17,8 @@ const ManagementTeam = () => {
 
         <div className="space-y-12">
           {Departments.map((department) => (
-            <div key={department.id}>
-              <div className={`flex items-center mb-8 pb-4 border-b-2 ${department.theme.border}`}>
+            <Link key={department.id} to={`/departments/${department.id}`} className="block hover:opacity-80 transition">
+              <div className={`flex items-center mb-8 pb-4 border-b-2 ${department.theme.border} cursor-pointer hover:shadow-lg transition rounded-lg p-4`}>
                 <div
                   className={`w-16 h-16 rounded-full flex items-center justify-center ${department.theme.iconBg} mr-6`}
                 >
@@ -57,7 +58,7 @@ const ManagementTeam = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
