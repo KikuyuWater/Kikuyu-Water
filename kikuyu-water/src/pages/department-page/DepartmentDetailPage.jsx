@@ -68,6 +68,16 @@ const DepartmentDetailPage = () => {
       "Maintained zero major compliance violations",
       "Implemented risk management framework protecting company assets",
     ],
+    "customer-relations": [
+      "Achieved 92% customer satisfaction rating through enhanced service delivery",
+      "Resolved 95% of customer complaints within 48 hours",
+      "Implemented digital feedback system receiving 5,000+ responses annually",
+      "Reduced average call wait time from 10 minutes to under 2 minutes",
+      "Established 24/7 customer support helpline serving 1,000+ calls daily",
+      "Trained customer service team resulting in 40% improvement in service quality",
+      "Launched customer engagement programs reaching 15,000+ households",
+      "Maintained 98% accuracy in billing inquiries resolution",
+    ],
   };
 
   return (

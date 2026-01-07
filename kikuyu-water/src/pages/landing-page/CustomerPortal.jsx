@@ -1,4 +1,17 @@
 const CustomerPortal = () => {
+  const handleAppRedirect = () => {
+    const appUrl = 'intent://app.wonderkid.maji_safi#Intent;scheme=https;package=app.wonderkid.maji_safi;end';
+    const playStoreUrl = 'https://play.google.com/store/apps/details?id=app.wonderkid.maji_safi&hl=en';
+    
+    // Try to open the app, fallback to Play Store
+    window.location.href = appUrl;
+    
+    // Fallback to Play Store after a delay if app doesn't open
+    setTimeout(() => {
+      window.location.href = playStoreUrl;
+    }, 2000);
+  };
+
   return (
     <section
       id="customer-portal-promo"
@@ -59,10 +72,14 @@ const CustomerPortal = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="w-full sm:w-auto bg-white text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition">
+              <button 
+                onClick={handleAppRedirect}
+                className="w-full sm:w-auto bg-white text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition">
                 Access Portal
               </button>
-              <button className="w-full sm:w-auto border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition">
+              <button 
+                onClick={handleAppRedirect}
+                className="w-full sm:w-auto border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition">
                 Register Account
               </button>
             </div>

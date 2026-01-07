@@ -1,4 +1,22 @@
+import applicationForm from '../assets/department-heads/New Connection Application  Form.pdf';
+
 const Footer = () => {
+  const handleApplyForConnection = () => {
+    const link = document.createElement('a');
+    link.href = applicationForm;
+    link.download = 'New Connection Application Form.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const handleAppRedirect = () => {
+    const appUrl = 'intent://app.wonderkid.maji_safi#Intent;scheme=https;package=app.wonderkid.maji_safi;end';
+    const playStoreUrl = 'https://play.google.com/store/apps/details?id=app.wonderkid.maji_safi&hl=en';
+    window.location.href = appUrl;
+    setTimeout(() => { window.location.href = playStoreUrl; }, 2000);
+  };
+
   return (
     <footer id="footer" className="bg-gray-900 text-white py-10 sm:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,8 +93,8 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base">
               {[
-                { label: "Customer Portal", path: "/" },
-                { label: "Apply for Connection", path: "/" },
+                { label: "Customer Portal", path: "/", onClick: handleAppRedirect },
+                { label: "Apply for Connection", path: "/", onClick: handleApplyForConnection },
                 { label: "Pay Bill", path: "/" },
                 { label: "Report Issue", path: "/#report-issue" },
                 { label: "Service Charter", path: "/charter" },
@@ -84,12 +102,21 @@ const Footer = () => {
                 { label: "Contact Us", path: "/" },
               ].map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.path}
-                    className="text-gray-400 hover:text-white transition"
-                  >
-                    {link.label}
-                  </a>
+                  {link.onClick ? (
+                    <button
+                      onClick={link.onClick}
+                      className="text-gray-400 hover:text-white transition text-left"
+                    >
+                      {link.label}
+                    </button>
+                  ) : (
+                    <a
+                      href={link.path}
+                      className="text-gray-400 hover:text-white transition"
+                    >
+                      {link.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
