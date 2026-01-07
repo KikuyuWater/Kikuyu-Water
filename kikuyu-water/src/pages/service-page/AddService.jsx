@@ -90,8 +90,6 @@ const AddService = () => {
 
         {/* Desktop Grid View */}
         <div className="hidden md:grid grid-cols-2 gap-8">
-        {/* Desktop Grid View */}
-        <div className="hidden md:grid grid-cols-2 gap-8">
           {additionalServices.map((service) => (
             <div
               key={service.id}
