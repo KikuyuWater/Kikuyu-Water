@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Departments } from "../../data";
 import Footer from "../../layouts/Footer";
+import DepartmentBulletinBoard from "./DepartmentBulletinBoard";
 
 const DepartmentDetailPage = () => {
   const { id } = useParams();
@@ -100,7 +101,7 @@ const DepartmentDetailPage = () => {
             {/* Department Head */}
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-lg p-8 border-l-4 border-primary">
               <div className="text-center">
-                <div className="w-24 h-24 rounded-full overflow-hidden bg-white shadow-inner flex items-center justify-center mx-auto mb-4 border-4 border-primary/10">
+                <div className="w-40 h-40 rounded-xl overflow-hidden bg-white shadow-inner flex items-center justify-center mx-auto mb-6 border-4 border-primary/10">
                   {department.photo ? (
                     <img
                       src={department.photo}
@@ -109,7 +110,7 @@ const DepartmentDetailPage = () => {
                     />
                   ) : (
                     <div className={`w-full h-full flex items-center justify-center ${department.theme.iconBg}`}>
-                      <i className={`fa-solid ${department.icon} text-3xl text-${department.theme.color}`}></i>
+                      <i className={`fa-solid ${department.icon} text-5xl text-${department.theme.color}`}></i>
                     </div>
                   )}
                 </div>
@@ -202,6 +203,12 @@ const DepartmentDetailPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Department Bulletin Board */}
+      <DepartmentBulletinBoard 
+        departmentId={department.id} 
+        departmentTheme={department.theme}
+      />
 
       {/* Contact Section */}
       <section className="py-16 bg-primary text-white">

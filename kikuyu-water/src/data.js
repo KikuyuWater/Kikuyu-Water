@@ -151,6 +151,26 @@ const Departments = [
     ],
     head: "Jenifer Chebet",
   },
+  {
+    id: "customer-relations",
+    title: "Customer Relations",
+    description:
+      "Dedicated to enhancing customer satisfaction through effective communication, complaint resolution, feedback management, and building strong customer relationships.",
+    theme: {
+      color: "teal-500",
+      border: "border-teal-500",
+      iconBg: "bg-teal-500/10",
+      iconHoverBg: "bg-teal-500",
+    },
+    icon: "fa-headset",
+    features: [
+      "Customer feedback",
+      "Complaint resolution",
+      "Service improvement",
+      "Customer engagement",
+    ],
+    head: "Veronica Mataara",
+  },
 ];
 
 export { Departments };
