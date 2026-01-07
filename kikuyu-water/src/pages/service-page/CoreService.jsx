@@ -126,8 +126,6 @@ const CoreService = () => {
 
         {/* Desktop Grid View */}
         <div className="hidden md:grid grid-cols-3 gap-8">
-        {/* Desktop Grid View */}
-        <div className="hidden md:grid grid-cols-3 gap-8">
           {services.map((service) => (
             <div
               key={service.id}
