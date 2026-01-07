@@ -1,6 +1,117 @@
-import React from "react";
+import React, { useState } from "react";
 
 const CoreService = () => {
+  const [expandedService, setExpandedService] = useState(null);
+
+  const toggleService = (serviceId) => {
+    setExpandedService(expandedService === serviceId ? null : serviceId);
+  };
+
+  const services = [
+    {
+      id: 'new-water-connection',
+      icon: 'fa-plug',
+      color: 'primary',
+      colorClass: 'blue',
+      title: 'New Water Connection',
+      description: 'Apply online for domestic or commercial water connection. Get connected to our reliable water supply network with a streamlined application process.',
+      features: [
+        'Online application portal',
+        'Fast approval (7-14 days)',
+        'Professional installation',
+        'Flexible payment plans'
+      ],
+      pricing: { label: 'Connection Fee:', value: 'From KSh 15,000', note: 'Includes meter, materials & installation' },
+      buttonText: 'Apply Now',
+      buttonColor: 'bg-primary hover:bg-blue-700'
+    },
+    {
+      id: 'sewer-connection',
+      icon: 'fa-toilet',
+      color: 'green-500',
+      colorClass: 'green',
+      title: 'Sewer Connection',
+      description: 'Connect to our modern sewerage system for proper wastewater management. Ensure environmental compliance and public health safety.',
+      features: [
+        'Site inspection & assessment',
+        'Professional installation',
+        'Compliance certification',
+        'Ongoing maintenance support'
+      ],
+      pricing: { label: 'Connection Fee:', value: 'From KSh 20,000', note: 'Includes inspection & installation' },
+      buttonText: 'Apply Now',
+      buttonColor: 'bg-green-600 hover:bg-green-700'
+    },
+    {
+      id: 'billing-payments',
+      icon: 'fa-credit-card',
+      color: 'blue-500',
+      colorClass: 'blue',
+      title: 'Billing & Payments',
+      description: 'Multiple convenient payment options with transparent billing. Access your account 24/7 through our online portal.',
+      features: [
+        'M-Pesa & bank payments',
+        'Monthly billing statements',
+        'Payment history tracking',
+        'Auto-payment setup available'
+      ],
+      pricing: { label: 'Payment Methods:', value: '5+ Options', note: 'Instant confirmation & receipts' },
+      buttonText: 'Pay Bill Now',
+      buttonColor: 'bg-blue-600 hover:bg-blue-700'
+    },
+    {
+      id: 'water-quality',
+      icon: 'fa-vial',
+      color: 'purple-500',
+      colorClass: 'purple',
+      title: 'Water Quality & Testing',
+      description: 'Regular water quality testing and monitoring to ensure compliance with national and international standards. View monthly reports.',
+      features: [
+        'WHO & KEBS compliant',
+        'Monthly quality reports',
+        'Laboratory testing services',
+        'Private water testing available'
+      ],
+      pricing: { label: 'Water Quality:', value: '99.8% Safe', note: 'Tested daily at multiple points' },
+      buttonText: 'View Reports',
+      buttonColor: 'bg-purple-600 hover:bg-purple-700'
+    },
+    {
+      id: 'disconnection-reconnection',
+      icon: 'fa-power-off',
+      color: 'orange-500',
+      colorClass: 'orange',
+      title: 'Disconnection & Reconnection',
+      description: 'Request temporary disconnection or reconnection services. Fast processing for reconnections after bill payment or property transfers.',
+      features: [
+        'Same-day reconnection',
+        'Temporary disconnection option',
+        'Account transfer services',
+        'Clear payment before reconnection'
+      ],
+      pricing: { label: 'Reconnection Fee:', value: 'KSh 1,000', note: 'Plus any outstanding balance' },
+      buttonText: 'Request Service',
+      buttonColor: 'bg-orange-600 hover:bg-orange-700'
+    },
+    {
+      id: 'customer-support',
+      icon: 'fa-headset',
+      color: 'red-500',
+      colorClass: 'red',
+      title: 'Customer Complaints & Support',
+      description: '24/7 customer support for all your queries and complaints. Report leaks, burst pipes, or service issues with priority response.',
+      features: [
+        '24/7 emergency hotline',
+        'Online complaint portal',
+        'Real-time tracking system',
+        '2-hour emergency response'
+      ],
+      pricing: { label: 'Emergency Line:', value: '+254728578098', note: 'Available 24/7 for emergencies' },
+      buttonText: 'Report Issue',
+      buttonColor: 'bg-red-600 hover:bg-red-700'
+    }
+  ];
+
   return (
     <section id="main-services-grid" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -12,317 +123,101 @@ const CoreService = () => {
             Essential water and sewerage services for our community
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-8">
-          <div
-            id="service-new-water-connection"
-            className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition border-t-4 border-primary p-8"
-          >
-            <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mb-6">
-              <i className="fa-solid fa-plug text-primary text-3xl"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              New Water Connection
-            </h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Apply online for domestic or commercial water connection. Get
-              connected to our reliable water supply network with a streamlined
-              application process.
-            </p>
-            <div className="space-y-3 mb-6">
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-primary mr-3 mt-1"></i>
-                <span className="text-gray-700">Online application portal</span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-primary mr-3 mt-1"></i>
-                <span className="text-gray-700">Fast approval (7-14 days)</span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-primary mr-3 mt-1"></i>
-                <span className="text-gray-700">Professional installation</span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-primary mr-3 mt-1"></i>
-                <span className="text-gray-700">Flexible payment plans</span>
-              </div>
-            </div>
-            <div className="bg-neutral rounded-lg p-4 mb-6">
-              <div className="flex justify-between items-center mb-2">
-                <span className="text-gray-700 font-bold">Connection Fee:</span>
-                <span className="text-primary font-black text-lg">
-                  From KSh 15,000
-                </span>
-              </div>
-              <p className="text-sm text-gray-600">
-                Includes meter, materials & installation
-              </p>
-            </div>
-            <button className="w-full bg-primary text-white py-3.5 rounded-lg font-bold hover:bg-blue-700 transition shadow-lg">
-              Apply Now
-            </button>
-          </div>
 
-          <div
-            id="service-sewer-connection"
-            className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition border-t-4 border-green-500 p-8"
-          >
-            <div className="bg-green-500/10 w-20 h-20 rounded-full flex items-center justify-center mb-6">
-              <i className="fa-solid fa-toilet text-green-600 text-3xl"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Sewer Connection
-            </h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Connect to our modern sewerage system for proper wastewater
-              management. Ensure environmental compliance and public health
-              safety.
-            </p>
-            <div className="space-y-3 mb-6">
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-green-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">
-                  Site inspection & assessment
-                </span>
+        {/* Desktop Grid View */}
+        <div className="hidden md:grid grid-cols-3 gap-8">
+        {/* Desktop Grid View */}
+        <div className="hidden md:grid grid-cols-3 gap-8">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              id={`service-${service.id}`}
+              className={`bg-white rounded-2xl shadow-xl hover:shadow-2xl transition border-t-4 border-${service.color} p-8`}
+            >
+              <div className={`bg-${service.color}/10 w-20 h-20 rounded-full flex items-center justify-center mb-6`}>
+                <i className={`fa-solid ${service.icon} text-${service.color} text-3xl`}></i>
               </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-green-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">Professional installation</span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-green-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">Compliance certification</span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-green-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">
-                  Ongoing maintenance support
-                </span>
-              </div>
-            </div>
-            <div className="bg-neutral rounded-lg p-4 mb-6">
-              <div className="flex justify-between items-center mb-2">
-                <span className="text-gray-700 font-bold">Connection Fee:</span>
-                <span className="text-green-600 font-black text-lg">
-                  From KSh 20,000
-                </span>
-              </div>
-              <p className="text-sm text-gray-600">
-                Includes inspection & installation
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                {service.description}
               </p>
+              <div className="space-y-3 mb-6">
+                {service.features.map((feature, idx) => (
+                  <div key={idx} className="flex items-start">
+                    <i className={`fa-solid fa-check-circle text-${service.color} mr-3 mt-1`}></i>
+                    <span className="text-gray-700">{feature}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="bg-neutral rounded-lg p-4 mb-6">
+                <div className="flex justify-between items-center mb-2">
+                  <span className="text-gray-700 font-bold">{service.pricing.label}</span>
+                  <span className={`text-${service.color} font-black text-lg`}>
+                    {service.pricing.value}
+                  </span>
+                </div>
+                <p className="text-sm text-gray-600">{service.pricing.note}</p>
+              </div>
+              <button className={`w-full ${service.buttonColor} text-white py-3.5 rounded-lg font-bold transition shadow-lg`}>
+                {service.buttonText}
+              </button>
             </div>
-            <button className="w-full bg-green-600 text-white py-3.5 rounded-lg font-bold hover:bg-green-700 transition shadow-lg">
-              Apply Now
-            </button>
-          </div>
+          ))}
+        </div>
 
-          <div
-            id="service-billing-payments"
-            className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition border-t-4 border-blue-500 p-8"
-          >
-            <div className="bg-blue-500/10 w-20 h-20 rounded-full flex items-center justify-center mb-6">
-              <i className="fa-solid fa-credit-card text-blue-600 text-3xl"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Billing & Payments
-            </h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Multiple convenient payment options with transparent billing.
-              Access your account 24/7 through our online portal.
-            </p>
-            <div className="space-y-3 mb-6">
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-blue-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">M-Pesa & bank payments</span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-blue-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">
-                  Monthly billing statements
-                </span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-blue-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">Payment history tracking</span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-blue-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">
-                  Auto-payment setup available
-                </span>
-              </div>
-            </div>
-            <div className="bg-neutral rounded-lg p-4 mb-6">
-              <div className="flex justify-between items-center mb-2">
-                <span className="text-gray-700 font-bold">
-                  Payment Methods:
-                </span>
-                <span className="text-blue-600 font-black text-lg">
-                  5+ Options
-                </span>
-              </div>
-              <p className="text-sm text-gray-600">
-                Instant confirmation & receipts
-              </p>
-            </div>
-            <button className="w-full bg-blue-600 text-white py-3.5 rounded-lg font-bold hover:bg-blue-700 transition shadow-lg">
-              Pay Bill Now
-            </button>
-          </div>
+        {/* Mobile List View with Dropdowns */}
+        <div className="md:hidden space-y-4">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              className={`bg-white rounded-xl shadow-lg border-l-4 border-${service.color} overflow-hidden`}
+            >
+              {/* Collapsed Header */}
+              <button
+                onClick={() => toggleService(service.id)}
+                className="w-full p-4 flex items-center justify-between text-left"
+              >
+                <div className="flex items-center space-x-3">
+                  <div className={`bg-${service.color}/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0`}>
+                    <i className={`fa-solid ${service.icon} text-${service.color} text-xl`}></i>
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900">{service.title}</h3>
+                </div>
+                <i className={`fa-solid ${expandedService === service.id ? 'fa-chevron-up' : 'fa-chevron-down'} text-gray-400`}></i>
+              </button>
 
-          <div
-            id="service-water-quality"
-            className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition border-t-4 border-purple-500 p-8"
-          >
-            <div className="bg-purple-500/10 w-20 h-20 rounded-full flex items-center justify-center mb-6">
-              <i className="fa-solid fa-vial text-purple-600 text-3xl"></i>
+              {/* Expanded Content */}
+              {expandedService === service.id && (
+                <div className="px-4 pb-4 border-t border-gray-100">
+                  <p className="text-gray-600 mt-4 mb-4 leading-relaxed">
+                    {service.description}
+                  </p>
+                  <div className="space-y-2 mb-4">
+                    {service.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-start">
+                        <i className={`fa-solid fa-check-circle text-${service.color} mr-2 mt-0.5 text-sm`}></i>
+                        <span className="text-sm text-gray-700">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="bg-neutral rounded-lg p-3 mb-4">
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="text-sm text-gray-700 font-bold">{service.pricing.label}</span>
+                      <span className={`text-${service.color} font-black text-base`}>
+                        {service.pricing.value}
+                      </span>
+                    </div>
+                    <p className="text-xs text-gray-600">{service.pricing.note}</p>
+                  </div>
+                  <button className={`w-full ${service.buttonColor} text-white py-3 rounded-lg font-bold transition shadow-lg`}>
+                    {service.buttonText}
+                  </button>
+                </div>
+              )}
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Water Quality & Testing
-            </h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Regular water quality testing and monitoring to ensure compliance
-              with national and international standards. View monthly reports.
-            </p>
-            <div className="space-y-3 mb-6">
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-purple-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">WHO & KEBS compliant</span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-purple-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">Monthly quality reports</span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-purple-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">
-                  Laboratory testing services
-                </span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-purple-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">
-                  Private water testing available
-                </span>
-              </div>
-            </div>
-            <div className="bg-neutral rounded-lg p-4 mb-6">
-              <div className="flex justify-between items-center mb-2">
-                <span className="text-gray-700 font-bold">Water Quality:</span>
-                <span className="text-purple-600 font-black text-lg">
-                  99.8% Safe
-                </span>
-              </div>
-              <p className="text-sm text-gray-600">
-                Tested daily at multiple points
-              </p>
-            </div>
-            <button className="w-full bg-purple-600 text-white py-3.5 rounded-lg font-bold hover:bg-purple-700 transition shadow-lg">
-              View Reports
-            </button>
-          </div>
-
-          <div
-            id="service-disconnection-reconnection"
-            className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition border-t-4 border-orange-500 p-8"
-          >
-            <div className="bg-orange-500/10 w-20 h-20 rounded-full flex items-center justify-center mb-6">
-              <i className="fa-solid fa-power-off text-orange-600 text-3xl"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Disconnection & Reconnection
-            </h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Request temporary disconnection or reconnection services. Fast
-              processing for reconnections after bill payment or property
-              transfers.
-            </p>
-            <div className="space-y-3 mb-6">
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-orange-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">Same-day reconnection</span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-orange-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">
-                  Temporary disconnection option
-                </span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-orange-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">Account transfer services</span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-orange-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">
-                  Clear payment before reconnection
-                </span>
-              </div>
-            </div>
-            <div className="bg-neutral rounded-lg p-4 mb-6">
-              <div className="flex justify-between items-center mb-2">
-                <span className="text-gray-700 font-bold">
-                  Reconnection Fee:
-                </span>
-                <span className="text-orange-600 font-black text-lg">
-                  KSh 1,000
-                </span>
-              </div>
-              <p className="text-sm text-gray-600">
-                Plus any outstanding balance
-              </p>
-            </div>
-            <button className="w-full bg-orange-600 text-white py-3.5 rounded-lg font-bold hover:bg-orange-700 transition shadow-lg">
-              Request Service
-            </button>
-          </div>
-
-          <div
-            id="service-customer-support"
-            className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition border-t-4 border-red-500 p-8"
-          >
-            <div className="bg-red-500/10 w-20 h-20 rounded-full flex items-center justify-center mb-6">
-              <i className="fa-solid fa-headset text-red-600 text-3xl"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Customer Complaints & Support
-            </h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              24/7 customer support for all your queries and complaints. Report
-              leaks, burst pipes, or service issues with priority response.
-            </p>
-            <div className="space-y-3 mb-6">
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-red-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">24/7 emergency hotline</span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-red-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">Online complaint portal</span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-red-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">Real-time tracking system</span>
-              </div>
-              <div className="flex items-start">
-                <i className="fa-solid fa-check-circle text-red-600 mr-3 mt-1"></i>
-                <span className="text-gray-700">2-hour emergency response</span>
-              </div>
-            </div>
-            <div className="bg-neutral rounded-lg p-4 mb-6">
-              <div className="flex justify-between items-center mb-2">
-                <span className="text-gray-700 font-bold">Emergency Line:</span>
-                <span className="text-red-600 font-black text-lg">
-                  +254728578098
-                </span>
-              </div>
-              <p className="text-sm text-gray-600">
-                Available 24/7 for emergencies
-              </p>
-            </div>
-            <button className="w-full bg-red-600 text-white py-3.5 rounded-lg font-bold hover:bg-red-700 transition shadow-lg">
-              Report Issue
-            </button>
-          </div>
+          ))}
         </div>
       </div>
     </section>
