@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Departments } from "../../data";
 
 const OrganizationalStructure = () => {
@@ -16,14 +17,17 @@ const OrganizationalStructure = () => {
 
         {/* Managing Director */}
         <div className="flex justify-center mb-12">
-          <div className="bg-gradient-to-br from-primary to-blue-800 rounded-2xl p-8 text-white text-center shadow-2xl max-w-md">
+          <a 
+            href="/about#md-message" 
+            className="bg-gradient-to-br from-primary to-blue-800 rounded-2xl p-8 text-white text-center shadow-2xl max-w-md hover:shadow-3xl hover:scale-105 transition-all cursor-pointer block"
+          >
             <div className="bg-white/20 backdrop-blur-sm w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
               <i className="fa-solid fa-user-tie text-4xl"></i>
             </div>
             <h3 className="text-2xl font-bold mb-2">Jane Murage</h3>
             <p className="text-lg font-semibold text-blue-100 mb-1">Managing Director</p>
             <p className="text-sm text-blue-200">CEO & Chief Executive Officer</p>
-          </div>
+          </a>
         </div>
 
         {/* Connecting Line */}
@@ -34,16 +38,20 @@ const OrganizationalStructure = () => {
         {/* Department Heads */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {Departments.map((dept) => (
-            <div key={dept.id} className="relative">
+            <Link 
+              key={dept.id} 
+              to={`/departments/${dept.id}`}
+              className="relative block group"
+            >
               {/* Connecting Line to Top */}
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-8 w-1 h-8 bg-gray-300"></div>
               
               {/* Department Head Card */}
-              <div className="bg-white rounded-xl shadow-lg border-t-4 border-primary p-6 hover:shadow-2xl transition">
-                <div className={`w-16 h-16 rounded-full flex items-center justify-center ${dept.theme.iconBg} mx-auto mb-4`}>
+              <div className="bg-white rounded-xl shadow-lg border-t-4 border-primary p-6 hover:shadow-2xl hover:scale-105 transition-all cursor-pointer">
+                <div className={`w-16 h-16 rounded-full flex items-center justify-center ${dept.theme.iconBg} mx-auto mb-4 group-hover:scale-110 transition-transform`}>
                   <i className={`fa-solid ${dept.icon} text-2xl text-${dept.theme.color}`}></i>
                 </div>
-                <h4 className="text-lg font-bold text-gray-900 text-center mb-2">
+                <h4 className="text-lg font-bold text-gray-900 text-center mb-2 group-hover:text-primary transition">
                   {dept.title.replace(" Department", "")}
                 </h4>
                 <div className="text-center mb-4 pb-4 border-b border-gray-200">
@@ -66,7 +74,7 @@ const OrganizationalStructure = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

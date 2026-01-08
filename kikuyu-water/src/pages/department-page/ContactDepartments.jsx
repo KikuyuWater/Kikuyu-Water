@@ -1,4 +1,95 @@
+import React, { useState } from "react";
+
 const ContactDepartments = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    department: "Technical Department",
+    message: ""
+  });
+  const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+    // Clear error for this field when user starts typing
+    if (errors[name]) {
+      setErrors(prev => ({
+        ...prev,
+        [name]: ""
+      }));
+    }
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+    
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Please enter a valid email address";
+    }
+    
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+    } else if (formData.message.trim().length < 10) {
+      newErrors.message = "Message must be at least 10 characters";
+    }
+    
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    if (!validateForm()) {
+      return;
+    }
+
+    setIsSubmitting(true);
+    
+    // Create mailto link with form data
+    const subject = encodeURIComponent(`[${formData.department}] Contact Form Submission`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Department: ${formData.department}\n\n` +
+      `Message:\n${formData.message}`
+    );
+    
+    const mailtoLink = `mailto:kikuyuwater@yahoo.com?subject=${subject}&body=${body}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+    
+    // Reset form and show success message
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setSubmitStatus("success");
+      setFormData({
+        name: "",
+        email: "",
+        department: "Technical Department",
+        message: ""
+      });
+      
+      // Clear success message after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus(null);
+      }, 5000);
+    }, 1000);
+  };
+
   return (
     <section id="contact-departments" className="py-20 bg-neutral">
       <div className="max-w-7xl mx-auto px-6">
@@ -19,32 +110,61 @@ const ContactDepartments = () => {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Send Us a Message
             </h3>
-            <form className="space-y-6">
+            
+            {submitStatus === "success" && (
+              <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center">
+                <i className="fa-solid fa-check-circle text-green-600 text-xl mr-3"></i>
+                <p className="text-green-800">Your email client has been opened. Please send the email to complete your message.</p>
+              </div>
+            )}
+            
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-gray-700 font-medium mb-2">
-                  Your Name
+                  Your Name <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary ${
+                    errors.name ? "border-red-500" : "border-gray-300"
+                  }`}
                   placeholder="John Doe"
                 />
+                {errors.name && (
+                  <p className="mt-1 text-sm text-red-500">{errors.name}</p>
+                )}
               </div>
               <div>
                 <label className="block text-gray-700 font-medium mb-2">
-                  Email Address
+                  Email Address <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary ${
+                    errors.email ? "border-red-500" : "border-gray-300"
+                  }`}
                   placeholder="john@example.com"
                 />
+                {errors.email && (
+                  <p className="mt-1 text-sm text-red-500">{errors.email}</p>
+                )}
               </div>
               <div>
                 <label className="block text-gray-700 font-medium mb-2">
                   Select Department
                 </label>
-                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                <select 
+                  name="department"
+                  value={formData.department}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                >
                   <option>Technical Department</option>
                   <option>Commercial Department</option>
                   <option>Finance Department</option>
@@ -52,23 +172,37 @@ const ContactDepartments = () => {
                   <option>Human Resource</option>
                   <option>Non-Revenue Water</option>
                   <option>Internal Audit</option>
+                  <option>Customer Relations</option>
                 </select>
               </div>
               <div>
                 <label className="block text-gray-700 font-medium mb-2">
-                  Message
+                  Message <span className="text-red-500">*</span>
                 </label>
                 <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   rows="4"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="Type your message here..."
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary ${
+                    errors.message ? "border-red-500" : "border-gray-300"
+                  }`}
+                  placeholder="Type your message here... (minimum 10 characters)"
                 ></textarea>
+                {errors.message && (
+                  <p className="mt-1 text-sm text-red-500">{errors.message}</p>
+                )}
               </div>
               <button
                 type="submit"
-                className="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition"
+                disabled={isSubmitting}
+                className={`w-full py-3 rounded-lg font-bold transition ${
+                  isSubmitting 
+                    ? "bg-gray-400 cursor-not-allowed" 
+                    : "bg-primary text-white hover:bg-blue-700"
+                }`}
               >
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
