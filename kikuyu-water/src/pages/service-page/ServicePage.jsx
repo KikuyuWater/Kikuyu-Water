@@ -2,7 +2,6 @@ import React from "react";
 import HeroSection from "./HeroSection";
 import ServiceSection from "./ServiceSection";
 import CoreService from "./CoreService";
-import AddService from "./AddService";
 import Footer from "../../layouts/Footer";
 
 const ServicePage = () => {
@@ -11,7 +10,6 @@ const ServicePage = () => {
       <HeroSection />
       <ServiceSection />
       <CoreService />
-      <AddService />
       <Footer />
     </>
   );

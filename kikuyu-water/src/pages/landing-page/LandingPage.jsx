@@ -10,7 +10,6 @@ import Partners from "./Partners";
 import QuickActions from "./QuickActions";
 import Services from "./Services";
 import Statistics from "./Statistics";
-import Tarrifs from "./Tarrifs";
 
 const LandingPage = () => {
   return (
@@ -22,7 +21,6 @@ const LandingPage = () => {
       <Services />
       <Announcements />
       <CustomerPortal />
-      <Tarrifs />
       <Partners />
       <Faq />
       <Cta />

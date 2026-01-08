@@ -36,10 +36,6 @@ const Services = () => {
                 <i className="fa-solid fa-check-circle text-primary mr-2"></i>
                 <span>Bulk water services</span>
               </li>
-              <li className="flex items-center text-gray-700 text-sm sm:text-base">
-                <i className="fa-solid fa-check-circle text-primary mr-2"></i>
-                <span>Water bowsers</span>
-              </li>
             </ul>
             <a
               href="/"
@@ -69,10 +65,6 @@ const Services = () => {
               <li className="flex items-center text-gray-700 text-sm sm:text-base">
                 <i className="fa-solid fa-check-circle text-primary mr-2"></i>
                 <span>Septic tank exhaustion</span>
-              </li>
-              <li className="flex items-center text-gray-700 text-sm sm:text-base">
-                <i className="fa-solid fa-check-circle text-primary mr-2"></i>
-                <span>Wastewater treatment</span>
               </li>
             </ul>
             <a

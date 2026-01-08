@@ -11,6 +11,7 @@ import DepartmentDetailPage from "./pages/department-page/DepartmentDetailPage";
 import CustomerServiceCharter from "./pages/CustomerServiceCharter";
 import CareersPage from "./pages/CareersPage";
 import TendersPage from "./pages/TendersPage";
+import ProjectsPage from "./pages/projects-page";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/charter" element={<CustomerServiceCharter />} />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/tenders" element={<TendersPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
         <Route path="*" element={<Maintenance />} />
       </Routes>
     </>

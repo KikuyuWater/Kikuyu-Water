@@ -58,57 +58,6 @@ const CoreService = () => {
       pricing: { label: 'Payment Methods:', value: '5+ Options', note: 'Instant confirmation & receipts' },
       buttonText: 'Pay Bill Now',
       buttonColor: 'bg-blue-600 hover:bg-blue-700'
-    },
-    {
-      id: 'water-quality',
-      icon: 'fa-vial',
-      color: 'purple-500',
-      colorClass: 'purple',
-      title: 'Water Quality & Testing',
-      description: 'Regular water quality testing and monitoring to ensure compliance with national and international standards. View monthly reports.',
-      features: [
-        'WHO & KEBS compliant',
-        'Monthly quality reports',
-        'Laboratory testing services',
-        'Private water testing available'
-      ],
-      pricing: { label: 'Water Quality:', value: '99.8% Safe', note: 'Tested daily at multiple points' },
-      buttonText: 'View Reports',
-      buttonColor: 'bg-purple-600 hover:bg-purple-700'
-    },
-    {
-      id: 'disconnection-reconnection',
-      icon: 'fa-power-off',
-      color: 'orange-500',
-      colorClass: 'orange',
-      title: 'Disconnection & Reconnection',
-      description: 'Request temporary disconnection or reconnection services. Fast processing for reconnections after bill payment or property transfers.',
-      features: [
-        'Same-day reconnection',
-        'Temporary disconnection option',
-        'Account transfer services',
-        'Clear payment before reconnection'
-      ],
-      pricing: { label: 'Reconnection Fee:', value: 'KSh 1,000', note: 'Plus any outstanding balance' },
-      buttonText: 'Request Service',
-      buttonColor: 'bg-orange-600 hover:bg-orange-700'
-    },
-    {
-      id: 'customer-support',
-      icon: 'fa-headset',
-      color: 'red-500',
-      colorClass: 'red',
-      title: 'Customer Complaints & Support',
-      description: '24/7 customer support for all your queries and complaints. Report leaks, burst pipes, or service issues with priority response.',
-      features: [
-        '24/7 emergency hotline',
-        'Online complaint portal',
-        'Real-time tracking system',
-        '2-hour emergency response'
-      ],
-      pricing: { label: 'Emergency Line:', value: '+254728578098', note: 'Available 24/7 for emergencies' },
-      buttonText: 'Report Issue',
-      buttonColor: 'bg-red-600 hover:bg-red-700'
     }
   ];
 

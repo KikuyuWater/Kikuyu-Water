@@ -2,6 +2,63 @@ import React, { useState } from "react";
 
 const DepartmentBulletinBoard = ({ departmentId, departmentTheme }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  
+  // Color mapping for department themes (Tailwind needs full class names)
+  const gradientMap = {
+    primary: "from-primary to-primary/90",
+    "green-500": "from-green-500 to-green-600",
+    "purple-500": "from-purple-500 to-purple-600",
+    "orange-500": "from-orange-500 to-orange-600",
+    "blue-500": "from-blue-500 to-blue-600",
+    "teal-500": "from-teal-500 to-teal-600",
+    "red-500": "from-red-500 to-red-600",
+    "indigo-500": "from-indigo-500 to-indigo-600",
+  };
+
+  const textColorMap = {
+    primary: "text-primary",
+    "green-500": "text-green-500",
+    "purple-500": "text-purple-500",
+    "orange-500": "text-orange-500",
+    "blue-500": "text-blue-500",
+    "teal-500": "text-teal-500",
+    "red-500": "text-red-500",
+    "indigo-500": "text-indigo-500",
+  };
+
+  const hoverTextColorMap = {
+    primary: "hover:text-primary",
+    "green-500": "hover:text-green-500",
+    "purple-500": "hover:text-purple-500",
+    "orange-500": "hover:text-orange-500",
+    "blue-500": "hover:text-blue-500",
+    "teal-500": "hover:text-teal-500",
+    "red-500": "hover:text-red-500",
+    "indigo-500": "hover:text-indigo-500",
+  };
+
+  const bgColorMap = {
+    primary: "bg-primary/10",
+    "green-500": "bg-green-500/10",
+    "purple-500": "bg-purple-500/10",
+    "orange-500": "bg-orange-500/10",
+    "blue-500": "bg-blue-500/10",
+    "teal-500": "bg-teal-500/10",
+    "red-500": "bg-red-500/10",
+    "indigo-500": "bg-indigo-500/10",
+  };
+
+  const hoverBgColorMap = {
+    primary: "group-hover:bg-primary/10",
+    "green-500": "group-hover:bg-green-500/10",
+    "purple-500": "group-hover:bg-purple-500/10",
+    "orange-500": "group-hover:bg-orange-500/10",
+    "blue-500": "group-hover:bg-blue-500/10",
+    "teal-500": "group-hover:bg-teal-500/10",
+    "red-500": "group-hover:bg-red-500/10",
+    "indigo-500": "group-hover:bg-indigo-500/10",
+  };
+  
   // Sample bulletin data - this would typically come from an API
   const bulletins = {
     technical: [
@@ -288,11 +345,11 @@ const DepartmentBulletinBoard = ({ departmentId, departmentTheme }) => {
           className="text-center mb-8 cursor-pointer group"
         >
           <div className="inline-flex items-center gap-3 mb-2">
-            <h2 className={`text-3xl font-bold text-gray-900 group-hover:text-${departmentTheme.color} transition`}>
+            <h2 className={`text-3xl font-bold text-gray-900 ${hoverTextColorMap[departmentTheme.color]} transition`}>
               Resources & Documents
             </h2>
-            <div className={`w-8 h-8 rounded-full bg-gray-100 group-hover:${departmentTheme.iconBg} flex items-center justify-center transition-all duration-300 ${isExpanded ? "rotate-180" : ""}`}>
-              <i className={`fa-solid fa-chevron-down text-gray-600 group-hover:text-${departmentTheme.color} transition`}></i>
+            <div className={`w-8 h-8 rounded-full bg-gray-100 ${hoverBgColorMap[departmentTheme.color]} flex items-center justify-center transition-all duration-300 ${isExpanded ? "rotate-180" : ""}`}>
+              <i className={`fa-solid fa-chevron-down text-gray-600 ${hoverTextColorMap[departmentTheme.color]} transition`}></i>
             </div>
           </div>
           <p className="text-gray-600 group-hover:text-gray-900 transition">
@@ -303,7 +360,7 @@ const DepartmentBulletinBoard = ({ departmentId, departmentTheme }) => {
         {/* Collapsible Bulletin Board Card */}
         <div className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden">
           {/* Card Header */}
-          <div className={`bg-gradient-to-r from-${departmentTheme.color} to-${departmentTheme.color}/90 p-6`}>
+          <div className={`bg-gradient-to-r ${gradientMap[departmentTheme.color]} p-6`}>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center">
@@ -338,19 +395,19 @@ const DepartmentBulletinBoard = ({ departmentId, departmentTheme }) => {
                     onClick={(e) => e.stopPropagation()}
                   >
                     <div className="flex items-center gap-3 flex-1">
-                      <i className={`fa-solid ${getFileIcon(bulletin.fileType)} text-${departmentTheme.color} text-lg`}></i>
-                      <span className={`font-medium text-gray-900 group-hover:text-${departmentTheme.color} transition`}>
+                      <i className={`fa-solid ${getFileIcon(bulletin.fileType)} ${textColorMap[departmentTheme.color]} text-lg`}></i>
+                      <span className={`font-medium text-gray-900 ${hoverTextColorMap[departmentTheme.color]} transition`}>
                         {bulletin.title}
                       </span>
                     </div>
-                    <i className={`fa-solid fa-download text-gray-400 group-hover:text-${departmentTheme.color} transition`}></i>
+                    <i className={`fa-solid fa-download text-gray-400 ${hoverTextColorMap[departmentTheme.color]} transition`}></i>
                   </a>
                 ))}
               </div>
             ) : (
               <div className="p-8 text-center border-t border-gray-200">
-                <div className={`w-16 h-16 rounded-full ${departmentTheme.iconBg} flex items-center justify-center mx-auto mb-3`}>
-                  <i className={`fa-solid fa-inbox text-${departmentTheme.color} text-2xl`}></i>
+                <div className={`w-16 h-16 rounded-full ${bgColorMap[departmentTheme.color]} flex items-center justify-center mx-auto mb-3`}>
+                  <i className={`fa-solid fa-inbox ${textColorMap[departmentTheme.color]} text-2xl`}></i>
                 </div>
                 <p className="text-gray-600">No documents available at this time</p>
               </div>

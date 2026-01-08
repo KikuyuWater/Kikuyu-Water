@@ -1,98 +1,83 @@
 const VisionSection = () => {
   return (
-    <section id="vision-mission-values" className="py-20 bg-neutral">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-black text-gray-900 mb-4">
+    <section id="vision-mission-values" className="py-12 bg-neutral">
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-black text-gray-900 mb-2">
             Our Vision, Mission & Core Values
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base text-gray-600">
             The guiding principles that drive our commitment to excellence
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-8">
-          <div
-            id="vision-card"
-            className="bg-white rounded-2xl p-10 shadow-lg hover:shadow-2xl transition border-t-4 border-primary"
-          >
-            <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fa-solid fa-eye text-primary text-3xl"></i>
+
+        <div className="bg-white rounded-xl p-6 md:p-8 shadow-lg space-y-6">
+          {/* Vision */}
+          <div>
+            <div className="flex items-center mb-2">
+              <div className="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                <i className="fa-solid fa-eye text-primary text-lg"></i>
+              </div>
+              <h3 className="text-xl font-bold text-primary">Our Vision</h3>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-              Our Vision
-            </h3>
-            <p className="text-gray-700 text-center leading-relaxed text-lg">
+            <p className="text-gray-700 leading-relaxed pl-13">
               To be the leading company in the provision of quality, reliable, 
               and affordable water services in the region and beyond.
             </p>
-            <div className="mt-8 pt-6 border-t border-gray-200">
-              <div className="flex items-center justify-center">
-                <i className="fa-solid fa-lightbulb text-primary text-xl mr-3"></i>
-                <span className="text-sm font-bold text-gray-700">
-                  Excellence & Innovation
-                </span>
-              </div>
-            </div>
           </div>
 
-          <div
-            id="mission-card"
-            className="bg-white rounded-2xl p-10 shadow-lg hover:shadow-2xl transition border-t-4 border-green-500"
-          >
-            <div className="bg-green-500/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fa-solid fa-bullseye text-green-600 text-3xl"></i>
+          {/* Divider */}
+          <div className="border-t border-gray-200"></div>
+
+          {/* Mission */}
+          <div>
+            <div className="flex items-center mb-2">
+              <div className="bg-green-500/10 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                <i className="fa-solid fa-bullseye text-green-600 text-lg"></i>
+              </div>
+              <h3 className="text-xl font-bold text-green-600">Our Mission</h3>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-              Our Mission
-            </h3>
-            <p className="text-gray-700 text-center leading-relaxed text-lg">
+            <p className="text-gray-700 leading-relaxed pl-13">
               To consistently provide excellent water services within our area of jurisdiction to 
               the absolute satisfaction of our esteemed customers throughout the year.
             </p>
-            <div className="mt-8 pt-6 border-t border-gray-200">
-              <div className="flex items-center justify-center">
-                <i className="fa-solid fa-heart text-green-600 text-xl mr-3"></i>
-                <span className="text-sm font-bold text-gray-700">
-                  Sustainability & Quality
-                </span>
-              </div>
-            </div>
           </div>
 
-          <div
-            id="values-card"
-            className="bg-white rounded-2xl p-10 shadow-lg hover:shadow-2xl transition border-t-4 border-orange-500"
-          >
-            <div className="bg-orange-500/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fa-solid fa-gem text-orange-600 text-3xl"></i>
+          {/* Divider */}
+          <div className="border-t border-gray-200"></div>
+
+          {/* Core Values */}
+          <div>
+            <div className="flex items-center mb-2">
+              <div className="bg-orange-500/10 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                <i className="fa-solid fa-gem text-orange-600 text-lg"></i>
+              </div>
+              <h3 className="text-xl font-bold text-orange-600">Core Values</h3>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-              Core Values
-            </h3>
-            <ul className="space-y-3">
+            <ul className="grid grid-cols-2 gap-x-6 gap-y-2 pl-13">
               <li className="flex items-start">
-                <i className="fa-solid fa-check-circle text-orange-600 mr-3 mt-1"></i>
-                <span className="text-gray-700 font-bold">Integrity</span>
+                <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
+                <span className="text-gray-900 font-semibold">Integrity</span>
               </li>
               <li className="flex items-start">
-                <i className="fa-solid fa-check-circle text-orange-600 mr-3 mt-1"></i>
-                <span className="text-gray-700 font-bold">Accountability</span>
+                <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
+                <span className="text-gray-900 font-semibold">Accountability</span>
               </li>
               <li className="flex items-start">
-                <i className="fa-solid fa-check-circle text-orange-600 mr-3 mt-1"></i>
-                <span className="text-gray-700 font-bold">Customer Focus</span>
+                <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
+                <span className="text-gray-900 font-semibold">Customer Focus</span>
               </li>
               <li className="flex items-start">
-                <i className="fa-solid fa-check-circle text-orange-600 mr-3 mt-1"></i>
-                <span className="text-gray-700 font-bold">Our Employees</span>
+                <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
+                <span className="text-gray-900 font-semibold">Our Employees</span>
               </li>
               <li className="flex items-start">
-                <i className="fa-solid fa-check-circle text-orange-600 mr-3 mt-1"></i>
-                <span className="text-gray-700 font-bold">Teamwork</span>
+                <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
+                <span className="text-gray-900 font-semibold">Teamwork</span>
               </li>
               <li className="flex items-start">
-                <i className="fa-solid fa-check-circle text-orange-600 mr-3 mt-1"></i>
-                <span className="text-gray-700 font-bold">Professionalism</span>
+                <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
+                <span className="text-gray-900 font-semibold">Professionalism</span>
               </li>
             </ul>
           </div>

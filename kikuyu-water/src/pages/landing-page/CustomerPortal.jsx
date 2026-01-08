@@ -1,15 +1,7 @@
 const CustomerPortal = () => {
   const handleAppRedirect = () => {
-    const appUrl = 'intent://app.wonderkid.maji_safi#Intent;scheme=https;package=app.wonderkid.maji_safi;end';
     const playStoreUrl = 'https://play.google.com/store/apps/details?id=app.wonderkid.maji_safi&hl=en';
-    
-    // Try to open the app, fallback to Play Store
-    window.location.href = appUrl;
-    
-    // Fallback to Play Store after a delay if app doesn't open
-    setTimeout(() => {
-      window.location.href = playStoreUrl;
-    }, 2000);
+    window.open(playStoreUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (

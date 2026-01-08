@@ -1,16 +1,16 @@
 const OverviewSection = () => {
   return (
-    <section id="company-overview" className="py-20 bg-white">
+    <section id="company-overview" className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 gap-16 items-center">
-          <div>
-            <div className="inline-block bg-primary/10 px-4 py-2 rounded-full mb-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+          <div className="lg:col-span-2">
+            <div className="inline-block bg-primary/10 px-4 py-2 rounded-full mb-4">
               <span className="text-primary font-bold text-sm">EXECUTIVE SUMMARY</span>
             </div>
-            <h2 className="text-4xl font-black text-gray-900 mb-6 leading-tight">
+            <h2 className="text-3xl font-black text-gray-900 mb-4 leading-tight">
               Serving the Kikuyu Community with Excellence
             </h2>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-base text-gray-700 mb-4 leading-relaxed">
               Kikuyu Water Company Limited (KIWACO) provides water services within 
               Kikuyu and Kabete Sub-Counties, covering ten administrative wards 
               with a total projected population of 436,232 people, based on the 
@@ -18,7 +18,7 @@ const OverviewSection = () => {
               residents, translating to an overall water service coverage of 55 
               percent.
             </p>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-base text-gray-700 mb-4 leading-relaxed">
               The utility relies exclusively on groundwater sources, operating 43 
               boreholes, of which 31 are active, while several have been decommissioned 
               due to low yield and poor water quality. KIWACO has an installed design 
@@ -27,7 +27,7 @@ const OverviewSection = () => {
               projects. At present, the Company produces an average of 11,000 m³ 
               per day, resulting in a persistent supply shortfall.
             </p>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-base text-gray-700 mb-4 leading-relaxed">
               The water supply infrastructure comprises approximately 33 kilometres
                of transmission pipelines and 560 kilometres of distribution networks, 
                supported by 41 storage tanks with a total capacity of 5,108 m³, of 
@@ -36,20 +36,20 @@ const OverviewSection = () => {
                disconnections largely attributable to historical water shortages. 
                Reconnection efforts are ongoing as supply capacity improves.
             </p>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-base text-gray-700 mb-6 leading-relaxed">
               To mitigate the supply deficit, water provision is partially supplemented through Community Water Projects, estimated at 25 schemes, alongside private boreholes
             </p>
-            <div className="flex items-center space-x-4">
-              <button className="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+            <div className="flex flex-wrap gap-3">
+              <button className="bg-primary text-white px-6 py-2.5 rounded-lg font-bold hover:bg-blue-700 transition text-sm">
                 Download Company Profile
               </button>
-              <button className="border-2 border-primary text-primary px-8 py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition">
+              <button className="border-2 border-primary text-primary px-6 py-2.5 rounded-lg font-bold hover:bg-primary hover:text-white transition text-sm">
                 View Annual Report
               </button>
             </div>
           </div>
-          <div className="relative">
-            <div className="bg-gradient-to-br from-primary to-blue-800 rounded-2xl overflow-hidden h-[500px]">
+          <div className="lg:col-span-1">
+            <div className="bg-gradient-to-br from-primary to-blue-800 rounded-xl overflow-hidden h-[350px] sticky top-4">
               <img
                 className="w-full h-full object-cover opacity-90"
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/921ee04888-0ff25509908c15c8fb4f.png"

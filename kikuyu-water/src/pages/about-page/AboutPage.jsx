@@ -1,6 +1,5 @@
 import Cta from "../../layouts/Cta";
 import Footer from "../../layouts/Footer";
-import GovernanceSection from "./GovernanceSection";
 import HeroSection from "./HeroSection";
 import HistorySection from "./HistorySection";
 import Infrustructure from "./Infrustructure";
@@ -10,21 +9,18 @@ import ServiceAreaSection from "./ServiceAreaSection";
 import SourcesSection from "./SourcesSection";
 import VisionSection from "./VisionSection";
 import ManagementTeam from "./ManagementTeam";
-import ManagingDirectorMessage from "./ManagingDirectorMessage";
 
 const AboutPage = () => {
   return (
     <>
       <HeroSection />
       <OverviewSection />
-      <ManagingDirectorMessage />
-      <ServiceAreaSection />
       <VisionSection />
+      <ManagementTeam />
+      <ServiceAreaSection />
       <HistorySection />
       <Infrustructure />
       <SourcesSection />
-      <GovernanceSection />
-      <ManagementTeam />
       <PlanSection />
       <Cta />
       <Footer />

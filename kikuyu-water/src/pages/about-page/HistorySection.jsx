@@ -115,7 +115,7 @@ const HistorySection = () => {
 
             <div id="history-item-6" className="flex items-start">
               <div className="bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-black text-xl mr-8 flex-shrink-0">
-                2025
+                2026
               </div>
               <div className="flex-1">
                 <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border-2 border-green-500 hover:shadow-lg transition">
@@ -123,8 +123,8 @@ const HistorySection = () => {
                     Present Day Excellence
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Today, we proudly serve over 45,000 active connections
-                    across 120 km² coverage area. Our commitment to innovation,
+                    Today, we proudly serve over 18,000 active connections
+                    across 250 km² coverage area. Our commitment to innovation,
                     sustainability, and customer satisfaction continues to drive
                     our growth. We maintain a 99.8% water quality standard and
                     96% service reliability, positioning us as a benchmark

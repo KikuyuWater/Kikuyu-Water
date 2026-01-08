@@ -11,10 +11,8 @@ const Footer = () => {
   };
 
   const handleAppRedirect = () => {
-    const appUrl = 'intent://app.wonderkid.maji_safi#Intent;scheme=https;package=app.wonderkid.maji_safi;end';
     const playStoreUrl = 'https://play.google.com/store/apps/details?id=app.wonderkid.maji_safi&hl=en';
-    window.location.href = appUrl;
-    setTimeout(() => { window.location.href = playStoreUrl; }, 2000);
+    window.open(playStoreUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (
