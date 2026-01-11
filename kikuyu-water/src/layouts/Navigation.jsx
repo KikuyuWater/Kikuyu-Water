@@ -10,7 +10,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-3 sm:py-4">
           {/* Logo */}
-          <div className="flex items-center">
+          <a href="/" className="flex items-center hover:opacity-80 transition">
             <img
               src={logo}
               alt="Kikuyu Water logo"
@@ -24,7 +24,7 @@ const Navigation = () => {
                 KUBORESHA HUDUMA YA MAJI
               </p>
             </div>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">

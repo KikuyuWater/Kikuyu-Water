@@ -95,9 +95,9 @@ const QuickActions = () => {
                 </span>
               </li>
             </ul>
-            <button className="w-full bg-green-600 text-white py-3 rounded-lg font-bold hover:bg-green-700 transition">
+            <a href="/payment" className="block w-full bg-green-600 text-white py-3 rounded-lg font-bold hover:bg-green-700 transition text-center">
               Pay Bill
-            </button>
+            </a>
           </div>
 
           {/* Card 3 */}

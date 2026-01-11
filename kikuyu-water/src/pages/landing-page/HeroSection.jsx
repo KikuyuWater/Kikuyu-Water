@@ -47,9 +47,9 @@ const HeroSection = () => {
               >
                 Apply for New Connection
               </a>
-              <button className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition w-full sm:w-auto text-center">
+              <a href="/payment" className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition w-full sm:w-auto text-center inline-block">
                 Pay Your Water Bill
-              </button>
+              </a>
             </div>
             <div className="mt-8 sm:mt-12 flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-8">
               <div className="flex items-center">

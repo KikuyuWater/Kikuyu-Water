@@ -93,7 +93,7 @@ const Footer = () => {
               {[
                 { label: "Customer Portal", path: "/", onClick: handleAppRedirect },
                 { label: "Apply for Connection", path: "/", onClick: handleApplyForConnection },
-                { label: "Pay Bill", path: "/" },
+                { label: "Pay Bill", path: "/payment" },
                 { label: "Report Issue", path: "/#report-issue" },
                 { label: "Service Charter", path: "/charter" },
                 { label: "FAQs", path: "/" },

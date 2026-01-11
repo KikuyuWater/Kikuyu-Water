@@ -107,9 +107,15 @@ const CoreService = () => {
                 </div>
                 <p className="text-sm text-gray-600">{service.pricing.note}</p>
               </div>
-              <button className={`w-full ${service.buttonColor} text-white py-3.5 rounded-lg font-bold transition shadow-lg`}>
-                {service.buttonText}
-              </button>
+              {service.id === 3 ? (
+                <a href="/payment" className={`block w-full ${service.buttonColor} text-white py-3.5 rounded-lg font-bold transition shadow-lg text-center`}>
+                  {service.buttonText}
+                </a>
+              ) : (
+                <button className={`w-full ${service.buttonColor} text-white py-3.5 rounded-lg font-bold transition shadow-lg`}>
+                  {service.buttonText}
+                </button>
+              )}
             </div>
           ))}
         </div>
@@ -158,9 +164,15 @@ const CoreService = () => {
                     </div>
                     <p className="text-xs text-gray-600">{service.pricing.note}</p>
                   </div>
-                  <button className={`w-full ${service.buttonColor} text-white py-3 rounded-lg font-bold transition shadow-lg`}>
-                    {service.buttonText}
-                  </button>
+                  {service.id === 3 ? (
+                    <a href="/payment" className={`block w-full ${service.buttonColor} text-white py-3 rounded-lg font-bold transition shadow-lg text-center`}>
+                      {service.buttonText}
+                    </a>
+                  ) : (
+                    <button className={`w-full ${service.buttonColor} text-white py-3 rounded-lg font-bold transition shadow-lg`}>
+                      {service.buttonText}
+                    </button>
+                  )}
                 </div>
               )}
             </div>
