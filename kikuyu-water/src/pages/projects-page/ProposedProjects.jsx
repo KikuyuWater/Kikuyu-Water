@@ -76,7 +76,7 @@ const ProposedProjects = () => {
     {
       id: 1,
       name: "Gitathuru Catchment Sewer Network",
-      description: "Construction of sewer network serving Wangige (27.3km trunk), Kingeero (11.6km main), and Lower Kabete (57.2km lateral). Total 96.1km of sewer lines.",
+      description: "Construction of sewer network serving Kabete (27.3km trunk), Kingeero (11.6km main), and Lower Kabete (57.2km lateral). Total 96.1km of sewer lines.",
       location: "Gitathuru Catchment",
       expectedStart: "Q2 2026",
       duration: "36 months",
@@ -85,7 +85,7 @@ const ProposedProjects = () => {
     {
       id: 2,
       name: "Turarie Catchment Sewer System",
-      description: "Construction of sewer network serving Gathiga (13km trunk), Wangige (8km secondary), and lateral lines (30km). Total 51km of sewer infrastructure.",
+      description: "Construction of sewer network serving Gathiga (13km trunk), Kabete (8km secondary), and lateral lines (30km). Total 51km of sewer infrastructure.",
       location: "Turarie Catchment",
       expectedStart: "Q3 2026",
       duration: "30 months",

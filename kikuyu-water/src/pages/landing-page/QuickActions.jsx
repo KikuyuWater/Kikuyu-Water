@@ -171,11 +171,11 @@ const QuickActions = () => {
                     </div>
                   </li>
                   <li className="p-3 rounded border hover:bg-gray-50 transition">
-                    <p className="font-semibold">Wangige</p>
+                    <p className="font-semibold">Kabete</p>
                     <p className="text-sm text-gray-600">Supervisor Mr Ngatia</p>
                     <div className="mt-2 flex items-center space-x-3">
-                      <a href="tel:+254758578094" aria-label="Call Wangige supervisor at +254 758 578 094" className="text-primary font-medium">Call</a>
-                      <a href="mailto:kikuyuwater@yahoo.com?subject=[WANGIGE]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Wangige" aria-label="Email Wangige supervisor" className="text-primary font-medium">Email</a>
+                      <a href="tel:+254758578094" aria-label="Call Kabete supervisor at +254 758 578 094" className="text-primary font-medium">Call</a>
+                      <a href="mailto:kikuyuwater@yahoo.com?subject=[KABETE]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Kabete" aria-label="Email Kabete supervisor" className="text-primary font-medium">Email</a>
                     </div>
                   </li>
                 </ul>

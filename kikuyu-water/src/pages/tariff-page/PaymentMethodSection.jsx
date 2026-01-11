@@ -22,7 +22,7 @@ const PaymentMethodSection = () => {
             <p className="text-gray-600 mb-4">Pay via M-Pesa Paybill</p>
             <div className="bg-neutral p-3 rounded-lg">
               <p className="text-sm text-gray-700">
-                <span className="font-bold">Paybill:</span> 123456
+                <span className="font-bold">Paybill:</span> 810100
               </p>
               <p className="text-sm text-gray-700">
                 <span className="font-bold">Account:</span> Your meter number

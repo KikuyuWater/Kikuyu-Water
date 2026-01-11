@@ -190,7 +190,7 @@ const Footer = () => {
                   url: "https://maps.app.goo.gl/g4RRZYykyS48dLQT6",
                 },
                 {
-                  name: "Wangige Office",
+                  name: "Kabete Office",
                   url: "https://maps.app.goo.gl/KKKv9ciKzprbUFts5",
                 },
               ].map((office) => (
