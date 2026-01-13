@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import kcbLogo from '../assets/kcb-logo.svg';
 
 export default function PaymentPage() {
   const navigate = useNavigate();
@@ -41,6 +42,23 @@ export default function PaymentPage() {
               Use your Kikuyu Water customer account number as the account number
             </p>
           </div>
+        </div>
+
+        {/* Bank Transfer Card (KCB) */}
+        <div className="bg-white rounded-2xl shadow-xl p-6 mb-6 border-t-4 border-primary">
+          <div className="flex items-center gap-4 mb-4">
+            <img src={kcbLogo} alt="KCB" className="w-24 h-12 object-contain" />
+            <div>
+              <h3 className="text-xl font-bold text-gray-900">Kenya Commercial Bank (KCB)</h3>
+              <p className="text-gray-600 text-sm">Direct bank transfer</p>
+            </div>
+          </div>
+          <div className="bg-neutral p-3 rounded-lg">
+            <p className="text-sm text-gray-700"><span className="font-bold">A/C 1:</span> 1102658111</p>
+            <p className="text-sm text-gray-700"><span className="font-bold">A/C 2:</span> 1002639648</p>
+            <p className="text-sm text-gray-700"><span className="font-bold">Account Name:</span> Kikuyu Water &amp; Sewerage Company</p>
+          </div>
+          <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to kikuyuwater@yahoo.com for reconciliation.</p>
         </div>
 
         {/* Step-by-Step Instructions */}
