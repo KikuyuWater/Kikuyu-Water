@@ -59,8 +59,8 @@ const Announcements = () => {
             <div className="h-48 sm:h-56 w-full overflow-hidden">
               <img
                 className="w-full h-full object-cover"
-                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c84372147-743baf9306ba3f05ba36.png"
-                alt="water conservation awareness campaign community gathering"
+                src={require('../../assets/During World Wetlands day 2025 celebrations at  at Ondiri Swamp in Kikuyu.jpeg')}
+                alt="World Wetlands Day 2025 celebrations at Ondiri Swamp in Kikuyu"
               />
             </div>
             <div className="p-4 sm:p-6 flex-1 flex flex-col">
@@ -69,19 +69,17 @@ const Announcements = () => {
                   CONSERVATION
                 </span>
                 <span className="text-gray-500 text-xs sm:text-sm ml-auto">
-                  December 1, 2024
+                  February 2, 2025
                 </span>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
-                Water Conservation Campaign Launch in Ondiri
+                World Wetlands Day 2025 at Ondiri Swamp
               </h3>
               <p className="text-gray-600 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed flex-1">
-                Join our community-wide water conservation campaign. Learn
-                practical tips to reduce water usage and protect our environment
-                for future generations.
+                National commemoration celebrating Ondiri Wetland's ecological importance. The event brought together government officials, conservation partners, and community members for awareness and restoration activities.
               </p>
               <a
-                href="/"
+                href="/world-wetlands-day-2025"
                 className="text-primary font-bold flex items-center hover:underline text-sm sm:text-base mt-auto"
               >
                 Read More <i className="fa-solid fa-arrow-right ml-2"></i>

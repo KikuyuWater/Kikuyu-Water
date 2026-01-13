@@ -21,9 +21,8 @@ const CoreService = () => {
         'Professional installation',
         'Flexible payment plans'
       ],
-      pricing: { label: 'Connection Fee:', value: 'From KSh 15,000', note: 'Includes meter, materials & installation' },
       buttonText: 'Apply Now',
-      buttonColor: 'bg-primary hover:bg-blue-700'
+      buttonColor: 'bg-primary hover:bg-primary/90'
     },
     {
       id: 'sewer-connection',
@@ -38,7 +37,6 @@ const CoreService = () => {
         'Compliance certification',
         'Ongoing maintenance support'
       ],
-      pricing: { label: 'Connection Fee:', value: 'From KSh 20,000', note: 'Includes inspection & installation' },
       buttonText: 'Apply Now',
       buttonColor: 'bg-green-600 hover:bg-green-700'
     },
@@ -98,16 +96,18 @@ const CoreService = () => {
                   </div>
                 ))}
               </div>
-              <div className="bg-neutral rounded-lg p-4 mb-6">
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-gray-700 font-bold">{service.pricing.label}</span>
-                  <span className={`text-${service.color} font-black text-lg`}>
-                    {service.pricing.value}
-                  </span>
+              {service.pricing && (
+                <div className="bg-neutral rounded-lg p-4 mb-6">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-gray-700 font-bold">{service.pricing.label}</span>
+                    <span className={`text-${service.color} font-black text-lg`}>
+                      {service.pricing.value}
+                    </span>
+                  </div>
+                  <p className="text-sm text-gray-600">{service.pricing.note}</p>
                 </div>
-                <p className="text-sm text-gray-600">{service.pricing.note}</p>
-              </div>
-              {service.id === 3 ? (
+              )}
+              {service.id === 'billing-payments' ? (
                 <a href="/payment" className={`block w-full ${service.buttonColor} text-white py-3.5 rounded-lg font-bold transition shadow-lg text-center`}>
                   {service.buttonText}
                 </a>
@@ -155,16 +155,18 @@ const CoreService = () => {
                       </div>
                     ))}
                   </div>
-                  <div className="bg-neutral rounded-lg p-3 mb-4">
-                    <div className="flex justify-between items-center mb-1">
-                      <span className="text-sm text-gray-700 font-bold">{service.pricing.label}</span>
-                      <span className={`text-${service.color} font-black text-base`}>
-                        {service.pricing.value}
-                      </span>
+                  {service.pricing && (
+                    <div className="bg-neutral rounded-lg p-3 mb-4">
+                      <div className="flex justify-between items-center mb-1">
+                        <span className="text-sm text-gray-700 font-bold">{service.pricing.label}</span>
+                        <span className={`text-${service.color} font-black text-base`}>
+                          {service.pricing.value}
+                        </span>
+                      </div>
+                      <p className="text-xs text-gray-600">{service.pricing.note}</p>
                     </div>
-                    <p className="text-xs text-gray-600">{service.pricing.note}</p>
-                  </div>
-                  {service.id === 3 ? (
+                  )}
+                  {service.id === 'billing-payments' ? (
                     <a href="/payment" className={`block w-full ${service.buttonColor} text-white py-3 rounded-lg font-bold transition shadow-lg text-center`}>
                       {service.buttonText}
                     </a>

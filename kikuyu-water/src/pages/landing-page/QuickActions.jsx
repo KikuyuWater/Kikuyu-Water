@@ -164,7 +164,7 @@ const QuickActions = () => {
                   </li>
                   <li className="p-3 rounded border hover:bg-gray-50 transition">
                     <p className="font-semibold">Kikuyu</p>
-                    <p className="text-sm text-gray-600">Superviso </p>
+                    <p className="text-sm text-gray-600">Supervisor </p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254758578093" aria-label="Call Kikuyu supervisor at +254 758 578 093" className="text-primary font-medium">Call</a>
                       <a href="mailto:kikuyuwater@yahoo.com?subject=[KIKUYU]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Kikuyu" aria-label="Email Kikuyu supervisor" className="text-primary font-medium">Email</a>

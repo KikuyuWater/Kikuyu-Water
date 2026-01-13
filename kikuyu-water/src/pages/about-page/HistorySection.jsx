@@ -26,7 +26,7 @@ const HistorySection = () => {
                     Company Establishment
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Kikuyu Water Company Limited (KIWACO), established in 2006, is one of the 
+                    Kikuyu Water and Sewerage Company (KIWASCO), established in 2006, is one of the 
                     eight water utilities in Kiambu County licensed by Water Sector Regulatory
                      Board (WASREB) to provide quality and affordable water and sewerage 
                      services in Kikuyu and Kabete Sub-counties.
@@ -65,7 +65,7 @@ const HistorySection = () => {
                     Sewer System Development
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    In 2018, KIWACO secured funds from the African Development Bank (AFDB) 
+                    In 2018, KIWASCO secured funds from the African Development Bank (AFDB) 
                     and the Kenya Urban Support Programme (KUSP) for constructing a sewer 
                     system in Kikuyu town, Kidfarmaco, Thogoto, and Kinoo areas. The 
                     projects became fully complete and Operational from July 2023

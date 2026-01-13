@@ -56,7 +56,7 @@ const ManagementTeam = () => {
             <div className="lg:col-span-2">
               <div className="space-y-4">
                 <p className="text-base text-gray-700 leading-relaxed">
-                  Welcome to Kikuyu Water Company Limited. As Managing Director, I am 
+                  Welcome to Kikuyu Water and Sewerage Company. As Managing Director, I am 
                   proud to lead an organization committed to delivering reliable, safe, 
                   and affordable water services to the Kikuyu and Kabete communities.
                 </p>
@@ -64,7 +64,7 @@ const ManagementTeam = () => {
                 <p className="text-base text-gray-700 leading-relaxed">
                   Water is a fundamental human right, and our mission is to ensure that 
                   every household and business within our service area has access to clean, 
-                  quality water. Over the years, KIWACO has made significant investments 
+                  quality water. Over the years, KIWASCO has made significant investments 
                   in infrastructure expansion, capacity building, and operational excellence 
                   to meet the growing demands of our customers.
                 </p>
