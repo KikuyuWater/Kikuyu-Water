@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-// Using official KCB logo hosted publicly (Wikipedia / KCB Group)
-const kcbLogo = 'https://upload.wikimedia.org/wikipedia/commons/1/1b/KCB_Group_logo.svg';
+import kcbLogo from '../assets/KCB bank logo.png';
 
 export default function PaymentPage() {
   const navigate = useNavigate();
@@ -27,6 +26,9 @@ export default function PaymentPage() {
           <p className="text-lg text-gray-600">
             Quick and secure payment using M-Pesa Paybill
           </p>
+          <div className="mt-4">
+            <a href="#kcb-bank" className="text-primary font-semibold hover:underline">View bank transfer details</a>
+          </div>
         </div>
 
         {/* Paybill Number Card */}
@@ -45,25 +47,8 @@ export default function PaymentPage() {
           </div>
         </div>
 
-        {/* Bank Transfer Card (KCB) */}
-        <div className="bg-white rounded-2xl shadow-xl p-6 mb-6 border-t-4 border-primary">
-          <div className="flex items-center gap-4 mb-4">
-            <img src={kcbLogo} alt="KCB" className="w-24 h-12 object-contain" />
-            <div>
-              <h3 className="text-xl font-bold text-gray-900">Kenya Commercial Bank (KCB)</h3>
-              <p className="text-gray-600 text-sm">Direct bank transfer</p>
-            </div>
-          </div>
-          <div className="bg-neutral p-3 rounded-lg">
-            <p className="text-sm text-gray-700"><span className="font-bold">A/C 1:</span> 1102658111</p>
-            <p className="text-sm text-gray-700"><span className="font-bold">A/C 2:</span> 1002639648</p>
-            <p className="text-sm text-gray-700"><span className="font-bold">Account Name:</span> Kikuyu Water &amp; Sewerage Company</p>
-          </div>
-          <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to kikuyuwater@yahoo.com for reconciliation.</p>
-        </div>
-
         {/* Step-by-Step Instructions */}
-        <div className="bg-white rounded-2xl shadow-xl p-8">
+        <div className="bg-white rounded-2xl shadow-xl p-8 mb-6">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
             <span className="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mr-3">
               <i className="fa-solid fa-list-check text-primary"></i>
@@ -178,6 +163,25 @@ export default function PaymentPage() {
             </div>
           </div>
         </div>
+
+        {/* Bank Transfer Card (KCB) */}
+        <div id="kcb-bank" className="bg-white rounded-2xl shadow-xl p-6 mb-6 border-t-4 border-primary">
+          <div className="flex items-center gap-4 mb-4">
+            <img src={kcbLogo} alt="KCB" className="w-24 h-12 object-contain" />
+            <div>
+              <h3 className="text-xl font-bold text-gray-900">Kenya Commercial Bank (KCB)</h3>
+              <p className="text-gray-600 text-sm">Direct bank transfer</p>
+            </div>
+          </div>
+          <div className="bg-neutral p-3 rounded-lg">
+            <p className="text-sm text-gray-700"><span className="font-bold">A/C 1:</span> 1102658111</p>
+            <p className="text-sm text-gray-700"><span className="font-bold">A/C 2:</span> 1002639648</p>
+            <p className="text-sm text-gray-700"><span className="font-bold">Account Name:</span> Kikuyu Water &amp; Sewerage Company</p>
+          </div>
+          <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to kikuyuwater@yahoo.com for reconciliation.</p>
+        </div>
+
+
 
         {/* Additional Info */}
         <div className="mt-6 bg-blue-50 border border-blue-200 rounded-xl p-6">

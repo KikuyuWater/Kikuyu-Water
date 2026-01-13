@@ -240,7 +240,7 @@ const DepartmentDetailPage = () => {
                   table, view the full charter page.
                 </p>
                 <a
-                  href="/customer-service-charter"
+                  href="/charter"
                   className="inline-block bg-primary text-white px-5 py-2 rounded-lg font-bold hover:bg-blue-700 transition"
                 >
                   View full charter
