@@ -1,3 +1,5 @@
+import workersImg from "../../assets/Kikuyu water workers.jpeg";
+
 const OverviewSection = () => {
   return (
     <section id="company-overview" className="py-12 bg-white">
@@ -52,8 +54,8 @@ const OverviewSection = () => {
             <div className="bg-gradient-to-br from-primary to-blue-800 rounded-xl overflow-hidden h-[350px] sticky top-4">
               <img
                 className="w-full h-full object-cover opacity-90"
-                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/921ee04888-0ff25509908c15c8fb4f.png"
-                alt="modern water treatment facility with blue pipes and filtration systems, professional industrial photography"
+                src={workersImg}
+                alt="Kikuyu water workers"
               />
             </div>
           </div>

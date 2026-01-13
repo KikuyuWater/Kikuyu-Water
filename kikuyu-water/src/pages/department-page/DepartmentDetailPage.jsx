@@ -220,6 +220,46 @@ const DepartmentDetailPage = () => {
         departmentTheme={department.theme}
       />
 
+      {/* Commercial Documents - anchor targets for bulletin links */}
+      {department.id === "commercial" && (
+        <section className="py-12 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Commercial Documents</h2>
+            <div className="space-y-8">
+              <div id="customer-service-charter">
+                <h3 className="text-2xl font-semibold mb-2">Customer Service Charter</h3>
+                <p className="text-gray-700">Our commitment to service excellence and customer standards.</p>
+              </div>
+
+              <div id="approved-tariff-schedules">
+                <h3 className="text-2xl font-semibold mb-2">Approved tariff schedules</h3>
+                <p className="text-gray-700">Current approved tariff schedules for all customer categories.</p>
+              </div>
+
+              <div id="billing-procedures-billing-cycles">
+                <h3 className="text-2xl font-semibold mb-2">Billing procedures & billing cycles</h3>
+                <p className="text-gray-700">Billing procedures, cycle dates and related customer information.</p>
+              </div>
+
+              <div id="new-connection-procedures-forms">
+                <h3 className="text-2xl font-semibold mb-2">New connection procedures & forms</h3>
+                <p className="text-gray-700">Steps and forms required to apply for a new water connection.</p>
+              </div>
+
+              <div id="disconnection-reconnection-guidelines">
+                <h3 className="text-2xl font-semibold mb-2">Disconnection/reconnection guidelines</h3>
+                <p className="text-gray-700">Guidelines for disconnection and reconnection of services.</p>
+              </div>
+
+              <div id="payment-channels-customer-faqs">
+                <h3 className="text-2xl font-semibold mb-2">Payment channels & customer FAQs</h3>
+                <p className="text-gray-700">Available payment channels and frequently asked customer questions.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Contact Section */}
       <section className="py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
