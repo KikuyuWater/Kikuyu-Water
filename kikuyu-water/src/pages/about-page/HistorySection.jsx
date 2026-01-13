@@ -26,7 +26,7 @@ const HistorySection = () => {
                     Company Establishment
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Kikuyu Water and Sewerage Company (KIWASCO), established in 2006, is one of the 
+                    Kikuyu Water Company Limited (KIWACO), established in 2006, is one of the 
                     eight water utilities in Kiambu County licensed by Water Sector Regulatory
                      Board (WASREB) to provide quality and affordable water and sewerage 
                      services in Kikuyu and Kabete Sub-counties.
@@ -65,7 +65,7 @@ const HistorySection = () => {
                     Sewer System Development
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    In 2018, KIWASCO secured funds from the African Development Bank (AFDB) 
+                    In 2018, KIWACO secured funds from the African Development Bank (AFDB) 
                     and the Kenya Urban Support Programme (KUSP) for constructing a sewer 
                     system in Kikuyu town, Kidfarmaco, Thogoto, and Kinoo areas. The 
                     projects became fully complete and Operational from July 2023
@@ -115,7 +115,7 @@ const HistorySection = () => {
 
             <div id="history-item-6" className="flex items-start">
               <div className="bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-black text-xl mr-8 flex-shrink-0">
-                2026
+                2025
               </div>
               <div className="flex-1">
                 <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border-2 border-green-500 hover:shadow-lg transition">
@@ -123,8 +123,8 @@ const HistorySection = () => {
                     Present Day Excellence
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Today, we proudly serve over 18,000 active connections
-                    across 250 km² coverage area. Our commitment to innovation,
+                    Today, we proudly serve over 45,000 active connections
+                    across 120 km² coverage area. Our commitment to innovation,
                     sustainability, and customer satisfaction continues to drive
                     our growth. We maintain a 99.8% water quality standard and
                     96% service reliability, positioning us as a benchmark
