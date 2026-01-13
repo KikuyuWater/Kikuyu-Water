@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import kcbLogo from '../assets/kcb-logo.svg';
+// Using official KCB logo hosted publicly (Wikipedia / KCB Group)
+const kcbLogo = 'https://upload.wikimedia.org/wikipedia/commons/1/1b/KCB_Group_logo.svg';
 
 export default function PaymentPage() {
   const navigate = useNavigate();
