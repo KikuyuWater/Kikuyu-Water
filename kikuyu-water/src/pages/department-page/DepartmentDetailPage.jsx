@@ -3,6 +3,10 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Departments } from "../../data";
 import Footer from "../../layouts/Footer";
 import DepartmentBulletinBoard from "./DepartmentBulletinBoard";
+import BillingFaqSection from "../tariff-page/BillingFaqSection";
+import FaqSection from "../landing-page/Faq";
+import tariffPDF from "../../assets/Kikuyu.pdf";
+import applicationForm from "../../assets/department-heads/New Connection Application  Form.pdf";
 
 const DepartmentDetailPage = () => {
   const { id } = useParams();
@@ -228,32 +232,49 @@ const DepartmentDetailPage = () => {
             <div className="space-y-8">
               <div id="customer-service-charter">
                 <h3 className="text-2xl font-semibold mb-2">Customer Service Charter</h3>
-                <p className="text-gray-700">Our commitment to service excellence and customer standards.</p>
+                <p className="text-gray-700 mb-4">
+                  The Customer Service Charter sets out our service standards and
+                  target response times for services such as new connections,
+                  billing, disconnections and reconnections, complaints handling
+                  and meter reading. For full details and the complete service
+                  table, view the full charter page.
+                </p>
+                <a
+                  href="/customer-service-charter"
+                  className="inline-block bg-primary text-white px-5 py-2 rounded-lg font-bold hover:bg-blue-700 transition"
+                >
+                  View full charter
+                </a>
               </div>
 
               <div id="approved-tariff-schedules">
                 <h3 className="text-2xl font-semibold mb-2">Approved tariff schedules</h3>
-                <p className="text-gray-700">Current approved tariff schedules for all customer categories.</p>
+                <p className="text-gray-700 mb-4">Current approved tariff schedules for all customer categories. You can download the official tariff PDF below.</p>
+                <a href={tariffPDF} download="Kikuyu-Water-Tariff-2025-2026.pdf" className="inline-block bg-primary text-white px-5 py-2 rounded-lg font-bold hover:bg-blue-700 transition">Download tariff PDF</a>
               </div>
 
               <div id="billing-procedures-billing-cycles">
                 <h3 className="text-2xl font-semibold mb-2">Billing procedures & billing cycles</h3>
-                <p className="text-gray-700">Billing procedures, cycle dates and related customer information.</p>
+                <p className="text-gray-700 mb-4">Monthly meter reading, bill generation and dispatch procedures together with common billing questions are covered below.</p>
+                <BillingFaqSection />
               </div>
 
               <div id="new-connection-procedures-forms">
                 <h3 className="text-2xl font-semibold mb-2">New connection procedures & forms</h3>
-                <p className="text-gray-700">Steps and forms required to apply for a new water connection.</p>
+                <p className="text-gray-700 mb-4">Apply using the official application form. Installation is scheduled after payment and inspection.</p>
+                <a href={applicationForm} download="New Connection Application Form.pdf" className="inline-block bg-primary text-white px-5 py-2 rounded-lg font-bold hover:bg-blue-700 transition">Download application form</a>
               </div>
 
               <div id="disconnection-reconnection-guidelines">
                 <h3 className="text-2xl font-semibold mb-2">Disconnection/reconnection guidelines</h3>
-                <p className="text-gray-700">Guidelines for disconnection and reconnection of services.</p>
+                <p className="text-gray-700 mb-4">Disconnection for non-payment typically occurs after 10 days from bill issue. Reconnection is processed within 72 hours after settlement (reconnection fees may apply). Contact the billing office to arrange reconnection.</p>
+                <a href="/customer-service-charter" className="text-primary font-semibold hover:underline">See service levels in the charter</a>
               </div>
 
               <div id="payment-channels-customer-faqs">
                 <h3 className="text-2xl font-semibold mb-2">Payment channels & customer FAQs</h3>
-                <p className="text-gray-700">Available payment channels and frequently asked customer questions.</p>
+                <p className="text-gray-700 mb-4">We accept payments via MPESA, banks and cheques; many transactions can be completed using the channels below. See common FAQs for quick answers.</p>
+                <FaqSection />
               </div>
             </div>
           </div>
