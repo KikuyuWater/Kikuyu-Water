@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const CalculatorSection = () => {
   const [category, setCategory] = useState("domestic");
   const [consumption, setConsumption] = useState(25);
+  const [calcMode, setCalcMode] = useState("water"); // water | sewer | both
   const [breakdown, setBreakdown] = useState(null);
 
   // Tariff rates based on Kenya Gazette Notice No. 9724
@@ -87,14 +88,15 @@ const CalculatorSection = () => {
       category: categoryLabel[category],
       waterCharge,
       details,
-      total: waterCharge
+      sewerCharge: parseFloat((waterCharge * 0.75).toFixed(2)),
+      total: calcMode === 'water' ? waterCharge : calcMode === 'sewer' ? parseFloat((waterCharge * 0.75).toFixed(2)) : parseFloat((waterCharge + (waterCharge * 0.75)).toFixed(2))
     });
   };
 
   React.useEffect(() => {
     calculateBill();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [category, consumption]);
+  }, [category, consumption, calcMode]);
 
   return (
     <section id="tariff-calculator" className="py-16 bg-white">
@@ -106,8 +108,25 @@ const CalculatorSection = () => {
               <p className="text-xl text-blue-100 mb-8">
                 Estimate your monthly water bill based on consumption
               </p>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <div className="space-y-6">
+                      <div>
+                        <label className="block text-sm font-bold mb-3">Calculator Mode</label>
+                        <div className="flex items-center space-x-4">
+                          <label className="inline-flex items-center">
+                            <input type="radio" name="calcMode" value="water" checked={calcMode==='water'} onChange={() => setCalcMode('water')} className="form-radio" />
+                            <span className="ml-2">Water only</span>
+                          </label>
+                          <label className="inline-flex items-center">
+                            <input type="radio" name="calcMode" value="sewer" checked={calcMode==='sewer'} onChange={() => setCalcMode('sewer')} className="form-radio" />
+                            <span className="ml-2">Sewer only (75% of water bill)</span>
+                          </label>
+                          <label className="inline-flex items-center">
+                            <input type="radio" name="calcMode" value="both" checked={calcMode==='both'} onChange={() => setCalcMode('both')} className="form-radio" />
+                            <span className="ml-2">Water & Sewer</span>
+                          </label>
+                        </div>
+                      </div>
                   <div>
                     <label className="block text-sm font-bold mb-3">
                       Customer Category
@@ -167,9 +186,18 @@ const CalculatorSection = () => {
                       </div>
                     </div>
                   ))}
+                  {calcMode !== 'water' && (
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                      <div className="flex justify-between items-center mb-1">
+                        <span className="text-blue-100 text-sm">Sewer Charge (75% of water bill)</span>
+                        <span className="font-bold">KSh {breakdown.sewerCharge.toFixed(2)}</span>
+                      </div>
+                      <div className="text-xs text-blue-200">Calculated as 75% of the water charge</div>
+                    </div>
+                  )}
                   <div className="bg-white/20 backdrop-blur-sm rounded-xl p-5 mt-6 border border-white/30">
                     <div className="flex justify-between items-center">
-                      <span className="text-xl font-black">Total Bill</span>
+                      <span className="text-xl font-black">Total Payable</span>
                       <span className="text-3xl font-black">KSh {breakdown.total.toFixed(2)}</span>
                     </div>
                   </div>

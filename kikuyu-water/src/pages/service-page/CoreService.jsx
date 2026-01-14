@@ -7,6 +7,20 @@ const CoreService = () => {
     setExpandedService(expandedService === serviceId ? null : serviceId);
   };
 
+  const handleCall = (number, name) => {
+    try {
+      const confirmCall = window.confirm(`Call ${name} at ${number}?`);
+      if (confirmCall) {
+        // remove spaces for tel: link
+        const tel = `tel:${number.replace(/\s+/g, '')}`;
+        window.location.href = tel;
+      }
+    } catch (e) {
+      // fallback: just navigate to tel link
+      window.location.href = `tel:${number}`;
+    }
+  };
+
   const services = [
     {
       id: 'new-water-connection',
@@ -22,7 +36,8 @@ const CoreService = () => {
         'Flexible payment plans'
       ],
       buttonText: 'Apply Now',
-      buttonColor: 'bg-primary hover:bg-primary/90'
+      buttonColor: 'bg-primary hover:bg-primary/90',
+      download: { href: '/documents/New_Water_Connection_Form.pdf', filename: 'New_Water_Connection_Form.pdf' }
     },
     {
       id: 'sewer-connection',
@@ -41,21 +56,22 @@ const CoreService = () => {
       buttonColor: 'bg-green-600 hover:bg-green-700'
     },
     {
-      id: 'billing-payments',
-      icon: 'fa-credit-card',
-      color: 'blue-500',
-      colorClass: 'blue',
-      title: 'Billing & Payments',
-      description: 'Multiple convenient payment options with transparent billing. Access your account 24/7 through our online portal.',
+      id: 'exhauster-services',
+      icon: 'fa-truck-ramp-box',
+      color: 'orange-500',
+      colorClass: 'orange',
+      title: 'Exhauster Services',
+      description: 'Professional septic tank and pit emptying services. Rapid response for domestic and commercial premises.',
       features: [
-        'M-Pesa & bank payments',
-        'Monthly billing statements',
-        'Payment history tracking',
-        'Auto-payment setup available'
+        'Septic tank emptying',
+        'Scheduled desludging',
+        'Emergency response',
+        'Environmentally safe disposal'
       ],
-      pricing: { label: 'Payment Methods:', value: '5+ Options', note: 'Instant confirmation & receipts' },
-      buttonText: 'Pay Bill Now',
-      buttonColor: 'bg-blue-600 hover:bg-blue-700'
+      pricing: { label: 'Service Availability:', value: 'On Request', note: 'Call to schedule and get a quote' },
+      call: { name: 'Mr Kamau', number: '+254726113280' },
+      buttonText: 'Call Mr Kamau',
+      buttonColor: 'bg-orange-600 hover:bg-orange-700'
     }
   ];
 
@@ -107,8 +123,16 @@ const CoreService = () => {
                   <p className="text-sm text-gray-600">{service.pricing.note}</p>
                 </div>
               )}
-              {service.id === 'billing-payments' ? (
-                <a href="/payment" className={`block w-full ${service.buttonColor} text-white py-3.5 rounded-lg font-bold transition shadow-lg text-center`}>
+              {service.call ? (
+                <button onClick={() => handleCall(service.call.number, service.call.name)} className={`w-full ${service.buttonColor} text-white py-3.5 rounded-lg font-bold transition shadow-lg`}>
+                  {service.buttonText}
+                </button>
+              ) : service.download ? (
+                <a
+                  href={service.download.href}
+                  download={service.download.filename}
+                  className={`block w-full ${service.buttonColor} text-white py-3.5 rounded-lg font-bold transition shadow-lg text-center`}
+                >
                   {service.buttonText}
                 </a>
               ) : (
@@ -166,8 +190,16 @@ const CoreService = () => {
                       <p className="text-xs text-gray-600">{service.pricing.note}</p>
                     </div>
                   )}
-                  {service.id === 'billing-payments' ? (
-                    <a href="/payment" className={`block w-full ${service.buttonColor} text-white py-3 rounded-lg font-bold transition shadow-lg text-center`}>
+                  {service.call ? (
+                    <button onClick={() => handleCall(service.call.number, service.call.name)} className={`w-full ${service.buttonColor} text-white py-3 rounded-lg font-bold transition shadow-lg`}>
+                      {service.buttonText}
+                    </button>
+                  ) : service.download ? (
+                    <a
+                      href={service.download.href}
+                      download={service.download.filename}
+                      className={`block w-full ${service.buttonColor} text-white py-3 rounded-lg font-bold transition shadow-lg text-center`}
+                    >
                       {service.buttonText}
                     </a>
                   ) : (
