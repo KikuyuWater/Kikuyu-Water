@@ -1,9 +1,4 @@
 const CustomerPortal = () => {
-  const handleAppRedirect = () => {
-    const playStoreUrl = 'https://play.google.com/store/apps/details?id=app.wonderkid.maji_safi&hl=en';
-    window.open(playStoreUrl, '_blank', 'noopener,noreferrer');
-  };
-
   return (
     <section
       id="customer-portal-promo"
@@ -17,8 +12,7 @@ const CustomerPortal = () => {
               Manage Your Account Online
             </h2>
             <p className="text-lg sm:text-xl text-blue-100 mb-6 sm:mb-8 leading-relaxed max-w-xl">
-              Access your customer portal for 24/7 account management, bill
-              payments, service requests, and more.
+              Access your customer portal for 24/7 account management.
             </p>
 
             <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
@@ -64,16 +58,16 @@ const CustomerPortal = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <button 
-                onClick={handleAppRedirect}
-                className="w-full sm:w-auto bg-white text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition">
+              <a 
+                href="/customer-portal"
+                className="w-full sm:w-auto bg-white text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition text-center">
                 Access Portal
-              </button>
-              <button 
-                onClick={handleAppRedirect}
-                className="w-full sm:w-auto border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition">
+              </a>
+              <a 
+                href="/customer-portal"
+                className="w-full sm:w-auto border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition text-center">
                 Register Account
-              </button>
+              </a>
             </div>
           </div>
 
