@@ -4,10 +4,10 @@ const Services = () => {
   const [openService, setOpenService] = useState(null);
 
   const supervisors = {
-    Muguga: { name: 'Mr Kitheka', phone: '+254758578091', office: 'Muguga', coords: '-1.2480,36.6460' },
-    Karai: { name: 'Mr Peter', phone: '+254758578092', office: 'Karai', coords: '-1.2100,36.6900' },
-    Kikuyu: { name: 'Mr Wilfred', phone: '+254758578093', office: 'Kikuyu', coords: '-1.2196,36.6659' },
-    Kabete: { name: 'Mr Ngatia', phone: '+254758578094', office: 'Kabete', coords: '-1.2460,36.6980' },
+    Muguga: { name: 'Mr Kitheka', phone: '+254714370990', office: 'Muguga', coords: '-1.2480,36.6460' },
+    Karai: { name: 'Mr Peter', phone: '+254722731026', office: 'Karai', coords: '-1.2100,36.6900' },
+    Kikuyu: { name: 'Mr Wilfred', phone: '+254717684692', office: 'Kikuyu', coords: '-1.2196,36.6659' },
+    Kabete: { name: 'Mr Ngatia', phone: '+254724705173', office: 'Kabete', coords: '-1.2460,36.6980' },
     // Wangige merged into Kabete
     // fallback / head office
     Head: { name: 'Head Office', phone: '+254728578098', office: 'Kikuyu Town', coords: '-1.2196,36.6659' },
