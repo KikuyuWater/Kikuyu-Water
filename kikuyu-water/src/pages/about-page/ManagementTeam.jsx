@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Departments } from "../../data";
 import managingDirectorPhoto from "../../assets/department-heads/Jane Murage, Managing Director.jpg";
 
 const ManagementTeam = () => {
+  const [showFullMessage, setShowFullMessage] = useState(false);
+
   return (
     <section id="management-team" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -61,34 +63,53 @@ const ManagementTeam = () => {
                   and affordable water services to the Kikuyu and Kabete communities.
                 </p>
 
-                <p className="text-base text-gray-700 leading-relaxed">
-                  Water is a fundamental human right, and our mission is to ensure that 
-                  every household and business within our service area has access to clean, 
-                  quality water. Over the years, KIWASCO has made significant investments 
-                  in infrastructure expansion, capacity building, and operational excellence 
-                  to meet the growing demands of our customers.
-                </p>
+                {/* Show truncated or full message based on state (mobile only) */}
+                <div className={`space-y-4 ${showFullMessage ? 'block' : 'hidden md:block'}`}>
+                  <p className="text-base text-gray-700 leading-relaxed">
+                    Water is a fundamental human right, and our mission is to ensure that 
+                    every household and business within our service area has access to clean, 
+                    quality water. Over the years, KIWASCO has made significant investments 
+                    in infrastructure expansion, capacity building, and operational excellence 
+                    to meet the growing demands of our customers.
+                  </p>
 
-                <p className="text-base text-gray-700 leading-relaxed">
-                  We face challenges common to many water utilities in Kenya, including 
-                  water source variability, aging infrastructure, and the need for continuous 
-                  investment. However, our dedicated team of professionals, supported by our 
-                  Board of Directors and stakeholders, remains committed to addressing these 
-                  challenges head-on through innovation, strategic planning, and sustainable 
-                  practices.
-                </p>
+                  <p className="text-base text-gray-700 leading-relaxed">
+                    We face challenges common to many water utilities in Kenya, including 
+                    water source variability, aging infrastructure, and the need for continuous 
+                    investment. However, our dedicated team of professionals, supported by our 
+                    Board of Directors and stakeholders, remains committed to addressing these 
+                    challenges head-on through innovation, strategic planning, and sustainable 
+                    practices.
+                  </p>
 
-                <p className="text-base text-gray-700 leading-relaxed">
-                  Our vision is to be a model water utility that delivers excellent service, 
-                  maintains financial sustainability, and contributes positively to the social 
-                  and economic development of the region. We invite all our stakeholders—customers, 
-                  employees, suppliers, and partners—to join us on this journey toward water 
-                  security and excellence.
-                </p>
+                  <p className="text-base text-gray-700 leading-relaxed">
+                    Our vision is to be a model water utility that delivers excellent service, 
+                    maintains financial sustainability, and contributes positively to the social 
+                    and economic development of the region. We invite all our stakeholders—customers, 
+                    employees, suppliers, and partners—to join us on this journey toward water 
+                    security and excellence.
+                  </p>
 
-                <p className="text-base text-gray-700 leading-relaxed font-semibold">
-                  Thank you for your continued support and trust.
-                </p>
+                  <p className="text-base text-gray-700 leading-relaxed font-semibold">
+                    Thank you for your continued support and trust.
+                  </p>
+                </div>
+
+                {/* Read More/Less Button for Mobile */}
+                <button
+                  onClick={() => setShowFullMessage(!showFullMessage)}
+                  className="md:hidden text-primary font-semibold hover:underline flex items-center"
+                >
+                  {showFullMessage ? (
+                    <>
+                      Show Less <i className="fa-solid fa-chevron-up ml-2"></i>
+                    </>
+                  ) : (
+                    <>
+                      Read More <i className="fa-solid fa-chevron-down ml-2"></i>
+                    </>
+                  )}
+                </button>
               </div>
             </div>
           </div>
