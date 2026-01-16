@@ -74,14 +74,11 @@ const Navigation = () => {
 
           {/* Customer Portal & Mobile Menu */}
           <div className="flex items-center space-x-4">
-            <button 
-              onClick={() => {
-                const playStoreUrl = 'https://play.google.com/store/apps/details?id=app.wonderkid.maji_safi&hl=en';
-                window.open(playStoreUrl, '_blank', 'noopener,noreferrer');
-              }}
+            <a 
+              href="/customer-portal"
               className="hidden lg:inline-block bg-primary text-white px-4 sm:px-6 py-2 sm:py-2.5 rounded-lg font-bold hover:bg-blue-700 transition text-sm sm:text-base">
               Customer Portal
-            </button>
+            </a>
 
             {/* Mobile Menu Button */}
             <button

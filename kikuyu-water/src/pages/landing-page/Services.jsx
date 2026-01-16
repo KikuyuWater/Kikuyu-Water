@@ -1,4 +1,93 @@
+import React, { useState } from 'react';
+
 const Services = () => {
+  const [openService, setOpenService] = useState(null);
+
+  const supervisors = {
+    Muguga: { name: 'Mr Kitheka', phone: '+254758578091', office: 'Muguga', coords: '-1.2480,36.6460' },
+    Karai: { name: 'Mr Peter', phone: '+254758578092', office: 'Karai', coords: '-1.2100,36.6900' },
+    Kikuyu: { name: 'Mr Wilfred', phone: '+254758578093', office: 'Kikuyu', coords: '-1.2196,36.6659' },
+    Kabete: { name: 'Mr Ngatia', phone: '+254758578094', office: 'Kabete', coords: '-1.2460,36.6980' },
+    // Wangige merged into Kabete
+    // fallback / head office
+    Head: { name: 'Head Office', phone: '+254728578098', office: 'Kikuyu Town', coords: '-1.2196,36.6659' },
+  };
+
+  const renderContactsFor = (serviceKey) => {
+    // serviceKey: 'water' | 'sewer' | 'maintenance'
+    let areas = [];
+    if (serviceKey === 'water') areas = ['Karai', 'Kikuyu', 'Muguga', 'Kabete'];
+    if (serviceKey === 'sewer') areas = ['Kikuyu'];
+    if (serviceKey === 'maintenance') areas = ['Kikuyu', 'Karai', 'Muguga', 'Kabete'];
+
+    return (
+      <div className="mt-4 bg-white p-4 rounded-lg shadow-sm border">
+        <h4 className="text-lg font-bold text-gray-900 mb-2">Service Availability & Contacts</h4>
+        <p className="text-sm text-gray-600 mb-3">
+          For inquiries on the availability of the services visit our offices or call:
+        </p>
+        <ul className="space-y-3">
+          {areas.map((area) => {
+            // For sewer we want Muguga and Kikuyu to share the same contact (Mr Wilfred)
+            if (serviceKey === 'sewer') {
+              const shared = supervisors.Kikuyu || supervisors.Head;
+              return (
+                <li key={area} className="p-3 rounded border hover:bg-gray-50 transition">
+                  <p className="font-semibold">{area}</p>
+                  <p className="text-sm text-gray-600">Contact: {shared.name}</p>
+                  <div className="mt-2 flex items-center space-x-3">
+                    <a href={`tel:${shared.phone}`} className="text-primary font-medium">Call {shared.phone}</a>
+                    <span className="text-xs text-gray-500">Office: {shared.office}</span>
+                  </div>
+                  {shared.coords && (
+                    <div className="mt-2">
+                      <a
+                        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(shared.coords)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary text-sm"
+                      >
+                        Get Directions
+                      </a>
+                    </div>
+                  )}
+                </li>
+              );
+            }
+
+            // Muguga may not have a dedicated field supervisor in the map; fall back to Head
+            const info = supervisors[area] || supervisors.Head;
+            return (
+              <li key={area} className="p-3 rounded border hover:bg-gray-50 transition">
+                <p className="font-semibold">{area}</p>
+                <p className="text-sm text-gray-600">Contact: {info.name}</p>
+                <div className="mt-2 flex items-center space-x-3">
+                  <a href={`tel:${info.phone}`} className="text-primary font-medium">Call {info.phone}</a>
+                  <span className="text-xs text-gray-500">Office: {info.office}</span>
+                </div>
+                {info.coords && (
+                  <div className="mt-2">
+                    <a
+                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(info.coords)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary text-sm"
+                    >
+                      Get Directions
+                    </a>
+                  </div>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+        <div className="mt-3 text-right">
+          <button className="text-sm text-gray-600 underline" onClick={() => setOpenService(null)}>Close</button>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <section id="services-overview" className="py-12 sm:py-16 bg-neutral">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,12 +126,15 @@ const Services = () => {
                 <span>Bulk water services</span>
               </li>
             </ul>
-            <a
-              href="/"
-              className="text-primary font-bold flex items-center hover:underline text-sm sm:text-base"
+            <button
+              onClick={() => setOpenService(openService === 'water' ? null : 'water')}
+              className="text-primary font-bold flex items-center hover:underline text-sm sm:text-base bg-transparent"
+              aria-expanded={openService === 'water'}
             >
               Learn More <i className="fa-solid fa-arrow-right ml-2"></i>
-            </a>
+            </button>
+
+            {openService === 'water' && renderContactsFor('water')}
           </div>
 
           {/* Sewerage Services */}
@@ -67,12 +159,15 @@ const Services = () => {
                 <span>Septic tank exhaustion</span>
               </li>
             </ul>
-            <a
-              href="/"
-              className="text-primary font-bold flex items-center hover:underline text-sm sm:text-base"
+            <button
+              onClick={() => setOpenService(openService === 'sewer' ? null : 'sewer')}
+              className="text-primary font-bold flex items-center hover:underline text-sm sm:text-base bg-transparent"
+              aria-expanded={openService === 'sewer'}
             >
               Learn More <i className="fa-solid fa-arrow-right ml-2"></i>
-            </a>
+            </button>
+
+            {openService === 'sewer' && renderContactsFor('sewer')}
           </div>
 
           {/* Maintenance & Repairs */}
@@ -101,12 +196,15 @@ const Services = () => {
                 <span>Emergency repairs</span>
               </li>
             </ul>
-            <a
-              href="/"
-              className="text-primary font-bold flex items-center hover:underline text-sm sm:text-base"
+            <button
+              onClick={() => setOpenService(openService === 'maintenance' ? null : 'maintenance')}
+              className="text-primary font-bold flex items-center hover:underline text-sm sm:text-base bg-transparent"
+              aria-expanded={openService === 'maintenance'}
             >
               Learn More <i className="fa-solid fa-arrow-right ml-2"></i>
-            </a>
+            </button>
+
+            {openService === 'maintenance' && renderContactsFor('maintenance')}
           </div>
         </div>
 

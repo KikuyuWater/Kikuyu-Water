@@ -1,6 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import kcbLogo from '../assets/KCB bank logo.png';
+import equityLogo from '../assets/Equity Bank Logo.png';
+import familyBankLogo from '../assets/Family Bank Logo.jpg';
+import postBankLogo from '../assets/Post Bank logo.png';
 
 export default function PaymentPage() {
   const navigate = useNavigate();
@@ -164,6 +167,12 @@ export default function PaymentPage() {
           </div>
         </div>
 
+        {/* Bank Transfer Section Header */}
+        <div className="text-center mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Bank Transfer Options</h2>
+          <p className="text-gray-600">You can also pay directly to our bank accounts</p>
+        </div>
+
         {/* Bank Transfer Card (KCB) */}
         <div id="kcb-bank" className="bg-white rounded-2xl shadow-xl p-6 mb-6 border-t-4 border-primary">
           <div className="flex items-center gap-4 mb-4">
@@ -176,7 +185,55 @@ export default function PaymentPage() {
           <div className="bg-neutral p-3 rounded-lg">
             <p className="text-sm text-gray-700"><span className="font-bold">A/C 1:</span> 1102658111</p>
             <p className="text-sm text-gray-700"><span className="font-bold">A/C 2:</span> 1002639648</p>
-            <p className="text-sm text-gray-700"><span className="font-bold">Account Name:</span> Kikuyu Water &amp; Sewerage Company</p>
+            <p className="text-sm text-gray-700"><span className="font-bold">Account Name:</span> Kikuyu Water Company Ltd</p>
+          </div>
+          <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to kikuyuwater@yahoo.com for reconciliation.</p>
+        </div>
+
+        {/* Equity Bank */}
+        <div className="bg-white rounded-2xl shadow-xl p-6 mb-6 border-t-4 border-red-600">
+          <div className="flex items-center gap-4 mb-4">
+            <img src={equityLogo} alt="Equity Bank" className="w-24 h-12 object-contain" />
+            <div>
+              <h3 className="text-xl font-bold text-gray-900">Equity Bank</h3>
+              <p className="text-gray-600 text-sm">Direct bank transfer</p>
+            </div>
+          </div>
+          <div className="bg-neutral p-3 rounded-lg">
+            <p className="text-sm text-gray-700"><span className="font-bold">Account No:</span> 0570292031078</p>
+            <p className="text-sm text-gray-700"><span className="font-bold">Account Name:</span> Kikuyu Water Company Ltd</p>
+          </div>
+          <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to kikuyuwater@yahoo.com for reconciliation.</p>
+        </div>
+
+        {/* Family Bank */}
+        <div className="bg-white rounded-2xl shadow-xl p-6 mb-6 border-t-4 border-orange-500">
+          <div className="flex items-center gap-4 mb-4">
+            <img src={familyBankLogo} alt="Family Bank" className="w-24 h-12 object-contain" />
+            <div>
+              <h3 className="text-xl font-bold text-gray-900">Family Bank</h3>
+              <p className="text-gray-600 text-sm">Direct bank transfer</p>
+            </div>
+          </div>
+          <div className="bg-neutral p-3 rounded-lg">
+            <p className="text-sm text-gray-700"><span className="font-bold">Account No:</span> 102000004731</p>
+            <p className="text-sm text-gray-700"><span className="font-bold">Account Name:</span> Kikuyu Water Company Ltd</p>
+          </div>
+          <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to kikuyuwater@yahoo.com for reconciliation.</p>
+        </div>
+
+        {/* PostBank */}
+        <div className="bg-white rounded-2xl shadow-xl p-6 mb-6 border-t-4 border-yellow-500">
+          <div className="flex items-center gap-4 mb-4">
+            <img src={postBankLogo} alt="PostBank" className="w-24 h-12 object-contain" />
+            <div>
+              <h3 className="text-xl font-bold text-gray-900">PostBank</h3>
+              <p className="text-gray-600 text-sm">Direct bank transfer</p>
+            </div>
+          </div>
+          <div className="bg-neutral p-3 rounded-lg">
+            <p className="text-sm text-gray-700"><span className="font-bold">Account No:</span> 0744130007563</p>
+            <p className="text-sm text-gray-700"><span className="font-bold">Account Name:</span> Kikuyu Water Company Ltd</p>
           </div>
           <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to kikuyuwater@yahoo.com for reconciliation.</p>
         </div>

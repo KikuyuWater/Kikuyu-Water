@@ -153,6 +153,9 @@ const QuickActions = () => {
                       <a href="tel:+254758578091" aria-label="Call Muguga supervisor at +254 758 578 091" className="text-primary font-medium">Call</a>
                       <a href="mailto:kikuyuwater@yahoo.com?subject=[MUGUGA]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Muguga" aria-label="Email Muguga supervisor" className="text-primary font-medium">Email</a>
                     </div>
+                    <div className="mt-2">
+                      <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('-1.2480,36.6460')}`} target="_blank" rel="noopener noreferrer" className="text-primary text-sm">Get Directions</a>
+                    </div>
                   </li>
                   <li className="p-3 rounded border hover:bg-gray-50 transition">
                     <p className="font-semibold">Karai</p>
@@ -161,13 +164,19 @@ const QuickActions = () => {
                       <a href="tel:+254758578092" aria-label="Call Karai supervisor at +254 758 578 092" className="text-primary font-medium">Call</a>
                       <a href="mailto:kikuyuwater@yahoo.com?subject=[KARAI]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Karai" aria-label="Email Karai supervisor" className="text-primary font-medium">Email</a>
                     </div>
+                    <div className="mt-2">
+                      <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('-1.2100,36.6900')}`} target="_blank" rel="noopener noreferrer" className="text-primary text-sm">Get Directions</a>
+                    </div>
                   </li>
                   <li className="p-3 rounded border hover:bg-gray-50 transition">
                     <p className="font-semibold">Kikuyu</p>
                     <p className="text-sm text-gray-600">Supervisor Mr Wilfred </p>
                     <div className="mt-2 flex items-center space-x-3">
-                      <a href="tel:+254758578093" aria-label="Call Kikuyu supervisor at +254 717 684 692" className="text-primary font-medium">Call</a>
+                      <a href="tel:+254758578093" aria-label="Call Kikuyu supervisor at +254 758 578 093" className="text-primary font-medium">Call</a>
                       <a href="mailto:kikuyuwater@yahoo.com?subject=[KIKUYU]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Kikuyu" aria-label="Email Kikuyu supervisor" className="text-primary font-medium">Email</a>
+                    </div>
+                    <div className="mt-2">
+                      <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('-1.2196,36.6659')}`} target="_blank" rel="noopener noreferrer" className="text-primary text-sm">Get Directions</a>
                     </div>
                   </li>
                   <li className="p-3 rounded border hover:bg-gray-50 transition">
@@ -176,6 +185,9 @@ const QuickActions = () => {
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254758578094" aria-label="Call Kabete supervisor at +254 758 578 094" className="text-primary font-medium">Call</a>
                       <a href="mailto:kikuyuwater@yahoo.com?subject=[KABETE]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Kabete" aria-label="Email Kabete supervisor" className="text-primary font-medium">Email</a>
+                    </div>
+                    <div className="mt-2">
+                      <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('-1.2460,36.6980')}`} target="_blank" rel="noopener noreferrer" className="text-primary text-sm">Get Directions</a>
                     </div>
                   </li>
                 </ul>

@@ -113,7 +113,7 @@ const CompanyHighlights = () => {
                     <span className="text-sm sm:text-lg font-bold">
                       Non-Revenue Water
                     </span>
-                    <span className="text-2xl sm:text-3xl font-black">18%</span>
+                    <span className="text-2xl sm:text-3xl font-black">35%</span>
                   </div>
                   <div className="w-full bg-white/20 rounded-full h-2 sm:h-3">
                     <div

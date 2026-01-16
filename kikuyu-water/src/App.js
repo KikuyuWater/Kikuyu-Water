@@ -14,6 +14,7 @@ import TendersPage from "./pages/TendersPage";
 import ProjectsPage from "./pages/projects-page";
 import PaymentPage from "./pages/PaymentPage";
 import WorldWetlandsDayPage from "./pages/WorldWetlandsDayPage";
+import CustomerPortalPage from "./pages/CustomerPortalPage";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/tenders" element={<TendersPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/customer-portal" element={<CustomerPortalPage />} />
         <Route path="/world-wetlands-day-2025" element={<WorldWetlandsDayPage />} />
         <Route path="*" element={<Maintenance />} />
       </Routes>
