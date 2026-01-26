@@ -4,10 +4,11 @@ const Services = () => {
   const [openService, setOpenService] = useState(null);
 
   const supervisors = {
-    Muguga: { name: 'Mr Kitheka', phone: '+254714370990', office: 'Muguga', coords: '-1.2480,36.6460' },
-    Karai: { name: 'Mr Peter', phone: '+254722731026', office: 'Karai', coords: '-1.2100,36.6900' },
-    Kikuyu: { name: 'Mr Wilfred', phone: '+254717684692', office: 'Kikuyu', coords: '-1.2196,36.6659' },
-    Kabete: { name: 'Mr Ngatia', phone: '+254724705173', office: 'Kabete', coords: '-1.2460,36.6980' },
+    Muguga: { name: 'Mr Kitheka', phone: '+254714370990', office: 'Muguga Office', coords: '-1.2480,36.6460' },
+    Karai: { name: 'Mr Peter', phone: '+254722731026', office: 'Karai Office', coords: '-1.2100,36.6900' },
+    Kikuyu: { name: 'Mr Wilfred', phone: '+254717684692', office: 'Head Office, Kikuyu Town', coords: '-1.2196,36.6659' },
+    KikuyuSewer: { name: 'Mr Macharia', phone: '+254 712 692 965', office: 'Head Office, Kikuyu Town', coords: '-1.2196,36.6659' },
+    Kabete: { name: 'Mr Ngatia', phone: '+254724705173', office: 'Kabete Office', coords: '-1.2460,36.6980' },
     // Wangige merged into Kabete
     // fallback / head office
     Head: { name: 'Head Office', phone: '+254728578098', office: 'Kikuyu Town', coords: '-1.2196,36.6659' },
@@ -28,9 +29,9 @@ const Services = () => {
         </p>
         <ul className="space-y-3">
           {areas.map((area) => {
-            // For sewer we want Muguga and Kikuyu to share the same contact (Mr Wilfred)
+            // For sewer we want to use Mr Macharia for Kikuyu
             if (serviceKey === 'sewer') {
-              const shared = supervisors.Kikuyu || supervisors.Head;
+              const shared = supervisors.KikuyuSewer || supervisors.Head;
               return (
                 <li key={area} className="p-3 rounded border hover:bg-gray-50 transition">
                   <p className="font-semibold">{area}</p>
