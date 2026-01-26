@@ -52,7 +52,8 @@ const CoreService = () => {
         'Compliance certification',
         'Ongoing maintenance support'
       ],
-      buttonText: 'Apply Now',
+      call: { name: 'Mr Macharia', number: '+254 712 692 965' },
+      buttonText: 'Call Mr Macharia',
       buttonColor: 'bg-green-600 hover:bg-green-700'
     },
     {
