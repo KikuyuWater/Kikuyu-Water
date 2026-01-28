@@ -3,58 +3,34 @@ import Footer from "../layouts/Footer";
 
 const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState("all");
 
   // Gallery images from public folder
   const galleryImages = [
     {
       src: "/documents/gallery/Our team.jpg",
       title: "Our Dedicated Team",
-      category: "team",
-      description: "Meet the professionals committed to delivering excellence",
     },
     {
       src: "/documents/gallery/Our team 2.jpg",
       title: "Team Building",
-      category: "team",
-      description: "Building strong relationships for better service delivery",
     },
     {
       src: "/documents/gallery/Uthiru Interconnection.jpeg",
       title: "Uthiru Interconnection",
-      category: "infrastructure",
-      description: "Major infrastructure project connecting communities",
     },
     {
       src: "/documents/gallery/Uthiru Master Meter.jpeg",
       title: "Uthiru Master Meter",
-      category: "infrastructure",
-      description: "Advanced metering technology for accurate measurement",
     },
     {
       src: "/documents/gallery/Uthiru Testing.jpeg",
       title: "Uthiru Testing",
-      category: "infrastructure",
-      description: "Quality assurance and testing procedures",
     },
     {
       src: "/documents/gallery/WhatsApp Image 2023-03-26 at 12.14.41.jpeg",
       title: "Infrastructure Development",
-      category: "infrastructure",
-      description: "Ongoing projects to improve water distribution",
     },
   ];
-
-  const categories = [
-    { id: "all", label: "All Photos" },
-    { id: "team", label: "Our Team" },
-    { id: "infrastructure", label: "Infrastructure" },
-  ];
-
-  const filteredImages =
-    selectedCategory === "all"
-      ? galleryImages
-      : galleryImages.filter((img) => img.category === selectedCategory);
 
   return (
     <>
@@ -79,26 +55,9 @@ const GalleryPage = () => {
       {/* Gallery Section */}
       <section className="py-16 bg-neutral">
         <div className="max-w-7xl mx-auto px-6">
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => setSelectedCategory(category.id)}
-                className={`px-6 py-3 rounded-lg font-bold transition ${
-                  selectedCategory === category.id
-                    ? "bg-primary text-white shadow-lg"
-                    : "bg-white text-gray-700 hover:bg-gray-100"
-                }`}
-              >
-                {category.label}
-              </button>
-            ))}
-          </div>
-
           {/* Gallery Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredImages.map((image, index) => (
+            {galleryImages.map((image, index) => (
               <div
                 key={index}
                 className="group relative bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition hover:scale-105 hover:shadow-2xl"
@@ -113,8 +72,7 @@ const GalleryPage = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-lg font-bold mb-1">{image.title}</h3>
-                  <p className="text-sm text-gray-200">{image.description}</p>
+                  <h3 className="text-lg font-bold">{image.title}</h3>
                 </div>
                 <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
@@ -124,15 +82,6 @@ const GalleryPage = () => {
               </div>
             ))}
           </div>
-
-          {filteredImages.length === 0 && (
-            <div className="text-center py-12">
-              <i className="fa-solid fa-images text-6xl text-gray-400 mb-4"></i>
-              <p className="text-xl text-gray-600">
-                No images found in this category
-              </p>
-            </div>
-          )}
         </div>
       </section>
 
@@ -158,10 +107,9 @@ const GalleryPage = () => {
               className="w-full h-auto rounded-lg shadow-2xl"
             />
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mt-4">
-              <h2 className="text-2xl font-bold text-white mb-2">
+              <h2 className="text-2xl font-bold text-white">
                 {selectedImage.title}
               </h2>
-              <p className="text-gray-300">{selectedImage.description}</p>
             </div>
           </div>
         </div>
