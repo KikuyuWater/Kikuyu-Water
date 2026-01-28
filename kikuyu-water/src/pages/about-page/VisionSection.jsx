@@ -54,7 +54,7 @@ const VisionSection = () => {
               </div>
               <h3 className="text-xl font-bold text-orange-600">Core Values</h3>
             </div>
-            <ul className="grid grid-cols-2 gap-x-6 gap-y-2 pl-13">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 sm:gap-x-6 gap-y-2 pl-0">
               <li className="flex items-start">
                 <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
                 <span className="text-gray-900 font-semibold">Customer Focus</span>

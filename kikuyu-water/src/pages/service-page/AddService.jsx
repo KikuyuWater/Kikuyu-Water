@@ -88,6 +88,18 @@ const AddService = () => {
           </p>
         </div>
 
+        {/* Mobile View */}
+        <div className="md:hidden space-y-6">
+          {services.map((service) => (
+            <div key={service.id} className="bg-white rounded-2xl shadow-lg p-6">
+              <div className={`bg-${service.color}/10 w-16 h-16 rounded-full flex items-center justify-center mb-4`}>
+                <i className={`fa-solid ${service.icon} text-${service.color} text-2xl`}></i>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
+              <p className="text-gray-700 text-sm mb-4">{service.description}</p>
+            </div>
+          ))}
+        </div>
         {/* Desktop Grid View */}
         <div className="hidden md:grid grid-cols-2 gap-8">
           {additionalServices.map((service) => (

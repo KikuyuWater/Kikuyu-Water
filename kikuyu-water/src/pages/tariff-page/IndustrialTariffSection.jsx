@@ -46,7 +46,7 @@ const IndustrialTariffSection = () => {
             </div>
           </div>
           <div className="bg-gray-50 p-6 border-t-2 border-orange-600">
-            <div className="grid grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
               <div>
                 <h4 className="font-bold text-gray-900 mb-4 flex items-center">
                   <i className="fa-solid fa-building text-orange-600 mr-2"></i>

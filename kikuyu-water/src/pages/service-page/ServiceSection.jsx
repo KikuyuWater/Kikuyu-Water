@@ -8,6 +8,12 @@ const ServiceSection = () => {
     >
       <div className="max-w-7xl mx-auto px-6">
         {/* Desktop View */}
+        {/* Mobile - show title and description */}
+        <div className="md:hidden text-center mb-8">
+          <h2 className="text-3xl font-black text-gray-900 mb-4">Our Services</h2>
+          <p className="text-lg text-gray-600 mb-6">Essential water and sewerage services for our community</p>
+        </div>
+        {/* Desktop - show horizontal layout */}
         <div className="hidden md:flex items-center justify-between">
           <div className="flex items-center space-x-6">
             <button className="bg-primary text-white px-6 py-2.5 rounded-lg font-bold hover:bg-blue-700 transition">

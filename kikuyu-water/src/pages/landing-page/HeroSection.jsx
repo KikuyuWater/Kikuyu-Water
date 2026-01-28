@@ -72,7 +72,7 @@ const HeroSection = () => {
 
           <div className="relative mt-10 lg:mt-0">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
-              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="bg-white/20 backdrop-blur-sm p-4 sm:p-6 rounded-xl">
                   <i className="fa-solid fa-users text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
                   <p className="text-2xl sm:text-3xl font-black mb-1">

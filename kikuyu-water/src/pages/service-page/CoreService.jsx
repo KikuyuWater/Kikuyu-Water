@@ -88,6 +88,39 @@ const CoreService = () => {
           </p>
         </div>
 
+        {/* Mobile Grid - Single Column */}
+        <div className="md:hidden">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              id={`service-${service.id}`}
+              className={`bg-white rounded-2xl shadow-lg hover:shadow-xl transition border-t-4 border-${service.color} p-6 mb-6`}
+            >
+              <div className={`bg-${service.color}/10 w-16 h-16 rounded-full flex items-center justify-center mb-4`}>
+                <i className={`fa-solid ${service.icon} text-${service.color} text-2xl`}></i>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
+              <p className="text-gray-600 text-sm mb-4">{service.description}</p>
+              <ul className="space-y-2 mb-6">
+                {service.features?.map((feature, idx) => (
+                  <li key={idx} className="flex items-start text-sm">
+                    <i className={`fa-solid fa-check text-${service.color} mr-2 mt-0.5 flex-shrink-0`}></i>
+                    <span className="text-gray-700">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              {service.buttonText && (
+                <button
+                  onClick={() => service.call ? handleCall(service.call.number, service.call.name) : null}
+                  className={`w-full ${service.buttonColor} text-white px-4 py-2 rounded-lg font-bold text-sm`}
+                >
+                  {service.buttonText}
+                </button>
+              )}
+            </div>
+          ))}
+        </div>
+
         {/* Desktop Grid View */}
         <div className="hidden md:grid grid-cols-3 gap-8">
           {services.map((service) => (
