@@ -140,7 +140,7 @@ const Footer = () => {
                   <p>Head Office: Kikuyu Town</p>
                   <p>Kiambu County, Kenya</p>
                   <a
-                    href="https://maps.app.goo.gl/zDMBWXx73o3dr4727"
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('-1.2436313567256625,36.661594284695')}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-2 px-3 py-1.5 bg-primary text-white text-xs rounded hover:bg-blue-700 transition"
@@ -190,23 +190,20 @@ const Footer = () => {
               {[
                 {
                   name: "Muguga Office",
-                  url: "https://maps.app.goo.gl/Noau1yQfiQ9J1L5X6",
                   coords: '-1.2480,36.6460'
                 },
                 {
                   name: "Karai Office",
-                  url: "https://maps.app.goo.gl/g4RRZYykyS48dLQT6",
                   coords: '-1.2100,36.6900'
                 },
                 {
                   name: "Kabete Office",
-                  url: "https://maps.app.goo.gl/KKKv9ciKzprbUFts5",
                   coords: '-1.2197950587077637,36.7147972033909'
                 },
               ].map((office) => (
                 <a
                   key={office.name}
-                  href={office.url}
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(office.coords)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 px-4 py-3 bg-gray-800 rounded text-gray-400 hover:text-white hover:bg-primary/20 transition flex items-center justify-center text-center"
@@ -214,16 +211,6 @@ const Footer = () => {
                   <div className="flex flex-col items-center">
                     <i className="fa-solid fa-location-dot text-primary mr-2 mb-1"></i>
                     <span>{office.name}</span>
-                    {office.coords && (
-                      <a
-                        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(office.coords)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs text-gray-300 mt-1 hover:underline"
-                      >
-                        Get Directions
-                      </a>
-                    )}
                   </div>
                 </a>
               ))}
