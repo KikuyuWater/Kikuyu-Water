@@ -159,7 +159,7 @@ const QuickActions = () => {
                       <a href="mailto:kikuyuwater@yahoo.com?subject=[KARAI]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Karai" aria-label="Email Karai supervisor" className="text-primary font-medium">Email</a>
                     </div>
                     <div className="mt-2">
-                      <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('-1.2100,36.6900')}`} target="_blank" rel="noopener noreferrer" className="text-primary text-sm">Get Directions</a>
+                      <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('-1.2842811962849203,36.64692348056176')}`} target="_blank" rel="noopener noreferrer" className="text-primary text-sm">Get Directions</a>
                     </div>
                   </li>
                   <li className="p-3 rounded border hover:bg-gray-50 transition">

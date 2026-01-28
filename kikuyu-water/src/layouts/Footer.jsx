@@ -195,7 +195,7 @@ const Footer = () => {
                 },
                 {
                   name: "Karai Office",
-                  coords: 'https://maps.app.goo.gl/CWo7yGKGKhoPkZrR6'
+                  coords: '-1.2842811962849203,36.64692348056176'
                 },
                 {
                   name: "Kabete Office",

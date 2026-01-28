@@ -5,7 +5,7 @@ const Services = () => {
 
   const supervisors = {
     Muguga: { name: 'Mr Kitheka', phone: '+254714370990', office: 'Muguga Office', coords: '-1.2480,36.6460' },
-    Karai: { name: 'Mr Peter', phone: '+254722731026', office: 'Karai Office', coords: '-1.2100,36.6900' },
+    Karai: { name: 'Mr Peter', phone: '+254722731026', office: 'Karai Office', coords: '-1.2842811962849203,36.64692348056176' },
     Kikuyu: { name: 'Mr Wilfred', phone: '+254717684692', office: 'Head Office, Kikuyu Town', coords: '-1.2196,36.6659' },
     KikuyuSewer: { name: 'Mr Macharia', phone: '+254 712 692 965', office: 'Head Office, Kikuyu Town', coords: '-1.2196,36.6659' },
     Kabete: { name: 'Mr Ngatia', phone: '+254724705173', office: 'Kabete Office', coords: '-1.219807659777915,36.714799290289534' },
