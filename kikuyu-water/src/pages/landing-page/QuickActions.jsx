@@ -181,7 +181,7 @@ const QuickActions = () => {
                       <a href="mailto:kikuyuwater@yahoo.com?subject=[KABETE]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Kabete" aria-label="Email Kabete supervisor" className="text-primary font-medium">Email</a>
                     </div>
                     <div className="mt-2">
-                      <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('-1.2197950587077637,36.7147972033909')}`} target="_blank" rel="noopener noreferrer" className="text-primary text-sm">Get Directions</a>
+                      <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('-1.219807659777915,36.714799290289534')}`} target="_blank" rel="noopener noreferrer" className="text-primary text-sm">Get Directions</a>
                     </div>
                   </li>
                 </ul>

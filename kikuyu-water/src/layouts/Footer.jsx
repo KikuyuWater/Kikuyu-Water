@@ -140,7 +140,7 @@ const Footer = () => {
                   <p>Head Office: Kikuyu Town</p>
                   <p>Kiambu County, Kenya</p>
                   <a
-                    href="https://maps.app.goo.gl/CBovJGFaVMCbXzRP7"
+                    href="https://www.google.com/maps?q=-1.2438034084438538, 36.66087559220491"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-2 px-3 py-1.5 bg-primary text-white text-xs rounded hover:bg-blue-700 transition"
@@ -149,6 +149,7 @@ const Footer = () => {
                     Get Directions
                   </a>
                 </div>
+
               </div>
               <div className="flex items-start">
                 <i className="fa-solid fa-phone text-primary mr-2 sm:mr-3 mt-1"></i>
@@ -190,16 +191,17 @@ const Footer = () => {
               {[
                 {
                   name: "Muguga Office",
-                  coords: '-1.2480,36.6460'
+                  coords: '9G7V+X7R, Muguga'
                 },
                 {
                   name: "Karai Office",
-                  coords: '-1.2100,36.6900'
+                  coords: 'https://maps.app.goo.gl/CWo7yGKGKhoPkZrR6'
                 },
                 {
                   name: "Kabete Office",
-                  coords: '-1.2197950587077637,36.7147972033909'
+                  coords: "-1.219807659777915,36.714799290289534"
                 },
+
               ].map((office) => (
                 <a
                   key={office.name}
