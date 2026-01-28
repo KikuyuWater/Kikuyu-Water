@@ -1,13 +1,10 @@
-import applicationForm from '../assets/department-heads/New Connection Application  Form.pdf';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+  
   const handleApplyForConnection = () => {
-    const link = document.createElement('a');
-    link.href = applicationForm;
-    link.download = 'New Connection Application Form.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    navigate('/new-connection');
   };
 
   const handleAppRedirect = () => {
@@ -156,13 +153,23 @@ const Footer = () => {
               <div className="flex items-start">
                 <i className="fa-solid fa-phone text-primary mr-2 sm:mr-3 mt-1"></i>
                 <div>
-                  <p>+254728578098</p>
+                  <a
+                    href="tel:+254728578098"
+                    className="text-gray-300 hover:text-white transition font-semibold"
+                  >
+                    +254728578098
+                  </a>
                   <p className="text-xs sm:text-sm">24/7 Emergency Line</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <i className="fa-solid fa-envelope text-primary mr-2 sm:mr-3 mt-1"></i>
-                <p>kikuyuwater@yahoo.com</p>
+                <a
+                  href="mailto:kikuyuwater@yahoo.com"
+                  className="text-gray-300 hover:text-white transition font-semibold"
+                >
+                  kikuyuwater@yahoo.com
+                </a>
               </div>
               <div className="flex items-start">
                 <i className="fa-solid fa-clock text-primary mr-2 sm:mr-3 mt-1"></i>

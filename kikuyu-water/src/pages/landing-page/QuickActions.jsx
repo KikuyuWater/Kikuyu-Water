@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import applicationForm from '../../assets/department-heads/New Connection Application  Form.pdf';
+import { useNavigate } from 'react-router-dom';
 
 const QuickActions = () => {
+  const navigate = useNavigate();
   const [showSupervisors, setShowSupervisors] = useState(false);
 
   return (
@@ -50,16 +51,9 @@ const QuickActions = () => {
               </li>
             </ul>
             <button 
-              onClick={() => {
-                const link = document.createElement('a');
-                link.href = applicationForm;
-                link.download = 'New Connection Application Form.pdf';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }}
+              onClick={() => navigate('/new-connection')}
               className="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
-              Download Form
+              Apply Now
             </button>
           </div>
 

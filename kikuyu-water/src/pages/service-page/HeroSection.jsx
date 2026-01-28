@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <section
       id="services-hero"
@@ -21,12 +23,14 @@ const HeroSection = () => {
             Our Services
           </h1>
           <p className="text-xl text-blue-100 mb-8 leading-relaxed max-w-3xl mx-auto">
-            From new connections to water quality testing, we provide complete
+            From new connections we also provide complete
             water and sewerage solutions for residential, commercial, and
             industrial customers
           </p>
           <div className="flex items-center justify-center space-x-4">
-            <button className="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg">
+            <button 
+              onClick={() => navigate('/new-connection')}
+              className="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg">
               Apply for Service
             </button>
             <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-primary transition">

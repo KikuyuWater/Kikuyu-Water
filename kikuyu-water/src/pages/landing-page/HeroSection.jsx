@@ -1,8 +1,10 @@
 import React from "react";
-import applicationForm from "../../assets/department-heads/New Connection Application  Form.pdf";
+import { useNavigate } from "react-router-dom";
 import heroVideo from "../../assets/Slow Motion Water Droplet Falling Breaks Surface Tension and Makes Ripples in HD YouTube Video View - stepvideolabs (1080p, h264).mp4";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+  
   return (
     <section
       id="hero-section"
@@ -40,13 +42,12 @@ const HeroSection = () => {
               and sustainable water and sewerage services.
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <a
-                href={applicationForm}
-                download="New Connection Application Form.pdf"
-                className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition w-full sm:w-auto text-center inline-block"
+              <button
+                onClick={() => navigate('/new-connection')}
+                className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition w-full sm:w-auto text-center"
               >
                 Apply for New Connection
-              </a>
+              </button>
               <a href="/payment" className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition w-full sm:w-auto text-center inline-block">
                 Pay Your Water Bill
               </a>

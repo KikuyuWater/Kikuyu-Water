@@ -1,7 +1,9 @@
 import './Cta.css';
-import applicationForm from '../assets/department-heads/New Connection Application  Form.pdf';
+import { useNavigate } from 'react-router-dom';
 
 const Cta = () => {
+  const navigate = useNavigate();
+  
   const createRipple = (e) => {
     const target = e.currentTarget;
     const rect = target.getBoundingClientRect();
@@ -39,14 +41,7 @@ const Cta = () => {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
           <button 
-            onClick={() => {
-              const link = document.createElement('a');
-              link.href = applicationForm;
-              link.download = 'New Connection Application Form.pdf';
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
-            }}
+            onClick={() => navigate('/new-connection')}
             className="w-full sm:w-auto border-2 border-white text-white px-8 sm:px-10 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition">
             Apply for Connection
           </button>

@@ -6,7 +6,6 @@ import DepartmentBulletinBoard from "./DepartmentBulletinBoard";
 import BillingFaqSection from "../tariff-page/BillingFaqSection";
 import FaqSection from "../landing-page/Faq";
 import tariffPDF from "../../assets/Kikuyu.pdf";
-import applicationForm from "../../assets/department-heads/New Connection Application  Form.pdf";
 
 const DepartmentDetailPage = () => {
   const { id } = useParams();
@@ -262,7 +261,7 @@ const DepartmentDetailPage = () => {
               <div id="new-connection-procedures-forms">
                 <h3 className="text-2xl font-semibold mb-2">New connection procedures & forms</h3>
                 <p className="text-gray-700 mb-4">Apply using the official application form. Installation is scheduled after payment and inspection.</p>
-                <a href={applicationForm} download="New Connection Application Form.pdf" className="inline-block bg-primary text-white px-5 py-2 rounded-lg font-bold hover:bg-blue-700 transition">Download application form</a>
+                <button onClick={() => navigate('/new-connection')} className="inline-block bg-primary text-white px-5 py-2 rounded-lg font-bold hover:bg-blue-700 transition">Apply for New Connection</button>
               </div>
 
               <div id="disconnection-reconnection-guidelines">

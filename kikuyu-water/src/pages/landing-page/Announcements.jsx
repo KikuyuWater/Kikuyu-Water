@@ -34,16 +34,16 @@ const Announcements = () => {
                   SERVICE UPDATE
                 </span>
                 <span className="text-gray-500 text-xs sm:text-sm ml-auto">
-                  December 5, 2024
+                  December 5, 2023
                 </span>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
-                New Water Treatment Plant Commissioned
+                New Solar 
               </h3>
               <p className="text-gray-600 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed flex-1">
                 We are pleased to announce the commissioning of our new
-                state-of-the-art water treatment plant, increasing our capacity
-                by 30% to serve more customers.
+               Solar water Pumping plant, reducing power cost
+                by 30% to ensure sustainable water supply.
               </p>
               <a
                 href="/"

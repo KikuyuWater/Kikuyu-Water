@@ -25,7 +25,7 @@ const PaymentMethodSection = () => {
                 <span className="font-bold">Paybill:</span> 810100
               </p>
               <p className="text-sm text-gray-700">
-                <span className="font-bold">Account:</span> Your meter number
+                <span className="font-bold">Account:</span> Your water account number
               </p>
             </div>
           </div>
