@@ -140,7 +140,7 @@ const Footer = () => {
                   <p>Head Office: Kikuyu Town</p>
                   <p>Kiambu County, Kenya</p>
                   <a
-                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('-1.2436313567256625,36.661594284695')}`}
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('-1.2196,36.6659')}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-2 px-3 py-1.5 bg-primary text-white text-xs rounded hover:bg-blue-700 transition"

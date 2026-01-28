@@ -6,12 +6,12 @@ const Services = () => {
   const supervisors = {
     Muguga: { name: 'Mr Kitheka', phone: '+254714370990', office: 'Muguga Office', coords: '-1.2480,36.6460' },
     Karai: { name: 'Mr Peter', phone: '+254722731026', office: 'Karai Office', coords: '-1.2100,36.6900' },
-    Kikuyu: { name: 'Mr Wilfred', phone: '+254717684692', office: 'Head Office, Kikuyu Town', coords: '-1.2436313567256625,36.661594284695' },
-    KikuyuSewer: { name: 'Mr Macharia', phone: '+254 712 692 965', office: 'Head Office, Kikuyu Town', coords: '-1.2436313567256625,36.661594284695' },
+    Kikuyu: { name: 'Mr Wilfred', phone: '+254717684692', office: 'Head Office, Kikuyu Town', coords: '-1.2196,36.6659' },
+    KikuyuSewer: { name: 'Mr Macharia', phone: '+254 712 692 965', office: 'Head Office, Kikuyu Town', coords: '-1.2196,36.6659' },
     Kabete: { name: 'Mr Ngatia', phone: '+254724705173', office: 'Kabete Office', coords: '-1.2197950587077637,36.7147972033909' },
     // Wangige merged into Kabete
     // fallback / head office
-    Head: { name: 'Head Office', phone: '+254728578098', office: 'Kikuyu Town', coords: '-1.2436313567256625,36.661594284695' },
+    Head: { name: 'Head Office', phone: '+254728578098', office: 'Kikuyu Town', coords: '-1.2196,36.6659' },
   };
 
   const renderContactsFor = (serviceKey) => {
