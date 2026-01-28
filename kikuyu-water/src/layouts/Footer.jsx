@@ -201,7 +201,7 @@ const Footer = () => {
                 {
                   name: "Kabete Office",
                   url: "https://maps.app.goo.gl/KKKv9ciKzprbUFts5",
-                  coords: '-1.2460,36.6980'
+                  coords: '-1.2197950587077637,36.7147972033909'
                 },
               ].map((office) => (
                 <a
