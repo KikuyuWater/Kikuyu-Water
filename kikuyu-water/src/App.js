@@ -16,6 +16,7 @@ import PaymentPage from "./pages/PaymentPage";
 import WorldWetlandsDayPage from "./pages/WorldWetlandsDayPage";
 import CustomerPortalPage from "./pages/CustomerPortalPage";
 import NewConnectionPage from "./pages/NewConnectionPage";
+import GalleryPage from "./pages/GalleryPage";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/customer-portal" element={<CustomerPortalPage />} />
         <Route path="/world-wetlands-day-2025" element={<WorldWetlandsDayPage />} />
         <Route path="/new-connection" element={<NewConnectionPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
         <Route path="*" element={<Maintenance />} />
       </Routes>
     </>
