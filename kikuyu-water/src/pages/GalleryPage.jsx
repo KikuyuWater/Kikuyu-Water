@@ -4,6 +4,65 @@ import Footer from "../layouts/Footer";
 const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
+  // Prevent right-click on images
+  const handleContextMenu = (e) => {
+    e.preventDefault();
+    return false;
+  };
+
+  // Prevent drag and drop
+  const handleDragStart = (e) => {
+    e.preventDefault();
+    return false;
+  };
+
+  // Prevent printing
+  React.useEffect(() => {
+    const handleKeyDown = (e) => {
+      // Prevent Ctrl+P, Cmd+P (print)
+      if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+        e.preventDefault();
+        return false;
+      }
+      // Prevent F12 (developer tools)
+      if (e.key === 'F12') {
+        e.preventDefault();
+        return false;
+      }
+      // Prevent Ctrl+Shift+I (inspect element)
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'I') {
+        e.preventDefault();
+        return false;
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
+  // Disable user selection on the page
+  React.useEffect(() => {
+    const style = document.createElement('style');
+    style.textContent = `
+      .gallery-protection {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+      }
+      .gallery-protection img {
+        pointer-events: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    `;
+    document.head.appendChild(style);
+    return () => document.head.removeChild(style);
+  }, []);
+
   // Gallery images from public folder
   const galleryImages = [
     {
@@ -53,21 +112,26 @@ const GalleryPage = () => {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 bg-neutral">
+      <section className="py-16 bg-neutral gallery-protection">
         <div className="max-w-7xl mx-auto px-6">
           {/* Gallery Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {galleryImages.map((image, index) => (
               <div
                 key={index}
-                className="group relative bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition hover:scale-105 hover:shadow-2xl"
+                className="group relative bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition hover:scale-105 hover:shadow-2xl select-none"
                 onClick={() => setSelectedImage(image)}
+                onContextMenu={handleContextMenu}
+                onDragStart={handleDragStart}
               >
                 <div className="aspect-w-16 aspect-h-12 relative h-64">
                   <img
                     src={image.src}
                     alt={image.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover pointer-events-none select-none"
+                    onContextMenu={handleContextMenu}
+                    onDragStart={handleDragStart}
+                    draggable="false"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -88,8 +152,9 @@ const GalleryPage = () => {
       {/* Lightbox Modal */}
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 gallery-protection"
           onClick={() => setSelectedImage(null)}
+          onContextMenu={handleContextMenu}
         >
           <button
             className="absolute top-4 right-4 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white text-2xl transition"
@@ -104,7 +169,10 @@ const GalleryPage = () => {
             <img
               src={selectedImage.src}
               alt={selectedImage.title}
-              className="w-full h-auto rounded-lg shadow-2xl"
+              className="w-full h-auto rounded-lg shadow-2xl pointer-events-none select-none"
+              onContextMenu={handleContextMenu}
+              onDragStart={handleDragStart}
+              draggable="false"
             />
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mt-4">
               <h2 className="text-2xl font-bold text-white">
