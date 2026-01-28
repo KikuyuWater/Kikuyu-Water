@@ -13,9 +13,44 @@ const DepartmentValues = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Customer Focus */}
           <div
             id="value-card-1"
+            className="bg-neutral rounded-2xl p-8 text-center hover:shadow-lg transition"
+          >
+            <div className="bg-green-500/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i className="fa-solid fa-heart text-green-600 text-4xl"></i>
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Customer Focus
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              Our customers are at the heart of everything we do. We strive to
+              exceed their expectations through quality service and responsiveness.
+            </p>
+          </div>
+
+          {/* Professionalism */}
+          <div
+            id="value-card-2"
+            className="bg-neutral rounded-2xl p-8 text-center hover:shadow-lg transition"
+          >
+            <div className="bg-blue-500/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i className="fa-solid fa-briefcase text-blue-600 text-4xl"></i>
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Professionalism
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              We maintain the highest standards of professional conduct, expertise,
+              and competence in all our work and interactions.
+            </p>
+          </div>
+
+          {/* Integrity */}
+          <div
+            id="value-card-3"
             className="bg-neutral rounded-2xl p-8 text-center hover:shadow-lg transition"
           >
             <div className="bg-primary/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -28,81 +63,35 @@ const DepartmentValues = () => {
             </p>
           </div>
 
-          <div
-            id="value-card-2"
-            className="bg-neutral rounded-2xl p-8 text-center hover:shadow-lg transition"
-          >
-            <div className="bg-green-500/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fa-solid fa-heart text-green-600 text-4xl"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Customer Focus
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Our customers are at the heart of everything we do. We strive to
-              exceed their expectations through quality service.
-            </p>
-          </div>
-
-          <div
-            id="value-card-3"
-            className="bg-neutral rounded-2xl p-8 text-center hover:shadow-lg transition"
-          >
-            <div className="bg-purple-500/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fa-solid fa-lightbulb text-purple-600 text-4xl"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Innovation
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              We embrace new technologies and creative solutions to improve
-              service delivery and operational efficiency.
-            </p>
-          </div>
-
+          {/* Our Employees */}
           <div
             id="value-card-4"
             className="bg-neutral rounded-2xl p-8 text-center hover:shadow-lg transition"
           >
             <div className="bg-orange-500/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fa-solid fa-users-gear text-orange-600 text-4xl"></i>
+              <i className="fa-solid fa-users text-orange-600 text-4xl"></i>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Teamwork</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Employees</h3>
             <p className="text-gray-600 leading-relaxed">
-              We work collaboratively across departments, leveraging our
-              collective strengths to achieve common goals.
+              We value our people and invest in their growth, development, and
+              wellbeing as the foundation of our success.
             </p>
           </div>
 
+          {/* Good Citizenship */}
           <div
             id="value-card-5"
             className="bg-neutral rounded-2xl p-8 text-center hover:shadow-lg transition"
           >
-            <div className="bg-blue-500/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fa-solid fa-leaf text-blue-600 text-4xl"></i>
+            <div className="bg-purple-500/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i className="fa-solid fa-globe text-purple-600 text-4xl"></i>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Sustainability
+              Good Citizenship
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              We are committed to environmental stewardship and sustainable
-              practices that protect our water resources.
-            </p>
-          </div>
-
-          <div
-            id="value-card-6"
-            className="bg-neutral rounded-2xl p-8 text-center hover:shadow-lg transition"
-          >
-            <div className="bg-teal-500/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fa-solid fa-scale-balanced text-teal-600 text-4xl"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Accountability
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              We take responsibility for our actions and decisions, ensuring
-              transparency and trust with all stakeholders.
+              We are committed to being responsible corporate citizens, contributing
+              positively to our community and environment.
             </p>
           </div>
         </div>
