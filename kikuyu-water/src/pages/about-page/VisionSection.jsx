@@ -57,15 +57,15 @@ const VisionSection = () => {
             <ul className="grid grid-cols-2 gap-x-6 gap-y-2 pl-13">
               <li className="flex items-start">
                 <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
-                <span className="text-gray-900 font-semibold">Integrity</span>
-              </li>
-              <li className="flex items-start">
-                <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
-                <span className="text-gray-900 font-semibold">Accountability</span>
-              </li>
-              <li className="flex items-start">
-                <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
                 <span className="text-gray-900 font-semibold">Customer Focus</span>
+              </li>
+              <li className="flex items-start">
+                <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
+                <span className="text-gray-900 font-semibold">Professionalism</span>
+              </li>
+              <li className="flex items-start">
+                <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
+                <span className="text-gray-900 font-semibold">Integrity</span>
               </li>
               <li className="flex items-start">
                 <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
@@ -73,11 +73,7 @@ const VisionSection = () => {
               </li>
               <li className="flex items-start">
                 <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
-                <span className="text-gray-900 font-semibold">Teamwork</span>
-              </li>
-              <li className="flex items-start">
-                <i className="fa-solid fa-check-circle text-orange-600 mr-2 mt-0.5 text-sm"></i>
-                <span className="text-gray-900 font-semibold">Professionalism</span>
+                <span className="text-gray-900 font-semibold">Good Citizenship</span>
               </li>
             </ul>
           </div>

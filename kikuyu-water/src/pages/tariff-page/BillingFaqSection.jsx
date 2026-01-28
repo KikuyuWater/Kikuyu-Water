@@ -1,16 +1,16 @@
 const BillingFaqSection = () => {
   return (
-    <section id="billing-faqs" className="py-16 bg-white">
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="mb-10">
-          <h2 className="text-4xl font-black text-gray-900 mb-3">
+    <section id="billing-faqs" className="py-12 sm:py-16 md:py-20 bg-white">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-8 sm:mb-10">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 mb-2 sm:mb-3">
             Billing & Tariff FAQs
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600">
             Common questions about water charges and billing
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           <div
             id="billing-faq-1"
             className="bg-neutral rounded-xl p-6 hover:shadow-lg transition"
