@@ -76,7 +76,7 @@ const HeroSection = () => {
                 <div className="bg-white/20 backdrop-blur-sm p-4 sm:p-6 rounded-xl">
                   <i className="fa-solid fa-users text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
                   <p className="text-2xl sm:text-3xl font-black mb-1">
-                    18,000+
+                    10,000+
                   </p>
                   <p className="text-xs sm:text-sm text-blue-100">
                     Active Connections
@@ -100,7 +100,7 @@ const HeroSection = () => {
                 </div>
                 <div className="bg-white/20 backdrop-blur-sm p-4 sm:p-6 rounded-xl">
                   <i className="fa-solid fa-shield-halved text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
-                  <p className="text-2xl sm:text-3xl font-black mb-1">99.9%</p>
+                  <p className="text-2xl sm:text-3xl font-black mb-1">94.0%</p>
                   <p className="text-xs sm:text-sm text-blue-100">
                     Water Quality
                   </p>
