@@ -16,7 +16,7 @@ const ServiceAreaSection = () => {
           <div className="lg:col-span-1 bg-white rounded-xl shadow-lg overflow-hidden">
             <div className="relative h-[300px] bg-gray-100">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127641.42637567937!2d36.6556!3d-1.2501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f9d5e9c5c5d%3A0x7c5e5e5e5e5e5e5e!2sKikuyu%2C%20Kenya!5e0!3m2!1sen!2sus!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.713187839685!2d36.63087!3d-1.2501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f7e1b1b1b1b%3A0x1b1b1b1b1b1b1b1b!2sKikuyu%2C%20Kenya!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -25,6 +25,23 @@ const ServiceAreaSection = () => {
                 referrerPolicy="no-referrer-when-downgrade"
                 title="KIWASCO Service Area Map"
               ></iframe>
+              
+              {/* Legend Overlay */}
+              <div className="absolute bottom-2 right-2 bg-white/95 rounded-lg p-2 shadow-md text-xs max-w-[180px]">
+                <div className="font-semibold text-gray-800 mb-1.5 text-[10px]">Service Area</div>
+                <div className="flex items-center gap-2 mb-1">
+                  <div className="w-4 h-1 bg-blue-600"></div>
+                  <span className="text-gray-700">Kikuyu Sub-County</span>
+                </div>
+                <div className="flex items-center gap-2 mb-1">
+                  <div className="w-4 h-1 bg-blue-600"></div>
+                  <span className="text-gray-700">Kabete Sub-County</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-1 bg-green-600"></div>
+                  <span className="text-gray-700">10 Wards</span>
+                </div>
+              </div>
             </div>
             <div className="p-4 bg-primary text-white">
               <div className="flex items-center">

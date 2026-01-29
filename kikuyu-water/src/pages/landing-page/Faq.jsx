@@ -26,7 +26,7 @@ const Faq = () => {
     },
     {
       question: "Is the water safe to drink?",
-      answer: "Yes, our water is treated and tested regularly to meet WHO and KEBS standards. We publish water quality reports on our website."
+      answer: "Yes, our water is tested regularly to meet WHO and KEBS standards."
     }
   ];
 

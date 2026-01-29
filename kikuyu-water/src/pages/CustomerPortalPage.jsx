@@ -47,6 +47,33 @@ export default function CustomerPortalPage() {
           </p>
         </div>
 
+        {/* USSD Code Section */}
+        <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-3xl shadow-2xl p-8 sm:p-10 mb-16 text-white text-center">
+          <div className="flex justify-center mb-4">
+            <div className="bg-white/20 w-20 h-20 rounded-2xl flex items-center justify-center">
+              <i className="fa-solid fa-phone-volume text-4xl"></i>
+            </div>
+          </div>
+          <h2 className="text-3xl font-black mb-3">
+            Quick USSD Access
+          </h2>
+          <p className="text-lg mb-6 text-green-50">
+            Do you have an account registered 
+            
+            Try our USSD to know your account status*
+          </p>
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-md mx-auto border border-white/20">
+            <p className="text-sm mb-3 text-green-100">Dial this code:</p>
+            <div className="bg-white text-green-600 rounded-xl py-4 px-6 inline-block">
+              <span className="text-3xl sm:text-4xl font-black tracking-wider">*423*002#</span>
+            </div>
+          </div>
+          <p className="text-sm text-green-100 mt-6">
+            <i className="fa-solid fa-info-circle mr-2"></i>
+            No internet connection required
+          </p>
+        </div>
+
         {/* App Features Section */}
         <div className="bg-white rounded-3xl shadow-2xl p-8 sm:p-12 border-t-4 border-primary">
           <div className="text-center mb-10">

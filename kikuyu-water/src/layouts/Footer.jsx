@@ -7,11 +7,6 @@ const Footer = () => {
     navigate('/new-connection');
   };
 
-  const handleAppRedirect = () => {
-    const playStoreUrl = 'https://play.google.com/store/apps/details?id=app.wonderkid.maji_safi&hl=en';
-    window.open(playStoreUrl, '_blank', 'noopener,noreferrer');
-  };
-
   return (
     <footer id="footer" className="bg-gray-900 text-white py-10 sm:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -88,7 +83,7 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base">
               {[
-                { label: "Customer Portal", path: "/", onClick: handleAppRedirect },
+                { label: "Customer Portal", path: "/customer-portal" },
                 { label: "Apply for Connection", path: "/", onClick: handleApplyForConnection },
                 { label: "Pay Bill", path: "/payment" },
                 { label: "Report Issue", path: "/#report-issue" },

@@ -123,8 +123,8 @@ const HistorySection = () => {
                     Present Day Excellence
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Today, we proudly serve over 45,000 active connections
-                    across 120 km² coverage area. Our commitment to innovation,
+                    Today, we proudly serve over 18,000+ active connections
+                    across 250 km² coverage area. Our commitment to innovation,
                     sustainability, and customer satisfaction continues to drive
                     our growth. We maintain a 99.8% water quality standard and
                     96% service reliability, positioning us as a benchmark
