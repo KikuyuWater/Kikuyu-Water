@@ -63,33 +63,8 @@ const GalleryPage = () => {
     return () => document.head.removeChild(style);
   }, []);
 
-  // Gallery images from public folder
-  const galleryImages = [
-    {
-      src: "/documents/gallery/Our team.jpg",
-      title: "Our Dedicated Team",
-    },
-    {
-      src: "/documents/gallery/Our team 2.jpg",
-      title: "Team Building",
-    },
-    {
-      src: "/documents/gallery/Uthiru Interconnection.jpeg",
-      title: "Uthiru Interconnection",
-    },
-    {
-      src: "/documents/gallery/Uthiru Master Meter.jpeg",
-      title: "Uthiru Master Meter",
-    },
-    {
-      src: "/documents/gallery/Uthiru Testing.jpeg",
-      title: "Uthiru Testing",
-    },
-    {
-      src: "/documents/gallery/WhatsApp Image 2023-03-26 at 12.14.41.jpeg",
-      title: "Infrastructure Development",
-    },
-  ];
+  // Gallery images removed
+  const galleryImages = [];
 
   return (
     <>
@@ -115,37 +90,45 @@ const GalleryPage = () => {
       <section className="py-16 bg-neutral gallery-protection">
         <div className="max-w-7xl mx-auto px-6">
           {/* Gallery Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryImages.map((image, index) => (
-              <div
-                key={index}
-                className="group relative bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition hover:scale-105 hover:shadow-2xl select-none"
-                onClick={() => setSelectedImage(image)}
-                onContextMenu={handleContextMenu}
-                onDragStart={handleDragStart}
-              >
-                <div className="aspect-w-16 aspect-h-12 relative h-64">
-                  <img
-                    src={image.src}
-                    alt={image.title}
-                    className="w-full h-full object-cover pointer-events-none select-none"
-                    onContextMenu={handleContextMenu}
-                    onDragStart={handleDragStart}
-                    draggable="false"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-lg font-bold">{image.title}</h3>
-                </div>
-                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                    <i className="fa-solid fa-expand text-primary"></i>
+          {galleryImages.length === 0 ? (
+            <div className="bg-white rounded-2xl shadow-lg p-10 text-center">
+              <p className="text-gray-700 text-lg font-semibold">
+                No photos are available in the gallery at the moment.
+              </p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {galleryImages.map((image, index) => (
+                <div
+                  key={index}
+                  className="group relative bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition hover:scale-105 hover:shadow-2xl select-none"
+                  onClick={() => setSelectedImage(image)}
+                  onContextMenu={handleContextMenu}
+                  onDragStart={handleDragStart}
+                >
+                  <div className="aspect-w-16 aspect-h-12 relative h-64">
+                    <img
+                      src={image.src}
+                      alt={image.title}
+                      className="w-full h-full object-cover pointer-events-none select-none"
+                      onContextMenu={handleContextMenu}
+                      onDragStart={handleDragStart}
+                      draggable="false"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                    <h3 className="text-lg font-bold">{image.title}</h3>
+                  </div>
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                      <i className="fa-solid fa-expand text-primary"></i>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
