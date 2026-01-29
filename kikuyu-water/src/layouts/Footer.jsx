@@ -29,7 +29,9 @@ const Footer = () => {
             </p>
             <div className="flex space-x-3 sm:space-x-4">
               <a
-                href="/"
+                href="https://web.facebook.com/profile.php?id=100067983303923"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 sm:w-10 sm:h-10 bg-primary rounded-full flex items-center justify-center hover:bg-blue-700 transition"
               >
                 <i className="fa-brands fa-facebook-f text-xs sm:text-base"></i>
@@ -89,7 +91,7 @@ const Footer = () => {
                 { label: "Report Issue", path: "/#report-issue" },
                 { label: "Service Charter", path: "/charter" },
                 { label: "FAQs", path: "/" },
-                { label: "Contact Us", path: "/" },
+                { label: "Contact Us", path: "/contact-us" },
               ].map((link) => (
                 <li key={link.label}>
                   {link.onClick ? (
@@ -132,16 +134,16 @@ const Footer = () => {
               <div className="flex items-start">
                 <i className="fa-solid fa-map-marker-alt text-primary mr-2 sm:mr-3 mt-1"></i>
                 <div>
-                  <p>Head Office: Kikuyu Town</p>
+                  <p className="font-semibold">Head Office: Kikuyu Town</p>
                   <p>Kiambu County, Kenya</p>
                   <a
-                    href="https://www.google.com/maps?q=-1.2438034084438538, 36.66087559220491"
+                    href="https://www.google.com/maps/search/?api=1&query=-1.2438034084438538,36.66087559220491"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mt-2 px-3 py-1.5 bg-primary text-white text-xs rounded hover:bg-blue-700 transition"
+                    className="inline-block mt-2 px-3 py-1.5 bg-primary text-white text-xs rounded hover:bg-blue-700 transition font-bold"
                   >
                     <i className="fa-solid fa-location-dot mr-1"></i>
-                    Get Directions
+                    Visit Kikuyu Office
                   </a>
                 </div>
 

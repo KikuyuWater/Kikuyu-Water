@@ -55,12 +55,10 @@ const Cta = () => {
           <a href="tel:+254758578098" aria-label="Call Kikuyu Water at +254 758 578 098" className="flex flex-col items-center no-underline hover:underline relative overflow-hidden active:scale-95 active:opacity-80 transform transition duration-150" onMouseDown={createRipple} onTouchStart={createRipple}>
             <i className="fa-solid fa-phone text-3xl sm:text-4xl mb-2 sm:mb-3" aria-hidden="true"></i>
             <p className="font-bold mb-1 text-sm sm:text-base">Call Us</p>
-            <span className="text-blue-100 text-sm sm:text-base">+254728578098</span>
           </a>
           <a href="mailto:kikuyuwater@yahoo.com" aria-label="Email Kikuyu Water" className="flex flex-col items-center no-underline hover:underline relative overflow-hidden active:scale-95 active:opacity-80 transform transition duration-150" onMouseDown={createRipple} onTouchStart={createRipple}>
             <i className="fa-solid fa-envelope text-3xl sm:text-4xl mb-2 sm:mb-3" aria-hidden="true"></i>
             <p className="font-bold mb-1 text-sm sm:text-base">Email Us</p>
-            <span className="text-blue-100 text-sm sm:text-base">kikuyuwater@yahoo.com</span>
           </a>
           <a
             href="https://www.google.com/maps/search/?api=1&query=QM46%2BF8X%2C%20Ivory%20Towers%20Street%2C%20Rungiri"
@@ -73,7 +71,6 @@ const Cta = () => {
           >
             <i className="fa-solid fa-map-marker-alt text-3xl sm:text-4xl mb-2 sm:mb-3" aria-hidden="true"></i>
             <p className="font-bold mb-1 text-sm sm:text-base">Visit Us</p>
-            <span className="text-blue-100 text-sm sm:text-base">QM46+F8X, Ivory Towers Street, Rungiri</span>
           </a>
         </div>
       </div>

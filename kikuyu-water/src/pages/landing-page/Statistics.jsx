@@ -26,7 +26,7 @@ const Statistics = () => {
               <i className="fa-solid fa-home text-3xl sm:text-4xl"></i>
             </div>
             <p className="text-3xl sm:text-5xl font-black mb-1 sm:mb-2">
-              18,000+
+              10,000+
             </p>
             <p className="text-lg sm:text-lg text-blue-100">
               Active Connections

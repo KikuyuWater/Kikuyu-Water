@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const CoreService = () => {
   const [expandedService, setExpandedService] = useState(null);
+  const navigate = useNavigate();
 
   const toggleService = (serviceId) => {
     setExpandedService(expandedService === serviceId ? null : serviceId);
@@ -37,7 +39,8 @@ const CoreService = () => {
       ],
       buttonText: 'Apply Now',
       buttonColor: 'bg-primary hover:bg-primary/90',
-      download: { href: '/documents/New_Water_Connection_Form.pdf', filename: 'New_Water_Connection_Form.pdf' }
+      action: 'navigate',
+      path: '/new-connection'
     },
     {
       id: 'sewer-connection',
@@ -159,6 +162,13 @@ const CoreService = () => {
               )}
               {service.call ? (
                 <button onClick={() => handleCall(service.call.number, service.call.name)} className={`w-full ${service.buttonColor} text-white py-3.5 rounded-lg font-bold transition shadow-lg`}>
+                  {service.buttonText}
+                </button>
+              ) : service.action === 'navigate' ? (
+                <button
+                  onClick={() => navigate(service.path)}
+                  className={`w-full ${service.buttonColor} text-white py-3.5 rounded-lg font-bold transition shadow-lg`}
+                >
                   {service.buttonText}
                 </button>
               ) : service.download ? (
