@@ -58,8 +58,9 @@ export default function CustomerPortalPage() {
             Quick USSD Access
           </h2>
           <p className="text-lg mb-6 text-green-50">
-            Do you have an account registered 
-            
+            Do you have an account registered ?
+          </p>
+          <p className="text-sm mb-6 text-green-100">
             Try our USSD to know your account status*
           </p>
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-md mx-auto border border-white/20">
