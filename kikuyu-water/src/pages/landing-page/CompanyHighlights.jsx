@@ -16,7 +16,7 @@ const CompanyHighlights = () => {
               Committed to Excellence in Water Service Delivery
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
-              Kikuyu Water and Sewerage Company is a leading water service
+              Kikuyu Water Company is a leading water service
               provider dedicated to ensuring access to clean, safe, and
               affordable water for all residents and businesses within our
               service area.

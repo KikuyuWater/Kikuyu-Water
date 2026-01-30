@@ -14,61 +14,67 @@ const Navigation = () => {
       className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-3 sm:py-4">
+        <div className="flex items-center justify-between gap-4 py-3 sm:py-4 lg:py-5">
           {/* Logo */}
-          <a href="/" className="flex items-center hover:opacity-80 transition">
+          <a href="/" className="flex items-center gap-3 min-w-0 hover:opacity-80 transition">
             <img
               src={logo}
               alt="Kikuyu Water logo"
-              className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mr-4 object-contain"
+              className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-16 lg:h-16 object-contain"
             />
-            <div className="leading-tight">
-              <h1 className="text-lg sm:text-xl font-bold text-gray-900">
-                KIKUYU WATER AND SEWERAGE COMPANY
+            <div className="leading-tight min-w-0">
+              <h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-gray-900">
+                Kikuyu Water Company
               </h1>
-              <p className="text-xs sm:text-sm text-gray-600">
+              <p className="text-[10px] sm:text-xs text-gray-600">
                 KUBORESHA HUDUMA YA MAJI
               </p>
             </div>
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-6 whitespace-nowrap">
             <a
               href="/"
-              className="text-gray-700 hover:text-primary transition   "
+              className="text-sm xl:text-base text-gray-700 hover:text-primary transition"
             >
               Home
             </a>
             <a
               href="/about"
-              className="text-gray-700 hover:text-primary transition"
+              className="text-sm xl:text-base text-gray-700 hover:text-primary transition"
             >
               About
             </a>
             <a
               href="/service"
-              className="text-gray-700 hover:text-primary transition"
+              className="text-sm xl:text-base text-gray-700 hover:text-primary transition"
             >
               Services
             </a>
             <a
               href="/tarrif"
-              className="text-gray-700 hover:text-primary transition"
+              className="text-sm xl:text-base text-gray-700 hover:text-primary transition"
             >
               Tariffs
             </a>
             <a
               href="/departments"
-              className="text-gray-700 hover:text-primary transition"
+              className="text-sm xl:text-base text-gray-700 hover:text-primary transition"
             >
               Departments
             </a>
             <a
               href="/projects"
-              className="text-gray-700 hover:text-primary transition"
+              className="text-sm xl:text-base text-gray-700 hover:text-primary transition"
             >
               Projects
+            </a>
+            <a
+              href="/publications"
+              className="text-sm xl:text-base text-gray-700 hover:text-primary transition"
+            >
+              Publications
             </a>
             {/* <a href="/" className="text-gray-700 hover:text-primary transition">
               Media
@@ -79,10 +85,10 @@ const Navigation = () => {
           </nav>
 
           {/* Customer Portal & Mobile Menu */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center gap-3 sm:gap-4">
             <a 
               href="/customer-portal"
-              className="hidden lg:inline-block bg-primary text-white px-4 sm:px-6 py-2 sm:py-2.5 rounded-lg font-bold hover:bg-blue-700 transition text-sm sm:text-base">
+              className="hidden lg:inline-block bg-primary text-white px-4 xl:px-5 py-2 xl:py-2.5 rounded-lg font-bold hover:bg-blue-700 transition text-sm xl:text-base whitespace-nowrap">
               Customer Portal
             </a>
 
@@ -142,6 +148,13 @@ const Navigation = () => {
                 className="text-gray-700 hover:text-primary hover:bg-primary/10 transition py-3 px-4 rounded font-semibold"
               >
                 Projects
+              </a>
+              <a
+                href="/publications"
+                onClick={toggleMobileMenu}
+                className="text-gray-700 hover:text-primary hover:bg-primary/10 transition py-3 px-4 rounded font-semibold"
+              >
+                Publications
               </a>
               <a
                 href="/customer-portal"

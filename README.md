@@ -1,6 +1,6 @@
-# Kikuyu Water and Sewerage Company – Frontend
+# Kikuyu Water Company – Frontend
 
-Official frontend web application for **Kikuyu Water and Sewerage Company (KIWASCO)**.  
+Official frontend web application for **Kikuyu Water Company (kiwaco)**.  
 This project provides a modern, responsive, and user-friendly platform for customers to access water services, view announcements, check tariffs, submit service requests, and contact the company online.
 
 The frontend is built using **ReactJS**, **JavaScript**, and **Tailwind CSS**, and communicates with a RESTful backend powered by **Node.js and Express**.

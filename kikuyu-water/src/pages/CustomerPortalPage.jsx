@@ -25,7 +25,7 @@ export default function CustomerPortalPage() {
             <i className="fa-solid fa-mobile-screen-button text-primary text-5xl"></i>
           </div>
           <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
-            KIWASCO Customer Portal
+            kiwaco Customer Portal
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Download our mobile app for convenient water service management at your fingertips

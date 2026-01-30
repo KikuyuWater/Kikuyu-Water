@@ -23,7 +23,7 @@ const ServiceAreaSection = () => {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="KIWASCO Service Area Map"
+                title="kiwaco Service Area Map"
               ></iframe>
               
               {/* Legend Overlay */}
@@ -60,7 +60,7 @@ const ServiceAreaSection = () => {
               Administrative Coverage
             </h3>
             <p className="text-base text-gray-700 leading-relaxed mb-4">
-              KIWASCO serves Kikuyu and Kabete Sub-Counties, covering ten administrative 
+              kiwaco serves Kikuyu and Kabete Sub-Counties, covering ten administrative 
               wards with a total projected population of <strong className="text-primary">436,232 people</strong> based 
               on the 2019 census. Our service area includes the wards of <strong>Kikuyu</strong> (58,421), 
               <strong> Kinoo</strong> (52,389), <strong>Kabete</strong> (45,678), <strong>Uthiru</strong> (62,145), 

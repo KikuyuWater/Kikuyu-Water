@@ -184,7 +184,6 @@ export default function PaymentPage() {
           </div>
           <div className="bg-neutral p-3 rounded-lg">
             <p className="text-sm text-gray-700"><span className="font-bold">A/C 1:</span> 1102658111</p>
-            <p className="text-sm text-gray-700"><span className="font-bold">A/C 2:</span> 1002639648</p>
             <p className="text-sm text-gray-700"><span className="font-bold">Account Name:</span> Kikuyu Water Company Ltd</p>
           </div>
           <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to kikuyuwater@yahoo.com for reconciliation.</p>

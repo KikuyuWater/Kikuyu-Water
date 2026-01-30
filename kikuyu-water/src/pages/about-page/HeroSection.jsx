@@ -13,7 +13,7 @@ const HeroSection = () => {
           <span className="text-white font-bold">About Us</span>
         </div>
         <h1 className="text-5xl font-black mb-4">
-          About Kikuyu Water and Sewerage Company
+          About Kikuyu Water Company
         </h1>
         <p className="text-xl text-blue-100 max-w-3xl">
           Committed to providing clean, safe, and affordable water services to

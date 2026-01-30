@@ -223,7 +223,7 @@ const CustomerServiceCharter = () => {
               Service Standards & Commitments
             </h2>
             <p className="text-lg text-gray-700 mb-8">
-              Kikuyu Water and Sewerage Company (KIWASCO) is committed to delivering 
+              Kikuyu Water Company (kiwaco) is committed to delivering 
               high-quality water and sewerage services to our customers. This charter 
               outlines the service levels and timeframes we pledge to maintain across 
               all our service offerings.

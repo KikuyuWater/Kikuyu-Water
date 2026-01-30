@@ -221,7 +221,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-6 sm:pt-8">
           <div className="flex flex-col sm:flex-row items-center justify-between space-y-3 sm:space-y-0">
             <p className="text-gray-400 text-xs sm:text-sm">
-              © 2025 Kikuyu Water and Sewerage Company. All rights reserved.
+              © 2025 Kikuyu Water Company. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center sm:justify-end space-x-3 sm:space-x-6 text-xs sm:text-sm">
               {["Privacy Policy", "Terms of Service", "Sitemap"].map((link) => (

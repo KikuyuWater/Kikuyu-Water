@@ -25,7 +25,7 @@ const CompletedProjects = () => {
     {
       id: 2,
       name: "KUSP ILRI-Mutego Trunk Sewer",
-      description: "Construction of ILRI–Mutego 4.8 km main trunk sewer. 0.8km serves the KIWASCO service area while the remaining section serves the Nairobi Water Service Area.",
+      description: "Construction of ILRI–Mutego 4.8 km main trunk sewer. 0.8km serves the kiwaco service area while the remaining section serves the Nairobi Water Service Area.",
       location: "ILRI - Mutego",
       completionDate: "July 2023",
       beneficiaries: "Multiple areas",

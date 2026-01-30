@@ -23,7 +23,7 @@ const LeadershipSection = () => {
             </div>
             <h2 className="text-4xl font-black mb-6">Leadership Statement</h2>
             <p className="text-xl text-blue-100 mb-6 leading-relaxed">
-              Welcome to Kikuyu Water and Sewerage Company. As we continue our
+              Welcome to Kikuyu Water Company. As we continue our
               journey of excellence in service delivery, our focus remains
               unwavering on meeting and exceeding customer expectations while
               ensuring sustainable water resource management.

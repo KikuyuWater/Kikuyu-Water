@@ -14,7 +14,7 @@ test('renders main header or maintenance when forced', () => {
   if (maintenanceHeading) {
     expect(maintenanceHeading).toBeInTheDocument();
   } else {
-    const header = screen.getByRole('heading', { name: /kikuyu water and sewerage company/i });
+    const header = screen.getByRole('heading', { name: /kikuyu water company/i });
     expect(header).toBeInTheDocument();
   }
 });

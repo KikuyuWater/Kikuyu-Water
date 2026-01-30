@@ -13,7 +13,7 @@ const OverviewSection = () => {
               Serving the Kikuyu Community with Excellence
             </h2>
             <p className="text-base text-gray-700 mb-4 leading-relaxed">
-              Kikuyu Water and Sewerage Company (KIWASCO) provides water services within 
+              Kikuyu Water Company (kiwaco) provides water services within 
               Kikuyu and Kabete Sub-Counties, covering ten administrative wards 
               with a total projected population of 436,232 people, based on the 
               2019 census. The Company currently serves approximately 240,900 
@@ -23,7 +23,7 @@ const OverviewSection = () => {
             <p className="text-base text-gray-700 mb-4 leading-relaxed">
               The utility relies exclusively on groundwater sources, operating 43 
               boreholes, of which 31 are active, while several have been decommissioned 
-              due to low yield and poor water quality. KIWASCO has an installed design 
+              due to low yield and poor water quality. kiwaco has an installed design 
               production capacity of 17,200 m³ per day, with an additional 6,120 m³ per 
               day expected upon completion of ongoing borehole and network expansion 
               projects. At present, the Company produces an average of 11,000 m³ 
