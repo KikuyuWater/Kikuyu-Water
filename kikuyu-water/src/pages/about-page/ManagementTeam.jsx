@@ -34,7 +34,7 @@ const ManagementTeam = () => {
               <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary/10 to-blue-100 flex items-center justify-center aspect-square">
                 <div className="text-center">
                   <i className="fa-solid fa-crown text-8xl text-primary mb-4"></i>
-                  <p className="text-primary font-black text-lg mt-4">LEADERSHIP</p>
+                  <p className="text-primary font-black text-lg mt-4">MANAGING DIRECTOR</p>
                 </div>
               </div>
               <div className="mt-6 text-center">

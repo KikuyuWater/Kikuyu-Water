@@ -16,7 +16,7 @@ const ManagingDirectorMessage = () => {
             <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary/10 to-blue-100 flex items-center justify-center h-80">
               <div className="text-center">
                 <i className="fa-solid fa-crown text-7xl text-primary mb-4"></i>
-                <p className="text-primary font-black text-lg">LEADERSHIP</p>
+                <p className="text-primary font-black text-lg">MANAGING DIRECTOR</p>
               </div>
             </div>
             <div className="mt-6 text-center">
