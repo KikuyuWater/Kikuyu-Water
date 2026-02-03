@@ -124,7 +124,7 @@ const ManagementTeam = () => {
         </div>
 
         {/* Department Heads Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {Departments.map((department) => (
             <Link
               key={department.id}
@@ -153,21 +153,21 @@ const ManagementTeam = () => {
                 </div>
 
                 {/* Card Content */}
-                <div className="p-6 text-center">
-                  <h3 className={`text-xl font-bold mb-2 text-${department.theme.color}`}>
+                <div className="p-4 text-center">
+                  <h3 className={`text-lg font-bold mb-1 text-${department.theme.color}`}>
                     {department.head}
                   </h3>
-                  <p className="text-sm font-semibold text-gray-600 mb-3">
+                  <p className="text-xs font-semibold text-gray-600 mb-2">
                     {department.title}
                   </p>
-                  <div className="text-xs space-y-2 text-gray-600">
+                  <div className="text-xs space-y-1 text-gray-600 hidden sm:block">
                     <div className="flex items-center justify-center">
                       <i className="fa-solid fa-envelope text-gray-400 mr-2"></i>
-                      <span>kikuyuwater@yahoo.com</span>
+                      <span className="text-xxs">kikuyuwater@yahoo.com</span>
                     </div>
                     <div className="flex items-center justify-center">
                       <i className="fa-solid fa-phone text-gray-400 mr-2"></i>
-                      <span>+254 728 578 098</span>
+                      <span className="text-xxs">+254 728 578 098</span>
                     </div>
                   </div>
                 </div>
