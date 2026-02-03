@@ -1,8 +1,4 @@
-import technicalPortrait from "./assets/department-heads/Paul Gichuki, Technical manager.jpg";
-import commercialPortrait from "./assets/department-heads/Mary Mbugua, Commercial Manager.jpg";
-import financePortrait from "./assets/department-heads/David Kimani, Finance Manager.jpg";
-import procurementPortrait from "./assets/department-heads/Stephen Nderi, Procurement Officer.jpg";
-import auditPortrait from "./assets/department-heads/Jenifer Chebet, Internal Auditor.jpg";
+// Department head photos removed - using logos/icons instead
 
 const Departments = [
   {
@@ -17,7 +13,6 @@ const Departments = [
       iconHoverBg: "bg-primary",
     },
     icon: "fa-wrench",
-    photo: technicalPortrait,
     features: [
       "Water distribution network",
       "Infrastructure maintenance",
@@ -38,7 +33,6 @@ const Departments = [
       iconHoverBg: "bg-green-500",
     },
     icon: "fa-briefcase",
-    photo: commercialPortrait,
     features: [
       "Customer service",
       "Billing & collections",
@@ -59,7 +53,6 @@ const Departments = [
       iconHoverBg: "bg-purple-500",
     },
     icon: "fa-chart-line",
-    photo: financePortrait,
     features: [
       "Financial planning",
       "Budget management",
@@ -80,7 +73,6 @@ const Departments = [
       iconHoverBg: "bg-orange-500",
     },
     icon: "fa-shopping-cart",
-    photo: procurementPortrait,
     features: [
       "Tender management",
       "Supplier relations",
@@ -142,7 +134,6 @@ const Departments = [
       iconHoverBg: "bg-indigo-500",
     },
     icon: "fa-shield-halved",
-    photo: auditPortrait,
     features: [
       "Compliance monitoring",
       "Risk assessment",

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Departments } from "../../data";
-import managingDirectorPhoto from "../../assets/department-heads/Jane Murage, Managing Director.jpg";
+// Department head photos removed - using logos/icons instead
 
 const ManagementTeam = () => {
   const [showFullMessage, setShowFullMessage] = useState(false);
@@ -31,12 +31,11 @@ const ManagementTeam = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 items-start">
             {/* Photo */}
             <div className="lg:col-span-1">
-              <div className="rounded-2xl overflow-hidden shadow-xl">
-                <img
-                  src={managingDirectorPhoto}
-                  alt="Jane Murage, Managing Director"
-                  className="w-full h-auto object-cover"
-                />
+              <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary/10 to-blue-100 flex items-center justify-center aspect-square">
+                <div className="text-center">
+                  <i className="fa-solid fa-crown text-7xl text-primary mb-4"></i>
+                  <p className="text-primary font-bold text-sm mt-4">LEADERSHIP</p>
+                </div>
               </div>
               <div className="mt-6 text-center">
                 <h4 className="text-2xl font-bold text-gray-900 mb-2">Jane Murage</h4>

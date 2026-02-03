@@ -5,7 +5,7 @@ const GovernanceSection = () => {
     <section id="governance-structure" className="py-20 bg-neutral">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-black text-gray-900 mb-4">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">
             Governance & Management Structure
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

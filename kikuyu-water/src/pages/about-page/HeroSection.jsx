@@ -12,7 +12,7 @@ const HeroSection = () => {
           <i className="fa-solid fa-chevron-right text-blue-200 mx-3 text-xs"></i>
           <span className="text-white font-bold">About Us</span>
         </div>
-        <h1 className="text-5xl font-black mb-4">
+        <h1 className="text-4xl font-black mb-4">
           About Kikuyu Water Company
         </h1>
         <p className="text-xl text-blue-100 max-w-3xl">

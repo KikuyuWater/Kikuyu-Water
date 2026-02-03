@@ -6,7 +6,7 @@ const HistorySection = () => {
           <div className="inline-block bg-primary/10 px-4 py-2 rounded-full mb-6">
             <span className="text-primary font-bold text-sm">OUR JOURNEY</span>
           </div>
-          <h2 className="text-4xl font-black text-gray-900 mb-4">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">
             History & Background
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

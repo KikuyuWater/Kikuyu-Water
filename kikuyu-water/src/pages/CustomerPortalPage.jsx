@@ -24,7 +24,7 @@ export default function CustomerPortalPage() {
           <div className="bg-primary/10 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
             <i className="fa-solid fa-mobile-screen-button text-primary text-5xl"></i>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
+          <h1 className="text-xl font-bold text-gray-900 mb-4">
             kiwaco Customer Portal
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">

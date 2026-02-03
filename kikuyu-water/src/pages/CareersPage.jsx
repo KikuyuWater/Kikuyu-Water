@@ -27,7 +27,7 @@ const CareersPage = () => {
             <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center mx-auto mb-6">
               <i className="fa-solid fa-briefcase text-5xl"></i>
             </div>
-            <h1 className="text-5xl font-black mb-4">Careers at Kikuyu Water</h1>
+            <h1 className="text-xl font-bold mb-4">Careers at Kikuyu Water</h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
               Join our team and be part of providing essential water services to thousands of families. 
               We offer competitive compensation, growth opportunities, and a positive work environment.

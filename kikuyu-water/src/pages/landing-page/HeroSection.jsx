@@ -34,7 +34,7 @@ const HeroSection = () => {
                 Serving Kenyans Since 2006
               </span>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4 sm:mb-6">
+            <h1 className="text-4xl font-black leading-tight mb-4 sm:mb-6">
               Clean Water and Reliable Sewerage Services for Kikuyu
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-6 sm:mb-8 leading-relaxed">

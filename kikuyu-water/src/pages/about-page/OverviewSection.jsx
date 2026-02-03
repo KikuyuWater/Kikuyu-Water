@@ -9,7 +9,7 @@ const OverviewSection = () => {
             <div className="inline-block bg-primary/10 px-4 py-2 rounded-full mb-4">
               <span className="text-primary font-bold text-sm">EXECUTIVE SUMMARY</span>
             </div>
-            <h2 className="text-3xl font-black text-gray-900 mb-4 leading-tight">
+            <h2 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
               Serving the Kikuyu Community with Excellence
             </h2>
             <p className="text-base text-gray-700 mb-4 leading-relaxed">

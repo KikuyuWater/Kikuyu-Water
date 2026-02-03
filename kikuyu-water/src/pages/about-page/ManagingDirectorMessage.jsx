@@ -1,5 +1,3 @@
-import managingDirectorPhoto from "../../assets/department-heads/Jane Murage, Managing Director.jpg";
-
 const ManagingDirectorMessage = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
@@ -13,14 +11,13 @@ const ManagingDirectorMessage = () => {
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-          {/* Photo */}
+          {/* Logo */}
           <div className="lg:col-span-1">
-            <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img
-                src={managingDirectorPhoto}
-                alt="Jane Murage, Managing Director"
-                className="w-full h-auto object-cover"
-              />
+            <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary/10 to-blue-100 flex items-center justify-center h-80">
+              <div className="text-center">
+                <i className="fa-solid fa-crown text-6xl text-primary mb-4"></i>
+                <p className="text-primary font-bold text-sm">LEADERSHIP</p>
+              </div>
             </div>
             <div className="mt-6 text-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Jane Murage</h3>
