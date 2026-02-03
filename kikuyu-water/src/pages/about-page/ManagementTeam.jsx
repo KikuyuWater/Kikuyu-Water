@@ -33,14 +33,14 @@ const ManagementTeam = () => {
             <div className="lg:col-span-1">
               <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary/10 to-blue-100 flex items-center justify-center aspect-square">
                 <div className="text-center">
-                  <i className="fa-solid fa-crown text-7xl text-primary mb-4"></i>
-                  <p className="text-primary font-bold text-sm mt-4">LEADERSHIP</p>
+                  <i className="fa-solid fa-crown text-8xl text-primary mb-4"></i>
+                  <p className="text-primary font-black text-lg mt-4">LEADERSHIP</p>
                 </div>
               </div>
               <div className="mt-6 text-center">
-                <h4 className="text-2xl font-bold text-gray-900 mb-2">Jane Murage</h4>
-                <p className="text-lg text-primary font-semibold mb-4">Managing Director</p>
-                <div className="text-sm space-y-2 text-gray-600">
+                <h4 className="text-3xl font-black text-gray-900 mb-2">Jane Murage</h4>
+                <p className="text-xl text-primary font-bold mb-4">Managing Director</p>
+                <div className="text-base space-y-2 text-gray-600">
                   <div className="flex items-center justify-center">
                     <i className="fa-solid fa-envelope text-gray-400 mr-2"></i>
                     <span>kikuyuwater@yahoo.com</span>
