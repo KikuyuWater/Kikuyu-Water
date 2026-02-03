@@ -144,7 +144,7 @@ const ManagementTeam = () => {
                   ) : (
                     <div className={`w-full h-full flex flex-col items-center justify-center ${department.theme.iconBg} p-4`}>
                       <i className={`fa-solid ${department.icon} text-4xl text-${department.theme.color} opacity-20 mb-3`}></i>
-                      <p className={`text-center font-bold text-sm text-${department.theme.color} leading-tight`}>
+                      <p className={`text-center font-bold text-base text-${department.theme.color} leading-tight`}>
                         {department.title}
                       </p>
                     </div>
@@ -157,10 +157,10 @@ const ManagementTeam = () => {
 
                 {/* Card Content */}
                 <div className="p-3 text-center">
-                  <h3 className={`text-sm font-bold mb-0.5 text-${department.theme.color}`}>
+                  <h3 className={`text-base font-bold mb-0.5 text-${department.theme.color}`}>
                     {department.head}
                   </h3>
-                  <p className="text-xs font-semibold text-gray-600 mb-1">
+                  <p className="text-sm font-semibold text-gray-600 mb-1">
                     {department.title}
                   </p>
                   <div className="text-xs space-y-0.5 text-gray-600 hidden sm:block">
