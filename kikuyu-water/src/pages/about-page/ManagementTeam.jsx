@@ -142,8 +142,11 @@ const ManagementTeam = () => {
                       className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                     />
                   ) : (
-                    <div className={`w-full h-full flex items-center justify-center ${department.theme.iconBg}`}>
-                      <i className={`fa-solid ${department.icon} text-4xl text-${department.theme.color} opacity-20`}></i>
+                    <div className={`w-full h-full flex flex-col items-center justify-center ${department.theme.iconBg} p-4`}>
+                      <i className={`fa-solid ${department.icon} text-4xl text-${department.theme.color} opacity-20 mb-3`}></i>
+                      <p className={`text-center font-bold text-sm text-${department.theme.color} leading-tight`}>
+                        {department.title}
+                      </p>
                     </div>
                   )}
                   {/* Department Icon Badge */}
