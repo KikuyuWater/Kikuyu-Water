@@ -124,7 +124,7 @@ const ManagementTeam = () => {
         </div>
 
         {/* Department Heads Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {Departments.map((department) => (
             <Link
               key={department.id}
@@ -132,9 +132,9 @@ const ManagementTeam = () => {
               className="group block"
               onClick={() => window.scrollTo(0, 0)}
             >
-              <div className={`bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 ${department.theme.border}`}>
+              <div className={`bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 ${department.theme.border}`}>
                 {/* Square Photo Container */}
-                <div className="aspect-square w-full overflow-hidden bg-gray-100 relative">
+                <div className="aspect-video w-full overflow-hidden bg-gray-100 relative">
                   {department.photo ? (
                     <img
                       src={department.photo}
@@ -143,24 +143,24 @@ const ManagementTeam = () => {
                     />
                   ) : (
                     <div className={`w-full h-full flex items-center justify-center ${department.theme.iconBg}`}>
-                      <i className={`fa-solid ${department.icon} text-6xl text-${department.theme.color} opacity-20`}></i>
+                      <i className={`fa-solid ${department.icon} text-4xl text-${department.theme.color} opacity-20`}></i>
                     </div>
                   )}
                   {/* Department Icon Badge */}
-                  <div className={`absolute top-4 right-4 w-12 h-12 rounded-full ${department.theme.iconBg} border-2 ${department.theme.border} flex items-center justify-center bg-white shadow-lg`}>
-                    <i className={`fa-solid ${department.icon} text-lg text-${department.theme.color}`}></i>
+                  <div className={`absolute top-2 right-2 w-9 h-9 rounded-full ${department.theme.iconBg} border-2 ${department.theme.border} flex items-center justify-center bg-white shadow-lg`}>
+                    <i className={`fa-solid ${department.icon} text-sm text-${department.theme.color}`}></i>
                   </div>
                 </div>
 
                 {/* Card Content */}
-                <div className="p-4 text-center">
-                  <h3 className={`text-lg font-bold mb-1 text-${department.theme.color}`}>
+                <div className="p-3 text-center">
+                  <h3 className={`text-sm font-bold mb-0.5 text-${department.theme.color}`}>
                     {department.head}
                   </h3>
-                  <p className="text-xs font-semibold text-gray-600 mb-2">
+                  <p className="text-xs font-semibold text-gray-600 mb-1">
                     {department.title}
                   </p>
-                  <div className="text-xs space-y-1 text-gray-600 hidden sm:block">
+                  <div className="text-xs space-y-0.5 text-gray-600 hidden sm:block">
                     <div className="flex items-center justify-center">
                       <i className="fa-solid fa-envelope text-gray-400 mr-2"></i>
                       <span className="text-xxs">kikuyuwater@yahoo.com</span>
