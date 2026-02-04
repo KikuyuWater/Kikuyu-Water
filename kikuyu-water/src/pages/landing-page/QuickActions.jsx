@@ -8,6 +8,40 @@ const QuickActions = () => {
   return (
     <section id="quick-actions" className="py-16 bg-neutral">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* USSD Banner */}
+        <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-2xl shadow-xl p-6 sm:p-8 mb-12 text-white">
+          <div className="max-w-5xl mx-auto">
+            <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6 lg:gap-8">
+              <div className="flex-1 text-center lg:text-left">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-2 flex items-center justify-center lg:justify-start">
+                  <i className="fa-solid fa-phone-flip mr-3"></i>
+                  Try Our USSD
+                </h2>
+                <p className="text-green-50 mb-4 text-sm sm:text-base">Dial <span className="font-bold text-xl">*483*002#</span> to access:</p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div className="text-left">
+                    <p className="font-semibold text-green-100 text-sm">Account Balance</p>
+                    <p className="text-green-50 text-xs">View current balances</p>
+                  </div>
+                  <div className="text-left">
+                    <p className="font-semibold text-green-100 text-sm">Free Statements</p>
+                    <p className="text-green-50 text-xs">Access statements at no cost</p>
+                  </div>
+                  <div className="text-left">
+                    <p className="font-semibold text-green-100 text-sm">Exhauster Services</p>
+                    <p className="text-green-50 text-xs">Request through live bidding</p>
+                  </div>
+                </div>
+              </div>
+              <button 
+                onClick={() => window.location.href = 'tel:*483*002#'}
+                className="bg-white text-green-600 px-8 py-3 rounded-lg font-bold hover:bg-green-50 transition whitespace-nowrap flex-shrink-0">
+                Dial Now
+              </button>
+            </div>
+          </div>
+        </div>
+
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-4xl font-black text-gray-900 mb-4">
             Quick Actions

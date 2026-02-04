@@ -50,6 +50,23 @@ export default function PaymentPage() {
           </div>
         </div>
 
+        {/* USSD Quick Dial */}
+        <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-2xl shadow-xl p-8 mb-6 text-white">
+          <div className="flex items-center justify-between">
+            <div className="flex-1">
+              <h3 className="text-2xl font-bold mb-2 flex items-center">
+                <i className="fa-solid fa-phone-flip mr-3"></i>
+                Try Our USSD
+              </h3>
+              <p className="text-green-100 text-lg">Quick and easy dial access</p>
+            </div>
+            <div className="text-right">
+              <p className="text-sm text-green-100 mb-2">Dial on your phone:</p>
+              <p className="text-4xl font-black">*483*002#</p>
+            </div>
+          </div>
+        </div>
+
         {/* Step-by-Step Instructions */}
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-6">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
