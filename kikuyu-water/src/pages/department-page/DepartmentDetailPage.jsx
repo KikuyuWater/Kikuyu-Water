@@ -2,7 +2,6 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Departments } from "../../data";
 import Footer from "../../layouts/Footer";
-import DepartmentBulletinBoard from "./DepartmentBulletinBoard";
 import BillingFaqSection from "../tariff-page/BillingFaqSection";
 import FaqSection from "../landing-page/Faq";
 import tariffPDF from "../../assets/Kikuyu.pdf";
@@ -216,12 +215,6 @@ const DepartmentDetailPage = () => {
           </div>
         </div>
       </section>
-
-      {/* Department Bulletin Board */}
-      <DepartmentBulletinBoard 
-        departmentId={department.id} 
-        departmentTheme={department.theme}
-      />
 
       {/* Commercial Documents - anchor targets for bulletin links */}
       {department.id === "commercial" && (

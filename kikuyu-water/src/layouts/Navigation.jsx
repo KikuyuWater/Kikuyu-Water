@@ -76,11 +76,14 @@ const Navigation = () => {
             >
               Publications
             </a>
+            <a
+              href="/faqs"
+              className="text-sm xl:text-base text-gray-700 hover:text-primary transition"
+            >
+              FAQs
+            </a>
             {/* <a href="/" className="text-gray-700 hover:text-primary transition">
               Media
-            </a> */}
-            {/* <a href="/" className="text-gray-700 hover:text-primary transition">
-              FAQs
             </a> */}
           </nav>
 
@@ -155,6 +158,13 @@ const Navigation = () => {
                 className="text-gray-700 hover:text-primary hover:bg-primary/10 transition py-3 px-4 rounded font-semibold"
               >
                 Publications
+              </a>
+              <a
+                href="/faqs"
+                onClick={toggleMobileMenu}
+                className="text-gray-700 hover:text-primary hover:bg-primary/10 transition py-3 px-4 rounded font-semibold"
+              >
+                FAQs
               </a>
               <a
                 href="/customer-portal"
