@@ -68,34 +68,57 @@ export default function ContactUsPage() {
     setIsSubmitting(true);
     setSubmitStatus(null);
 
+    // Get the selected department info
+    const selectedDepartment = Departments.find(dept => dept.id === formData.department);
+    const departmentName = selectedDepartment?.title || 'Kikuyu Water';
+    
+    // Hidden WhatsApp number
+    const whatsappNumber = '254728578098'; // Without + sign for WhatsApp API
+
     try {
-      // Create FormData object to include files
-      const submitData = new FormData();
-      submitData.append('name', formData.name);
-      submitData.append('email', formData.email);
-      submitData.append('phone', formData.phone);
-      submitData.append('department', formData.department);
-      submitData.append('meter', formData.meter);
-      submitData.append('subject', formData.subject);
-      submitData.append('message', formData.message);
-      submitData.append('recipient_email', 'kikuyuwater@yahoo.com');
-      
-      // Add files to FormData
-      uploadedFiles.forEach((fileObj, index) => {
-        submitData.append(`file_${index}`, fileObj.file);
-      });
+      // Create WhatsApp message with form details
+      let messageText = `Hello, I am contacting the *${departmentName}* department.
 
-      // Send to backend API endpoint
-      const response = await fetch('/api/contact-us', {
-        method: 'POST',
-        body: submitData
-      });
+*Name:* ${formData.name}
+*Email:* ${formData.email}
+*Phone:* ${formData.phone}
+*Account Number:* ${formData.meter || 'Not provided'}
 
-      if (!response.ok) {
-        throw new Error('Failed to send message');
+*Subject:* ${formData.subject}
+
+*Message:*
+${formData.message}`;
+
+      // Add files information if any files are attached
+      if (uploadedFiles.length > 0) {
+        messageText += `
+
+*Attached Files (${uploadedFiles.length}):*`;
+        uploadedFiles.forEach((file, index) => {
+          messageText += `\n${index + 1}. ${file.name} (${file.size}MB)`;
+        });
+        messageText += `\n\nPlease find the attached files in this chat.`;
       }
 
-      setSubmitStatus({ type: 'success', message: 'Thank you for your message. We will get back to you soon! A copy has been sent to kikuyuwater@yahoo.com' });
+      // Encode message for URL
+      const encodedMessage = encodeURIComponent(messageText);
+      
+      // Create WhatsApp link
+      const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+      // Open WhatsApp in new window
+      window.open(whatsappLink, '_blank');
+
+      // Create success message based on whether files are attached
+      let successMsg = 'Your message has been prepared. WhatsApp is opening now. Please confirm and send your message.';
+      if (uploadedFiles.length > 0) {
+        successMsg += ` Remember to attach the ${uploadedFiles.length} file(s) you selected in the WhatsApp chat.`;
+      }
+
+      // Show success message
+      setSubmitStatus({ type: 'success', message: successMsg });
+      
+      // Reset form
       setFormData({
         name: '',
         email: '',
@@ -107,15 +130,15 @@ export default function ContactUsPage() {
       });
       setUploadedFiles([]);
 
-      // Redirect after 2 seconds
+      // Redirect after 2 seconds (giving time for WhatsApp to open)
       setTimeout(() => {
         navigate('/');
       }, 2000);
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error('Error preparing WhatsApp message:', error);
       setSubmitStatus({ 
         type: 'error', 
-        message: 'Failed to send message. Please try again or contact us directly at kikuyuwater@yahoo.com' 
+        message: 'Failed to prepare message. Please try again.' 
       });
     } finally {
       setIsSubmitting(false);
@@ -279,6 +302,18 @@ export default function ContactUsPage() {
               <p className="text-xs text-gray-600 mb-3">
                 Maximum 5 files, up to 5MB each. Supported: Images (JPG, PNG), PDFs, and Documents
               </p>
+
+              {/* Info Box */}
+              <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg flex items-start">
+                <i className="fa-solid fa-info-circle text-blue-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                <div className="text-xs text-blue-800">
+                  <p className="font-semibold mb-1">How to attach files:</p>
+                  <p>1. Select your files below and they'll be listed</p>
+                  <p>2. When you submit, WhatsApp will open</p>
+                  <p>3. In WhatsApp, use the attachment button (📎) to add your files before sending</p>
+                </div>
+              </div>
+
               <div className="relative">
                 <input
                   type="file"
@@ -389,8 +424,8 @@ export default function ContactUsPage() {
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">Email Us</h3>
             <p className="text-gray-600 mb-3">Response within 24 hours</p>
-            <a href="mailto:kikuyuwater@yahoo.com" className="text-blue-500 hover:text-blue-700 font-bold">
-              kikuyuwater@yahoo.com
+            <a href="mailto:info@kikuyuwater.co.ke" className="text-blue-500 hover:text-blue-700 font-bold">
+              info@kikuyuwater.co.ke
             </a>
           </div>
 

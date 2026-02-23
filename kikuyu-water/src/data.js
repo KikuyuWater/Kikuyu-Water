@@ -20,6 +20,7 @@ const Departments = [
       "Quality assurance",
     ],
     head: "Paul Gichuki",
+    email: "technical@kikuyuwater.co.ke",
   },
   {
     id: "commercial",
@@ -40,6 +41,7 @@ const Departments = [
       "Meter reading",
     ],
     head: "Mary Mbugua",
+    email: "commercial@kikuyuwater.co.ke",
   },
   {
     id: "finance",
@@ -60,6 +62,7 @@ const Departments = [
       "Revenue management",
     ],
     head: "David Kimani",
+    email: "finance@kikuyuwater.co.ke",
   },
   {
     id: "procurement",
@@ -80,6 +83,7 @@ const Departments = [
       "Inventory control",
     ],
     head: "Stephen Nderi",
+    email: "procurement@kikuyuwater.co.ke",
   },
   {
     id: "hr",
@@ -100,6 +104,7 @@ const Departments = [
       "Performance management",
     ],
     head: "Florence Wanjohi",
+    email: "hrm@kikuyuwater.co.ke",
   },
 
   {
@@ -121,6 +126,7 @@ const Departments = [
       "Network optimization",
     ],
     head: "Stephen Mwaniki",
+    email: "ngatia.s@kikuyuwater.co.ke",
   },
   {
     id: "audit",
@@ -141,6 +147,7 @@ const Departments = [
       "Audit reporting",
     ],
     head: "Jenifer Chebet",
+    email: "internalaudit@kikuyuwater.co.ke",
   },
   {
     id: "customer-relations",
@@ -161,6 +168,7 @@ const Departments = [
       "Customer engagement",
     ],
     head: "Veronica Mataara",
+    email: "enquiries@kikuyuwater.co.ke",
   },
 ];
 

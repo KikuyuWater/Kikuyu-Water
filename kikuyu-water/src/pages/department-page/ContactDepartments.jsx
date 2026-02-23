@@ -67,7 +67,7 @@ const ContactDepartments = () => {
       `Message:\n${formData.message}`
     );
     
-    const mailtoLink = `mailto:kikuyuwater@yahoo.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:info@kikuyuwater.co.ke?subject=${subject}&body=${body}`;
     
     // Open email client
     window.location.href = mailtoLink;
@@ -224,7 +224,7 @@ const ContactDepartments = () => {
                   <i className="fa-solid fa-envelope text-primary text-xl mr-4 mt-1"></i>
                   <div>
                     <p className="font-bold text-gray-900">Email</p>
-                    <p className="text-gray-600">kikuyuwater@yahoo.com</p>
+                    <p className="text-gray-600">info@kikuyuwater.co.ke</p>
                   </div>
                 </div>
                 <div className="flex items-start">

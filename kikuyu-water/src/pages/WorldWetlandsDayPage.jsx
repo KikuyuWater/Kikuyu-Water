@@ -161,7 +161,7 @@ export default function WorldWetlandsDayPage() {
                 Contact Us
               </a>
               <a
-                href="mailto:kikuyuwater@yahoo.com"
+                href="mailto:info@kikuyuwater.co.ke"
                 className="inline-flex items-center border-2 border-primary text-primary px-6 py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition"
               >
                 <i className="fa-solid fa-envelope mr-2"></i>

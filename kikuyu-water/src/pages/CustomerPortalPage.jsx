@@ -197,9 +197,9 @@ export default function CustomerPortalPage() {
               <i className="fa-solid fa-phone mr-2"></i>
               +254 728 578 089
             </a>
-            <a href="mailto:kikuyuwater@yahoo.com" className="text-primary hover:text-primary/80 font-semibold inline-flex items-center">
+            <a href="mailto:info@kikuyuwater.co.ke" className="text-primary hover:text-primary/80 font-semibold inline-flex items-center">
               <i className="fa-solid fa-envelope mr-2"></i>
-              kikuyuwater@yahoo.com
+              info@kikuyuwater.co.ke
             </a>
           </div>
         </div>

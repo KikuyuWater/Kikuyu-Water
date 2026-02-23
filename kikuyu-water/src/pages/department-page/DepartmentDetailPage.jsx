@@ -131,7 +131,7 @@ const DepartmentDetailPage = () => {
                 <div className="space-y-2 text-sm text-gray-600">
                   <div className="flex items-center justify-center">
                     <i className="fa-solid fa-envelope text-primary mr-2"></i>
-                    <span>kikuyuwater@yahoo.com</span>
+                    <span>{department.email}</span>
                   </div>
                   <div className="flex items-center justify-center">
                     <i className="fa-solid fa-phone text-primary mr-2"></i>
@@ -289,7 +289,7 @@ const DepartmentDetailPage = () => {
               Call Us
             </a>
             <a
-              href="mailto:kikuyuwater@yahoo.com"
+              href={`mailto:${department.email}`}
               className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition inline-flex items-center"
             >
               <i className="fa-solid fa-envelope mr-3"></i>

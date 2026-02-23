@@ -10,7 +10,7 @@ test('contact links exist with correct hrefs', () => {
 
   const mail = screen.getByRole('link', { name: /email kikuyu water/i });
   expect(mail).toBeInTheDocument();
-  expect(mail).toHaveAttribute('href', 'mailto:kikuyuwater@yahoo.com');
+  expect(mail).toHaveAttribute('href', 'mailto:info@kikuyuwater.co.ke');
 
   const map = screen.getByRole('link', { name: /open kikuyu water location in google maps/i });
   expect(map).toBeInTheDocument();

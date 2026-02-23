@@ -163,10 +163,10 @@ const Footer = () => {
               <div className="flex items-start">
                 <i className="fa-solid fa-envelope text-primary mr-2 sm:mr-3 mt-1"></i>
                 <a
-                  href="mailto:kikuyuwater@yahoo.com"
+                  href="mailto:info@kikuyuwater.co.ke"
                   className="text-gray-300 hover:text-white transition font-semibold"
                 >
-                  kikuyuwater@yahoo.com
+                  info@kikuyuwater.co.ke
                 </a>
               </div>
               <div className="flex items-start">

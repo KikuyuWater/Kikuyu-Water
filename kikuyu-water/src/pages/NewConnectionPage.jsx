@@ -334,13 +334,13 @@ const NewConnectionPage = () => {
                 </div>
               </a>
               <a
-                href="mailto:kikuyuwater@yahoo.com"
+                href="mailto:info@kikuyuwater.co.ke"
                 className="flex items-center text-lg hover:text-blue-200 transition"
               >
                 <i className="fa-solid fa-envelope text-2xl mr-3"></i>
                 <div className="text-left">
                   <p className="text-sm text-blue-200">Email Us</p>
-                  <p className="font-bold">kikuyuwater@yahoo.com</p>
+                  <p className="font-bold">info@kikuyuwater.co.ke</p>
                 </div>
               </a>
             </div>

@@ -43,7 +43,7 @@ const ManagementTeam = () => {
                 <div className="text-base space-y-2 text-gray-600">
                   <div className="flex items-center justify-center">
                     <i className="fa-solid fa-envelope text-gray-400 mr-2"></i>
-                    <span>kikuyuwater@yahoo.com</span>
+                    <span>director@kikuyuwater.co.ke</span>
                   </div>
                   <div className="flex items-center justify-center">
                     <i className="fa-solid fa-phone text-gray-400 mr-2"></i>
@@ -166,7 +166,7 @@ const ManagementTeam = () => {
                   <div className="text-xs space-y-0.5 text-gray-600 hidden sm:block">
                     <div className="flex items-center justify-center">
                       <i className="fa-solid fa-envelope text-gray-400 mr-2"></i>
-                      <span className="text-xxs">kikuyuwater@yahoo.com</span>
+                      <span className="text-xxs">{department.email}</span>
                     </div>
                     <div className="flex items-center justify-center">
                       <i className="fa-solid fa-phone text-gray-400 mr-2"></i>

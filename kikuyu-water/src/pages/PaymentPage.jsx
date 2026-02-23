@@ -203,7 +203,7 @@ export default function PaymentPage() {
             <p className="text-sm text-gray-700"><span className="font-bold">A/C 1:</span> 1102658111</p>
             <p className="text-sm text-gray-700"><span className="font-bold">Account Name:</span> Kikuyu Water Company Ltd</p>
           </div>
-          <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to kikuyuwater@yahoo.com for reconciliation.</p>
+          <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to info@kikuyuwater.co.ke for reconciliation.</p>
         </div>
 
         {/* Equity Bank */}
@@ -219,7 +219,7 @@ export default function PaymentPage() {
             <p className="text-sm text-gray-700"><span className="font-bold">Account No:</span> 0570292031078</p>
             <p className="text-sm text-gray-700"><span className="font-bold">Account Name:</span> Kikuyu Water Company Ltd</p>
           </div>
-          <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to kikuyuwater@yahoo.com for reconciliation.</p>
+          <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to info@kikuyuwater.co.ke for reconciliation.</p>
         </div>
 
         {/* Family Bank */}
@@ -235,7 +235,7 @@ export default function PaymentPage() {
             <p className="text-sm text-gray-700"><span className="font-bold">Account No:</span> 102000004731</p>
             <p className="text-sm text-gray-700"><span className="font-bold">Account Name:</span> Kikuyu Water Company Ltd</p>
           </div>
-          <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to kikuyuwater@yahoo.com for reconciliation.</p>
+          <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to info@kikuyuwater.co.ke for reconciliation.</p>
         </div>
 
         {/* PostBank */}
@@ -251,7 +251,7 @@ export default function PaymentPage() {
             <p className="text-sm text-gray-700"><span className="font-bold">Account No:</span> 0744130007563</p>
             <p className="text-sm text-gray-700"><span className="font-bold">Account Name:</span> Kikuyu Water Company Ltd</p>
           </div>
-          <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to kikuyuwater@yahoo.com for reconciliation.</p>
+          <p className="text-xs text-gray-500 mt-3">After payment, email payment confirmation and transaction code to info@kikuyuwater.co.ke for reconciliation.</p>
         </div>
 
 
