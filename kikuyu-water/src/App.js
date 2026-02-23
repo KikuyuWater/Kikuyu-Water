@@ -1,7 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navigation from "./layouts/Navigation";
-import ScrollToTop from "./components/ScrollToTop";
 import AboutPage from "./pages/about-page";
 import LandingPage from "./pages/landing-page/LandingPage";
 import Maintenance from "./components/Error";
