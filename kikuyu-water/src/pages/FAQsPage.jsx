@@ -19,7 +19,7 @@ const FAQsPage = () => {
         },
         {
           question: 'What payment methods do you accept?',
-          answer: 'We accept payments via M-Pesa Paybill (810100), bank transfers through KCB, Equity Bank, Family Bank, and Post Bank, as well as direct payments at our offices.'
+          answer: 'We accept payments via M-Pesa Paybill (810100), bank transfers through KCB, Equity Bank, Family Bank, and Post Bank.'
         },
         {
           question: 'How do I update my account information?',
@@ -27,7 +27,7 @@ const FAQsPage = () => {
         },
         {
           question: 'What is included in my water bill?',
-          answer: 'Your bill includes the cost of water consumption, sewerage charges (if applicable), waste disposal fees, and any applicable taxes or levies.'
+          answer: 'Your bill includes the cost of water consumption, sewerage charges (if applicable), and any applicable taxes or levies.'
         }
       ]
     },
@@ -67,7 +67,7 @@ const FAQsPage = () => {
         },
         {
           question: 'My meter appears to be faulty. What should I do?',
-          answer: 'Contact our customer service team to report the faulty meter. We will arrange for inspection and replacement if necessary. There may be a fee for meter replacement if damage is customer-caused.'
+          answer: 'Contact our customer service team to report the faulty meter. We will arrange for inspection and servicing. There may be a fee for meter replacement if damage is customer-caused.'
         },
         {
           question: 'Can I relocate my water meter?',
@@ -75,7 +75,7 @@ const FAQsPage = () => {
         },
         {
           question: 'What are the charges for a new connection?',
-          answer: 'Connection charges vary based on location and distance from our supply lines. Visit our New Connection page or contact our office for a specific quote.'
+          answer: 'Connection charges vary based on tariff. Visit our New Connection page or contact our office for a specific quote.'
         },
         {
           question: 'How long does it take to get a new water connection?',
@@ -89,7 +89,7 @@ const FAQsPage = () => {
       faqs: [
         {
           question: 'What are your office hours?',
-          answer: 'Our main office is open Monday to Friday from 8:00 AM to 5:00 PM, and Saturday from 9:00 AM to 1:00 PM. We are closed on Sundays and public holidays.'
+          answer: 'Our main office is open Monday to Friday from 8:00 AM to 5:00 PM. We are closed on Saturdays, Sundays and public holidays.'
         },
         {
           question: 'How do I contact customer service?',
@@ -115,7 +115,7 @@ const FAQsPage = () => {
       faqs: [
         {
           question: 'What happens if I don\'t pay my bill on time?',
-          answer: 'Late payment may result in disconnection of your water supply. We recommend paying within 30 days of receiving your bill to avoid penalties.'
+          answer: 'Late payment may result in disconnection of your water supply. We recommend paying within 7 days of receiving your bill to avoid penalties.'
         },
         {
           question: 'How can I settle outstanding arrears?',

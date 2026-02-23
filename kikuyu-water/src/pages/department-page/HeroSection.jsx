@@ -20,7 +20,7 @@ const HeroSection = () => {
           </h1>
           <p className="text-xl text-blue-100 leading-relaxed mb-8">
             Dedicated teams working together to deliver excellence in water and
-            sewerage services across Kikuyu adn Kabete Sub counties
+            sewerage services across Kikuyu and Kabete Sub counties
           </p>
           <div className="flex items-center space-x-8">
             <div className="flex items-center">
