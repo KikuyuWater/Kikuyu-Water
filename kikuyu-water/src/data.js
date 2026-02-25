@@ -126,7 +126,7 @@ const Departments = [
       "Network optimization",
     ],
     head: "Stephen Mwaniki",
-    email: "ngatia.s@kikuyuwater.co.ke",
+    email: "nrw@kikuyuwater.co.ke",
   },
   {
     id: "audit",
