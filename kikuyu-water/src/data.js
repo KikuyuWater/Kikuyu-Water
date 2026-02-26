@@ -20,7 +20,7 @@ const Departments = [
       "Quality assurance",
     ],
     head: "Paul Gichuki",
-    email: "technical@kikuyuwater.co.ke",
+    email: "technicalm@kikuyuwater.co.ke",
   },
   {
     id: "commercial",

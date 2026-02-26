@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Departments } from "../../data";
 import Footer from "../../layouts/Footer";
@@ -10,6 +10,11 @@ const DepartmentDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const department = Departments.find((dept) => dept.id === id);
+
+  // Scroll to hero section when department page loads or ID changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   if (!department) {
     return (
@@ -129,10 +134,10 @@ const DepartmentDetailPage = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{department.head}</h3>
                 <p className="text-sm text-gray-600 mb-4">Department Head</p>
                 <div className="space-y-2 text-sm text-gray-600">
-                  <div className="flex items-center justify-center">
+                  <a href={`mailto:${department.email}`} className="flex items-center justify-center hover:text-primary transition">
                     <i className="fa-solid fa-envelope text-primary mr-2"></i>
                     <span>{department.email}</span>
-                  </div>
+                  </a>
                   <div className="flex items-center justify-center">
                     <i className="fa-solid fa-phone text-primary mr-2"></i>
                     <span>+254 728 578 098</span>
