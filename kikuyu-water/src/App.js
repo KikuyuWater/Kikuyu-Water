@@ -21,6 +21,7 @@ import ContactUsPage from "./pages/ContactUsPage";
 import PublicationsPage from "./pages/PublicationsPage";
 import NoticesPage from "./pages/NoticesPage";
 import FAQsPage from "./pages/FAQsPage";
+import ReportIssuePage from "./pages/ReportIssuePage";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <Route path="/notices" element={<NoticesPage />} />
         <Route path="/faqs" element={<FAQsPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
+        <Route path="/report-issue" element={<ReportIssuePage />} />
         <Route path="*" element={<Maintenance />} />
       </Routes>
     </>

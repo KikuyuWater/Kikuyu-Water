@@ -88,7 +88,7 @@ const Footer = () => {
                 { label: "Customer Portal", path: "/customer-portal" },
                 { label: "Apply for Connection", path: "/", onClick: handleApplyForConnection },
                 { label: "Pay Bill", path: "/payment" },
-                { label: "Report Issue", path: "/#report-issue" },
+                { label: "Report Issue", path: "/report-issue" },
                 { label: "Service Charter", path: "/charter" },
                 { label: "FAQs", path: "/" },
                 { label: "Contact Us", path: "/contact-us" },
@@ -178,6 +178,20 @@ const Footer = () => {
               </div>
             </div>
           </div>
+
+          {/* QR Code - Hidden */}
+          {/* <div className="flex flex-col items-center justify-center">
+            <h4 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 text-center">
+              Visit Us Online
+            </h4>
+            <div className="bg-white p-2 rounded-lg">
+              <QRCodeComponent 
+                size={120}
+                showLabel={true}
+                showControls={false}
+              />
+            </div>
+          </div> */}
 
           {/* Branch Offices */}
           <div className="lg:col-span-2">
