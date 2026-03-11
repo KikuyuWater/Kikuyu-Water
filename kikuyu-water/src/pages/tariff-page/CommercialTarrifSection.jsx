@@ -84,7 +84,7 @@ const CommercialTarrifSection = () => {
                 <ul className="space-y-1 text-gray-700 text-sm">
                   <li>• Bills due within 21 days</li>
                   <li>• Disconnection after 30 days</li>
-                  <li>• Reconnection fee: KSh 1,500</li>
+                  <li>• Reconnection fee: KSh 1,000</li>
                   <li>• Deposit: 2 months average bill</li>
                 </ul>
               </div>
