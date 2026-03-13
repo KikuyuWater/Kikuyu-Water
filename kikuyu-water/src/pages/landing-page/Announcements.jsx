@@ -92,26 +92,24 @@ const Announcements = () => {
             <div className="h-48 sm:h-56 w-full overflow-hidden">
               <img
                 className="w-full h-full object-cover"
-                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9b49cec583-726942c263ccccdda388.png"
-                alt="scheduled maintenance work on water pipes infrastructure"
+                src="/Butt fussion.jpg"
+                alt="DN150 water meter installation along pipeline using butt fusion welding"
               />
             </div>
             <div className="p-4 sm:p-6 flex-1 flex flex-col">
               <div className="flex items-center mb-3 sm:mb-4">
-                <span className="bg-orange-500/10 text-orange-600 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-bold">
-                  MAINTENANCE
+                <span className="bg-blue-500/10 text-blue-600 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-bold">
+                  INFRASTRUCTURE
                 </span>
                 <span className="text-gray-500 text-xs sm:text-sm ml-auto">
-                  November 28, 2024
+                  March 13, 2026
                 </span>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
-                Scheduled Maintenance Notice
+                Advanced Water Meter Installation
               </h3>
               <p className="text-gray-600 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed flex-1">
-                Planned maintenance works in Zones A and B on December 15-16.
-                Water supply will be temporarily interrupted. We apologize for
-                any inconvenience.
+                To improve water monitoring and accountability within the distribution network, a DN150 (150 mm diameter) water meter was installed along a key section of the pipeline. The installation involved connecting HDPE pipe sections using butt fusion welding, a modern technique that joins pipes by heating their ends and pressing them together to form a strong, leak-proof bond. After successfully pressure testing all joints, the pipeline was restored to service, strengthening our ability to accurately measure water flow and support better management of the water supply system.
               </p>
               <a
                 href="/"
