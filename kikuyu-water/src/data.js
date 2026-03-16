@@ -104,7 +104,7 @@ const Departments = [
       "Performance management",
     ],
     head: "Florence Wanjohi",
-    email: "hrm@kikuyuwater.co.ke",
+    email: "info@kikuyuwater.co.ke",
   },
 
   {
