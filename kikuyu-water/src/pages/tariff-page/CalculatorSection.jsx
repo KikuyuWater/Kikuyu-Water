@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const CalculatorSection = () => {
   const [category, setCategory] = useState("domestic");
-  const [consumption, setConsumption] = useState(25);
+  const [consumption, setConsumption] = useState(0);
   const [calcMode, setCalcMode] = useState("water"); // water | sewer | both
   const [breakdown, setBreakdown] = useState(null);
 
@@ -99,42 +99,39 @@ const CalculatorSection = () => {
   }, [category, consumption, calcMode]);
 
   return (
-    <section id="tariff-calculator" className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="bg-gradient-to-br from-primary to-blue-800 rounded-3xl p-12 text-white shadow-2xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <section id="tariff-calculator" className="py-8 sm:py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6">
+        <div className="bg-gradient-to-br from-primary to-blue-800 rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-12 text-white shadow-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
             <div>
-              <h2 className="text-4xl font-black mb-4">Tariff Calculator</h2>
-              <p className="text-xl text-blue-100 mb-8">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black mb-3 sm:mb-4">Tariff Calculator</h2>
+              <p className="text-base sm:text-lg lg:text-xl text-blue-100 mb-6 sm:mb-8">
                 Estimate your monthly water bill based on consumption
               </p>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <div className="space-y-6">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6">
+                <div className="space-y-4 sm:space-y-6">
                       <div>
-                        <label className="block text-sm font-bold mb-3">Calculator Mode</label>
-                        <div className="flex items-center space-x-4">
-                          <label className="inline-flex items-center">
-                            <input type="radio" name="calcMode" value="water" checked={calcMode==='water'} onChange={() => setCalcMode('water')} className="form-radio" />
-                            <span className="ml-2">Water only</span>
-                          </label>
-                          <label className="inline-flex items-center">
-                            <input type="radio" name="calcMode" value="sewer" checked={calcMode==='sewer'} onChange={() => setCalcMode('sewer')} className="form-radio" />
-                            <span className="ml-2">Sewer only (75% of water bill)</span>
-                          </label>
-                          <label className="inline-flex items-center">
-                            <input type="radio" name="calcMode" value="both" checked={calcMode==='both'} onChange={() => setCalcMode('both')} className="form-radio" />
-                            <span className="ml-2">Water & Sewer</span>
-                          </label>
-                        </div>
+                        <label className="block text-xs sm:text-sm font-bold mb-2 sm:mb-3">
+                          Calculator Mode
+                        </label>
+                        <select
+                          value={calcMode}
+                          onChange={(e) => setCalcMode(e.target.value)}
+                          className="w-full bg-white text-gray-900 px-3 sm:px-4 py-2 sm:py-3 rounded-lg font-medium text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-white"
+                        >
+                          <option value="water">Water only</option>
+                          <option value="sewer">Sewer only (75% of water bill)</option>
+                          <option value="both">Water & Sewer</option>
+                        </select>
                       </div>
                   <div>
-                    <label className="block text-sm font-bold mb-3">
+                    <label className="block text-xs sm:text-sm font-bold mb-2 sm:mb-3">
                       Customer Category
                     </label>
                     <select
                       value={category}
                       onChange={(e) => setCategory(e.target.value)}
-                      className="w-full bg-white text-gray-900 px-4 py-3 rounded-lg font-medium focus:outline-none focus:ring-2 focus:ring-white"
+                      className="w-full bg-white text-gray-900 px-3 sm:px-4 py-2 sm:py-3 rounded-lg font-medium text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-white"
                     >
                       <option value="domestic">Domestic / Residential</option>
                       <option value="mdu">MDUs / Gated Communities</option>
@@ -146,40 +143,40 @@ const CalculatorSection = () => {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-bold mb-3">
+                    <label className="block text-xs sm:text-sm font-bold mb-2 sm:mb-3">
                       Monthly Consumption (m³)
                     </label>
                     <input
                       type="number"
-                      placeholder="Enter consumption in cubic meters"
+                      placeholder=""
                       value={consumption}
                       onChange={(e) => setConsumption(parseFloat(e.target.value) || 0)}
-                      className="w-full bg-white text-gray-900 px-4 py-3 rounded-lg font-medium focus:outline-none focus:ring-2 focus:ring-white"
+                      className="w-full bg-white text-gray-900 px-3 sm:px-4 py-2 sm:py-3 rounded-lg font-medium text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-white"
                       min="0"
                       step="0.1"
                     />
                   </div>
-                  <p className="text-sm text-blue-200">
+                  <p className="text-xs sm:text-sm text-blue-200">
                     <i className="fa-solid fa-info-circle mr-2"></i>
                     Note: Rates effective 15th July 2025 - 14th July 2026
                   </p>
                 </div>
               </div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8">
+              <h3 className="text-xl sm:text-2xl lg:text-2xl font-bold mb-4 sm:mb-6">
                 {breakdown ? "Bill Breakdown" : "Enter Values"}
               </h3>
               {breakdown ? (
-                <div className="space-y-3">
-                  <div className="text-sm text-blue-200 mb-4">
+                <div className="space-y-2 sm:space-y-3">
+                  <div className="text-xs sm:text-sm text-blue-200 mb-3 sm:mb-4">
                     <strong>{breakdown.category}</strong>
                   </div>
                   {breakdown.details.map((detail, idx) => (
-                    <div key={idx} className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                      <div className="flex justify-between items-center mb-1">
-                        <span className="text-blue-100 text-sm">{detail.range}</span>
-                        <span className="font-bold">KSh {detail.cost.toFixed(2)}</span>
+                    <div key={idx} className="bg-white/10 backdrop-blur-sm rounded-lg sm:rounded-xl p-3 sm:p-4">
+                      <div className="flex justify-between items-center mb-1 gap-2">
+                        <span className="text-blue-100 text-xs sm:text-sm">{detail.range}</span>
+                        <span className="font-bold text-sm sm:text-base">KSh {detail.cost.toFixed(2)}</span>
                       </div>
                       <div className="text-xs text-blue-200">
                         {detail.volume.toFixed(1)} m³ × KSh {detail.rate}/m³
@@ -187,27 +184,27 @@ const CalculatorSection = () => {
                     </div>
                   ))}
                   {calcMode !== 'water' && (
-                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                      <div className="flex justify-between items-center mb-1">
-                        <span className="text-blue-100 text-sm">Sewer Charge (75% of water bill)</span>
-                        <span className="font-bold">KSh {breakdown.sewerCharge.toFixed(2)}</span>
+                    <div className="bg-white/10 backdrop-blur-sm rounded-lg sm:rounded-xl p-3 sm:p-4">
+                      <div className="flex justify-between items-center mb-1 gap-2">
+                        <span className="text-blue-100 text-xs sm:text-sm">Sewer Charge (75%)</span>
+                        <span className="font-bold text-sm sm:text-base">KSh {breakdown.sewerCharge.toFixed(2)}</span>
                       </div>
-                      <div className="text-xs text-blue-200">Calculated as 75% of the water charge</div>
+                      <div className="text-xs text-blue-200">75% of water charge</div>
                     </div>
                   )}
-                  <div className="bg-white/20 backdrop-blur-sm rounded-xl p-5 mt-6 border border-white/30">
-                    <div className="flex justify-between items-center">
-                      <span className="text-xl font-black">Total Payable</span>
-                      <span className="text-3xl font-black">KSh {breakdown.total.toFixed(2)}</span>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg sm:rounded-xl p-4 sm:p-5 mt-4 sm:mt-6 border border-white/30">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
+                      <span className="text-lg sm:text-xl font-black">Total Payable</span>
+                      <span className="text-2xl sm:text-3xl font-black">KSh {breakdown.total.toFixed(2)}</span>
                     </div>
                   </div>
-                  <p className="text-xs text-blue-200 mt-4">
+                  <p className="text-xs text-blue-200 mt-3 sm:mt-4">
                     *Does not include additional charges or fixed monthly fees. Check billing section for complete charges.
                   </p>
                 </div>
               ) : (
-                <div className="flex items-center justify-center h-64 text-blue-200">
-                  <p className="text-center">Select a category and enter your consumption to calculate your bill</p>
+                <div className="flex items-center justify-center h-48 sm:h-64 text-blue-200">
+                  <p className="text-center text-sm">Select a category and enter your consumption to calculate your bill</p>
                 </div>
               )}
             </div>
