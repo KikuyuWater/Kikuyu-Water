@@ -24,41 +24,6 @@ const Announcements = () => {
             <div className="h-48 sm:h-56 w-full overflow-hidden">
               <img
                 className="w-full h-full object-cover"
-                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3bc7ae8d76-0e2297d7d7774b2ed85a.png"
-                alt="modern water treatment plant facility with blue sky"
-              />
-            </div>
-            <div className="p-4 sm:p-6 flex-1 flex flex-col">
-              <div className="flex items-center mb-3 sm:mb-4">
-                <span className="bg-primary/10 text-primary px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-bold">
-                  SERVICE UPDATE
-                </span>
-                <span className="text-gray-500 text-xs sm:text-sm ml-auto">
-                  December 5, 2023
-                </span>
-              </div>
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
-                New Solar 
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed flex-1">
-                We are pleased to announce the commissioning of our new
-               Solar water Pumping plant, reducing power cost
-                by 30% to ensure sustainable water supply.
-              </p>
-              <a
-                href="/"
-                className="text-primary font-bold flex items-center hover:underline text-sm sm:text-base mt-auto"
-              >
-                Read More <i className="fa-solid fa-arrow-right ml-2"></i>
-              </a>
-            </div>
-          </div>
-
-          {/* News Card 2 */}
-          <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100 flex flex-col">
-            <div className="h-48 sm:h-56 w-full overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
                 src={require('../../assets/During World Wetlands day 2025 celebrations at  at Ondiri Swamp in Kikuyu.jpeg')}
                 alt="World Wetlands Day 2025 celebrations at Ondiri Swamp in Kikuyu"
               />
@@ -80,6 +45,39 @@ const Announcements = () => {
               </p>
               <a
                 href="/world-wetlands-day-2025"
+                className="text-primary font-bold flex items-center hover:underline text-sm sm:text-base mt-auto"
+              >
+                Read More <i className="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          {/* News Card 2 */}
+          <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100 flex flex-col">
+            <div className="h-48 sm:h-56 w-full overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="/Mwimuto.jpeg"
+                alt="Mwamuto Public Toilet Water Connection Project"
+              />
+            </div>
+            <div className="p-4 sm:p-6 flex-1 flex flex-col">
+              <div className="flex items-center mb-3 sm:mb-4">
+                <span className="bg-primary/10 text-primary px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-bold">
+                  SERVICE UPDATE
+                </span>
+                <span className="text-gray-500 text-xs sm:text-sm ml-auto">
+                  March 23, 2026
+                </span>
+              </div>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
+                Mwamuto Public Toilet Water Connection
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed flex-1">
+                Successfully completed 650-meter water pipeline installation to connect Mwamuto public toilet facility. The project enhances sanitation services and community health through reliable water access.
+              </p>
+              <a
+                href="/mwamuto-toilet-water"
                 className="text-primary font-bold flex items-center hover:underline text-sm sm:text-base mt-auto"
               >
                 Read More <i className="fa-solid fa-arrow-right ml-2"></i>
