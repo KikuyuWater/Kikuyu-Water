@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { tendersData } from "../backend/tenders/tendersData";
 import Footer from "../layouts/Footer";
 
 const TendersPage = () => {
-  const [filterCategory, setFilterCategory] = useState("All");
-
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString("en-US", {
@@ -16,12 +14,6 @@ const TendersPage = () => {
 
   const openTenders = tendersData.filter(tender => tender.status === "Open");
   const closedTenders = tendersData.filter(tender => tender.status === "Closed");
-
-  const filteredOpenTenders = filterCategory === "All" 
-    ? openTenders 
-    : openTenders.filter(tender => tender.category === filterCategory);
-
-  const categories = ["All", "Goods", "Services", "Works"];
 
   return (
     <>
@@ -44,26 +36,9 @@ const TendersPage = () => {
       {/* Filter Section */}
       <section className="py-8 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-center justify-between flex-wrap gap-4">
-            <div>
-              <h2 className="text-2xl font-bold text-gray-900">Open Tenders</h2>
-              <p className="text-gray-600">{filteredOpenTenders.length} active tender{filteredOpenTenders.length !== 1 ? "s" : ""}</p>
-            </div>
-            <div className="flex gap-2">
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => setFilterCategory(category)}
-                  className={`px-4 py-2 rounded-lg font-bold transition ${
-                    filterCategory === category
-                      ? "bg-orange-500 text-white"
-                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
-            </div>
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900">Open Tenders</h2>
+            <p className="text-gray-600">{openTenders.length} active tender{openTenders.length !== 1 ? "s" : ""}</p>
           </div>
         </div>
       </section>
@@ -71,15 +46,15 @@ const TendersPage = () => {
       {/* Open Tenders */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          {filteredOpenTenders.length > 0 ? (
+          {openTenders.length > 0 ? (
             <div className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden">
-              {filteredOpenTenders.map((tender, index) => (
+              {openTenders.map((tender, index) => (
                 <a
                   key={tender.id}
                   href={tender.documentUrl}
                   download
                   className={`flex items-center justify-between p-6 hover:bg-gray-50 transition group ${
-                    index !== filteredOpenTenders.length - 1 ? "border-b border-gray-100" : ""
+                    index !== openTenders.length - 1 ? "border-b border-gray-100" : ""
                   }`}
                 >
                   <div className="flex items-center gap-4 flex-1">
