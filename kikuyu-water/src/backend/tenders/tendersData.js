@@ -6,7 +6,7 @@ export const tendersData = [
     title: "PREQUALIFICATION DOCUMENT 2026-2028 FY",
     category: "Services",
     publishDate: "2026-04-22",
-    closingDate: "2026-05-22",
+    closingDate: "2026-05-06",
     closingTime: "10:00 AM",
     documentUrl: "/PREQUALIFICATION DOCUMENT 2026-2028 FY.docx",
     contactEmail: "tenders@kikuyuwater.co.ke",

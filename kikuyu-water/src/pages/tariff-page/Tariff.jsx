@@ -6,7 +6,6 @@ import DomesticTarrifSection from "./DomesticTarrifSection";
 import HeroSection from "./HeroSection";
 import IndustrialTariffSection from "./IndustrialTariffSection";
 import MiscellaneousChargesSection from "./MiscellaneousChargesSection";
-import OtherTariffSection from "./OtherTariffSection";
 import PaymentMethodSection from "./PaymentMethodSection";
 import tariffPDF from "../../assets/Kikuyu.pdf";
 
@@ -26,7 +25,6 @@ const Tariff = () => {
       <CalculatorSection />
       <DomesticTarrifSection />
       <IndustrialTariffSection />
-      <OtherTariffSection />
       <ConnectionSection />
       <MiscellaneousChargesSection />
       <BillingFaqSection />
