@@ -59,7 +59,7 @@ const PublicationsPage = () => {
                 Procurement opportunities for goods, works, and services.
               </p>
               <div className="bg-gray-50 rounded-xl p-4 text-gray-600 text-sm">
-                No tenders are available at the moment.
+                Open Tenders: Prequalification of suppliers for 2026-2028 FY
               </div>
               <a
                 href="/tenders"
