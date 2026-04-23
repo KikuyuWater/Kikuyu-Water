@@ -89,7 +89,7 @@ const FAQsPage = () => {
       faqs: [
         {
           question: 'What are your office hours?',
-          answer: 'Our main office is open Monday to Friday from 8:00 AM to 5:00 PM. We are closed on Saturdays, Sundays and public holidays.'
+          answer: 'Our main office is open Monday to Friday from 8:00 AM to 5:00 PM. We are closed on Saturdays, Sundays, and public holidays.'
         },
         {
           question: 'How do I contact customer service?',

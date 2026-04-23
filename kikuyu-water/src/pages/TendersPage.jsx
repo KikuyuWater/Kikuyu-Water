@@ -171,7 +171,7 @@ const TendersPage = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Office Hours</h3>
                 <div className="space-y-2 text-gray-700">
                   <p><strong>Monday - Friday:</strong> 8:00 AM - 5:00 PM</p>
-                  <p><strong>Saturday:</strong> 9:00 AM - 1:00 PM</p>
+                  <p><strong>Saturday:</strong> Closed</p>
                   <p><strong>Sunday:</strong> Closed</p>
                 </div>
               </div>
