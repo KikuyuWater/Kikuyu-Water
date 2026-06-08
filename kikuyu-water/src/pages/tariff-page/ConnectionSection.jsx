@@ -39,7 +39,7 @@ const ConnectionSection = () => {
               <div className="font-bold text-primary text-lg">KSh 500</div>
             </div>
           </div>
-          <div className="bg-blue-50 p-6 border-t-2 border-primary"
+          <div className="bg-blue-50 p-6 border-t-2 border-primary">
             <h4 className="font-bold text-gray-900 mb-3 flex items-center">
               <i className="fa-solid fa-info-circle text-primary mr-2"></i>
               Connection Requirements
