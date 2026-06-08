@@ -20,30 +20,26 @@ const ConnectionSection = () => {
           <div className="divide-y divide-gray-200">
             <div className="grid grid-cols-2 gap-4 p-6 hover:bg-neutral transition">
               <div className="font-bold text-gray-900">New Domestic Connection (DN20)</div>
-              <div className="font-bold text-primary text-lg">KSh 8,000</div>
-            </div>
-            <div className="grid grid-cols-2 gap-4 p-6 hover:bg-neutral transition">
-              <div className="font-bold text-gray-900">New Commercial Connection (DN25)</div>
-              <div className="font-bold text-primary text-lg">KSh 12,000</div>
-            </div>
-            <div className="grid grid-cols-2 gap-4 p-6 hover:bg-neutral transition">
-              <div className="font-bold text-gray-900">Connection Relocation</div>
-              <div className="font-bold text-primary text-lg">KSh 5,000</div>
-            </div>
-            <div className="grid grid-cols-2 gap-4 p-6 hover:bg-neutral transition">
-              <div className="font-bold text-gray-900">Connection Reconnection</div>
-              <div className="font-bold text-primary text-lg">KSh 3,000</div>
-            </div>
-            <div className="grid grid-cols-2 gap-4 p-6 hover:bg-neutral transition">
-              <div className="font-bold text-gray-900">Water Meter Replacement</div>
               <div className="font-bold text-primary text-lg">KSh 2,500</div>
             </div>
             <div className="grid grid-cols-2 gap-4 p-6 hover:bg-neutral transition">
-              <div className="font-bold text-gray-900">Meter Testing & Sealing</div>
+              <div className="font-bold text-gray-900">New Commercial Connection (DN25)</div>
+              <div className="font-bold text-primary text-lg">KSh 2,500</div>
+            </div>
+            <div className="grid grid-cols-2 gap-4 p-6 hover:bg-neutral transition">
+              <div className="font-bold text-gray-900">Connection Reconnection</div>
               <div className="font-bold text-primary text-lg">KSh 1,000</div>
             </div>
+            <div className="grid grid-cols-2 gap-4 p-6 hover:bg-neutral transition">
+              <div className="font-bold text-gray-900">Water Meter Replacement</div>
+              <div className="font-bold text-primary text-lg">KSh 3,500</div>
+            </div>
+            <div className="grid grid-cols-2 gap-4 p-6 hover:bg-neutral transition">
+              <div className="font-bold text-gray-900">Meter Testing & Sealing</div>
+              <div className="font-bold text-primary text-lg">KSh 500</div>
+            </div>
           </div>
-          <div className="bg-blue-50 p-6 border-t-2 border-primary">
+          <div className="bg-blue-50 p-6 border-t-2 border-primary"
             <h4 className="font-bold text-gray-900 mb-3 flex items-center">
               <i className="fa-solid fa-info-circle text-primary mr-2"></i>
               Connection Requirements
