@@ -1,3 +1,5 @@
+import { tariffData } from "./tariffData";
+
 const CommercialTarrifSection = () => {
   return (
     <section id="commercial-tariff" className="py-16 bg-white">
@@ -22,33 +24,33 @@ const CommercialTarrifSection = () => {
           <div className="divide-y divide-gray-200">
             <div className="grid grid-cols-5 gap-4 p-6 hover:bg-neutral transition">
               <div className="col-span-2 font-bold text-gray-900">
-                0 - 50 m³
+                {tariffData.commercial[0].label}
               </div>
-              <div className="text-gray-700">KSh 95.00</div>
+              <div className="text-gray-700">KSh {tariffData.commercial[0].rate.toFixed(2)}</div>
               <div className="text-gray-700">KSh 71.25</div>
               <div className="font-bold text-green-600 text-lg">KSh 166.25</div>
             </div>
             <div className="grid grid-cols-5 gap-4 p-6 hover:bg-neutral transition">
               <div className="col-span-2 font-bold text-gray-900">
-                51 - 100 m³
+                {tariffData.commercial[1].label}
               </div>
-              <div className="text-gray-700">KSh 105.00</div>
+              <div className="text-gray-700">KSh {tariffData.commercial[1].rate.toFixed(2)}</div>
               <div className="text-gray-700">KSh 78.75</div>
               <div className="font-bold text-green-600 text-lg">KSh 183.75</div>
             </div>
             <div className="grid grid-cols-5 gap-4 p-6 hover:bg-neutral transition">
               <div className="col-span-2 font-bold text-gray-900">
-                101 - 300 m³
+                {tariffData.commercial[2].label}
               </div>
-              <div className="text-gray-700">KSh 115.00</div>
+              <div className="text-gray-700">KSh {tariffData.commercial[2].rate.toFixed(2)}</div>
               <div className="text-gray-700">KSh 86.25</div>
               <div className="font-bold text-green-600 text-lg">KSh 201.25</div>
             </div>
             <div className="grid grid-cols-5 gap-4 p-6 hover:bg-neutral transition">
               <div className="col-span-2 font-bold text-gray-900">
-                Above 300 m³
+                {tariffData.commercial[3].label}
               </div>
-              <div className="text-gray-700">KSh 125.00</div>
+              <div className="text-gray-700">KSh {tariffData.commercial[3].rate.toFixed(2)}</div>
               <div className="text-gray-700">KSh 93.75</div>
               <div className="font-bold text-green-600 text-lg">KSh 218.75</div>
             </div>

@@ -1,3 +1,5 @@
+import { tariffData } from "./tariffData";
+
 const DomesticTarrifSection = () => {
   return (
     <section id="domestic-tariff" className="py-16 bg-neutral">
@@ -18,40 +20,12 @@ const DomesticTarrifSection = () => {
             </div>
           </div>
           <div className="divide-y divide-gray-200">
-            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
-              <div className="col-span-2 font-bold text-gray-900">1 - 6 m³</div>
-              <div className="font-bold text-primary text-lg">KSh 128.00 / m³</div>
-            </div>
-            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
-              <div className="col-span-2 font-bold text-gray-900">
-                7 - 20 m³
+            {tariffData.domestic.map((tier) => (
+              <div key={tier.label} className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
+                <div className="col-span-2 font-bold text-gray-900">{tier.label}</div>
+                <div className="font-bold text-primary text-lg">KSh {tier.rate.toFixed(2)} / m³</div>
               </div>
-              <div className="font-bold text-primary text-lg">KSh 138.00 / m³</div>
-            </div>
-            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
-              <div className="col-span-2 font-bold text-gray-900">
-                21 - 50 m³
-              </div>
-              <div className="font-bold text-primary text-lg">KSh 154.00 / m³</div>
-            </div>
-            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
-              <div className="col-span-2 font-bold text-gray-900">
-                51 - 100 m³
-              </div>
-              <div className="font-bold text-primary text-lg">KSh 164.00 / m³</div>
-            </div>
-            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
-              <div className="col-span-2 font-bold text-gray-900">
-                101 - 300 m³
-              </div>
-              <div className="font-bold text-primary text-lg">KSh 174.00 / m³</div>
-            </div>
-            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
-              <div className="col-span-2 font-bold text-gray-900">
-                Above 300 m³
-              </div>
-              <div className="font-bold text-primary text-lg">KSh 184.00 / m³</div>
-            </div>
+            ))}
           </div>
           <div className="bg-gray-50 p-6 border-t-2 border-primary">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">

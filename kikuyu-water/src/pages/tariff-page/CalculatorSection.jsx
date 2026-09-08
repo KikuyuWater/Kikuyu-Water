@@ -1,45 +1,11 @@
 import React, { useState } from "react";
+import { tariffData } from "./tariffData";
 
 const CalculatorSection = () => {
   const [category, setCategory] = useState("domestic");
   const [consumption, setConsumption] = useState(0);
   const [calcMode, setCalcMode] = useState("water"); // water | sewer | both
   const [breakdown, setBreakdown] = useState(null);
-
-  // Tariff rates based on Kenya Gazette Notice No. 9724
-  const tariffs = {
-    domestic: [
-      { max: 6, rate: 128 },
-      { max: 20, rate: 138 },
-      { max: 50, rate: 154 },
-      { max: 100, rate: 164 },
-      { max: 300, rate: 174 },
-      { max: Infinity, rate: 184 }
-    ],
-    mdu: [
-      { max: Infinity, rate: 154 }
-    ],
-    commercial: [
-      { max: 50, rate: 154 },
-      { max: 100, rate: 164 },
-      { max: 300, rate: 174 },
-      { max: Infinity, rate: 184 }
-    ],
-    school: [
-      { max: 600, rate: 154 },
-      { max: 1200, rate: 169 },
-      { max: Infinity, rate: 184 }
-    ],
-    kiosk: [
-      { max: Infinity, rate: 50 }
-    ],
-    bowsing: [
-      { max: Infinity, rate: 154 }
-    ],
-    bulk: [
-      { max: Infinity, rate: 123 }
-    ]
-  };
 
   const calculateBill = () => {
     if (consumption <= 0) {
@@ -49,7 +15,7 @@ const CalculatorSection = () => {
 
     let waterCharge = 0;
     let details = [];
-    let selectedTariff = tariffs[category];
+    let selectedTariff = tariffData[category];
     let remaining = consumption;
     let previousMax = 0;
 
@@ -62,7 +28,7 @@ const CalculatorSection = () => {
 
       waterCharge += tierCost;
       
-      const displayMax = tier.max === Infinity ? `Above ${previousMax}` : `${previousMax + 1}-${tier.max}`;
+      const displayMax = tier.label;
       details.push({
         range: displayMax + " m³",
         volume: tierConsumption,

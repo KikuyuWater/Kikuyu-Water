@@ -1,5 +1,7 @@
 import React from "react";
 
+import { tariffData } from "./tariffData";
+
 const IndustrialTariffSection = () => {
   return (
     <section id="industrial-tariff" className="py-16 bg-white">
@@ -20,30 +22,12 @@ const IndustrialTariffSection = () => {
             </div>
           </div>
           <div className="divide-y divide-gray-200">
-            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
-              <div className="col-span-2 font-bold text-gray-900">
-                1 - 50 m³
+            {tariffData.commercial.map((tier) => (
+              <div key={tier.label} className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
+                <div className="col-span-2 font-bold text-gray-900">{tier.label}</div>
+                <div className="font-bold text-orange-600 text-lg">KSh {tier.rate.toFixed(2)} / m³</div>
               </div>
-              <div className="font-bold text-orange-600 text-lg">KSh 154.00 / m³</div>
-            </div>
-            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
-              <div className="col-span-2 font-bold text-gray-900">
-                51 - 100 m³
-              </div>
-              <div className="font-bold text-orange-600 text-lg">KSh 164.00 / m³</div>
-            </div>
-            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
-              <div className="col-span-2 font-bold text-gray-900">
-                101 - 300 m³
-              </div>
-              <div className="font-bold text-orange-600 text-lg">KSh 174.00 / m³</div>
-            </div>
-            <div className="grid grid-cols-3 gap-4 p-6 hover:bg-neutral transition">
-              <div className="col-span-2 font-bold text-gray-900">
-                Above 300 m³
-              </div>
-              <div className="font-bold text-orange-600 text-lg">KSh 184.00 / m³</div>
-            </div>
+            ))}
           </div>
           <div className="bg-gray-50 p-6 border-t-2 border-orange-600">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
@@ -54,16 +38,16 @@ const IndustrialTariffSection = () => {
                 </h4>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                    <span className="text-gray-700">1 - 600 m³</span>
-                    <span className="font-bold text-gray-900">KSh 154.00 / m³</span>
+                    <span className="text-gray-700">{tariffData.school[0].label}</span>
+                    <span className="font-bold text-gray-900">KSh {tariffData.school[0].rate.toFixed(2)} / m³</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                    <span className="text-gray-700">601 - 1200 m³</span>
-                    <span className="font-bold text-gray-900">KSh 169.00 / m³</span>
+                    <span className="text-gray-700">{tariffData.school[1].label}</span>
+                    <span className="font-bold text-gray-900">KSh {tariffData.school[1].rate.toFixed(2)} / m³</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                    <span className="text-gray-700">Above 1200 m³</span>
-                    <span className="font-bold text-gray-900">KSh 184.00 / m³</span>
+                    <span className="text-gray-700">{tariffData.school[2].label}</span>
+                    <span className="font-bold text-gray-900">KSh {tariffData.school[2].rate.toFixed(2)} / m³</span>
                   </div>
                 </div>
               </div>
@@ -77,7 +61,7 @@ const IndustrialTariffSection = () => {
                     <div className="w-full">
                       <div className="flex justify-between">
                         <p className="font-bold text-gray-900">Bulk Water Supply</p>
-                        <span className="font-bold text-orange-600">KSh 123.00 / m³</span>
+                        <span className="font-bold text-orange-600">KSh {tariffData.bulk[0].rate.toFixed(2)} / m³</span>
                       </div>
                       <p className="text-sm text-gray-600 mt-1">
                         For large-scale water supply contracts
@@ -88,7 +72,7 @@ const IndustrialTariffSection = () => {
                     <div className="w-full">
                       <div className="flex justify-between">
                         <p className="font-bold text-gray-900">Bowsing Points (Own Tanker)</p>
-                        <span className="font-bold text-orange-600">KSh 154.00 / m³</span>
+                        <span className="font-bold text-orange-600">KSh {tariffData.bowsing[0].rate.toFixed(2)} / m³</span>
                       </div>
                       <p className="text-sm text-gray-600 mt-1">
                         For water collected using own tanker
