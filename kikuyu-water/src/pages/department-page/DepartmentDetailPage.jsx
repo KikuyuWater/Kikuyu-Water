@@ -4,7 +4,6 @@ import { Departments } from "../../data";
 import Footer from "../../layouts/Footer";
 import BillingFaqSection from "../tariff-page/BillingFaqSection";
 import FaqSection from "../landing-page/Faq";
-import tariffPDF from "../../assets/Kikuyu.pdf";
 
 const DepartmentDetailPage = () => {
   const { id } = useParams();
@@ -247,7 +246,7 @@ const DepartmentDetailPage = () => {
               <div id="approved-tariff-schedules">
                 <h3 className="text-2xl font-semibold mb-2">Approved tariff schedules</h3>
                 <p className="text-gray-700 mb-4">Current approved tariff schedules for all customer categories. You can download the official tariff PDF below.</p>
-                <a href={tariffPDF} download="Kikuyu-Water-Tariff-2025-2026.pdf" className="inline-block bg-primary text-white px-5 py-2 rounded-lg font-bold hover:bg-blue-700 transition">Download tariff PDF</a>
+                <a href="/Tariff.pdf" download="Tariff.pdf" className="inline-block bg-primary text-white px-5 py-2 rounded-lg font-bold hover:bg-blue-700 transition">Download tariff PDF</a>
               </div>
 
               <div id="billing-procedures-billing-cycles">

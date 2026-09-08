@@ -124,7 +124,7 @@ const CalculatorSection = () => {
                   </div>
                   <p className="text-xs sm:text-sm text-blue-200">
                     <i className="fa-solid fa-info-circle mr-2"></i>
-                    Note: Rates effective 15th July 2025 - 14th July 2026
+                    Note: Rates effective 7th August 2026 - 14th July 2027
                   </p>
                 </div>
               </div>

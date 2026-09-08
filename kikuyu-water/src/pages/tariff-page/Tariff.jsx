@@ -7,13 +7,12 @@ import HeroSection from "./HeroSection";
 import IndustrialTariffSection from "./IndustrialTariffSection";
 import MiscellaneousChargesSection from "./MiscellaneousChargesSection";
 import PaymentMethodSection from "./PaymentMethodSection";
-import tariffPDF from "../../assets/Kikuyu.pdf";
 
 const Tariff = () => {
   const downloadTariff = () => {
     const link = document.createElement('a');
-    link.href = tariffPDF;
-    link.download = 'Kikuyu-Water-Tariff-2025-2026.pdf';
+    link.href = '/Tariff.pdf';
+    link.download = 'Tariff.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

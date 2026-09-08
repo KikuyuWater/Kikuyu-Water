@@ -13,18 +13,18 @@ const HeroSection = ({ onDownload }) => {
       <div className="max-w-7xl mx-auto px-6 py-16 relative z-10">
         <div className="text-center">
           <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-            <span className="text-sm font-bold">WASREB Approved Tariffs 2025/2026</span>
+            <span className="text-sm font-bold">WASREB Approved Tariffs 2026/2027</span>
           </div>
           <h1 className="text-5xl font-black leading-tight mb-6">
             Tariff Schedule
           </h1>
           <p className="text-2xl text-blue-100 mb-8">
-            Official water charges as per Kenya Gazette Notice No. 9724
+            Official water charges as per Kenya Gazette Notice No. 12176
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
               <i className="fa-solid fa-calendar-alt mr-2"></i>
-              <span className="font-bold">Effective: 15th July 2025 - 14th July 2026</span>
+              <span className="font-bold">Effective: 7th August 2026 - 14th July 2027</span>
             </div>
             <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
               <i className="fa-solid fa-shield-halved mr-2"></i>

@@ -8,40 +8,6 @@ const QuickActions = () => {
   return (
     <section id="quick-actions" className="py-16 bg-neutral">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* USSD Banner */}
-        <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-2xl shadow-xl p-6 sm:p-8 mb-12 text-white">
-          <div className="max-w-5xl mx-auto">
-            <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6 lg:gap-8">
-              <div className="flex-1 text-center lg:text-left">
-                <h2 className="text-2xl sm:text-3xl font-bold mb-2 flex items-center justify-center lg:justify-start">
-                  <i className="fa-solid fa-phone-flip mr-3"></i>
-                  Try Our USSD
-                </h2>
-                <p className="text-green-50 mb-4 text-sm sm:text-base">Dial <span className="font-bold text-xl">*483*002#</span> to access:</p>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  <div className="text-left">
-                    <p className="font-semibold text-green-100 text-sm">Account Balance</p>
-                    <p className="text-green-50 text-xs">View current balances</p>
-                  </div>
-                  <div className="text-left">
-                    <p className="font-semibold text-green-100 text-sm">Free Statements</p>
-                    <p className="text-green-50 text-xs">Access statements at no cost</p>
-                  </div>
-                  <div className="text-left">
-                    <p className="font-semibold text-green-100 text-sm">Exhauster Services</p>
-                    <p className="text-green-50 text-xs">Request through live bidding</p>
-                  </div>
-                </div>
-              </div>
-              <button 
-                onClick={() => window.location.href = 'tel:*483*002#'}
-                className="bg-white text-green-600 px-8 py-3 rounded-lg font-bold hover:bg-green-50 transition whitespace-nowrap flex-shrink-0">
-                Dial Now
-              </button>
-            </div>
-          </div>
-        </div>
-
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-4xl font-black text-gray-900 mb-4">
             Quick Actions
@@ -52,7 +18,6 @@ const QuickActions = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Card 1 */}
           <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 sm:p-8 border-t-4 border-primary">
             <div className="bg-primary/10 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6">
               <i className="fa-solid fa-file-signature text-primary text-xl sm:text-2xl"></i>
@@ -61,37 +26,30 @@ const QuickActions = () => {
               Apply for Connection.
             </h3>
             <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
-              Get connected to our reliable water supply network. Complete your
-              application online in minutes.
+              Get connected to our reliable water supply network. Complete your application online in minutes.
             </p>
             <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
               <li className="flex items-start">
                 <i className="fa-solid fa-check text-primary mr-2 sm:mr-3 mt-1"></i>
-                <span className="text-gray-700 text-sm sm:text-base">
-                  Fast online application
-                </span>
+                <span className="text-gray-700 text-sm sm:text-base">Fast online application</span>
               </li>
               <li className="flex items-start">
                 <i className="fa-solid fa-check text-primary mr-2 sm:mr-3 mt-1"></i>
-                <span className="text-gray-700 text-sm sm:text-base">
-                  Track application status
-                </span>
+                <span className="text-gray-700 text-sm sm:text-base">Track application status</span>
               </li>
               <li className="flex items-start">
                 <i className="fa-solid fa-check text-primary mr-2 sm:mr-3 mt-1"></i>
-                <span className="text-gray-700 text-sm sm:text-base">
-                  Quick approval process
-                </span>
+                <span className="text-gray-700 text-sm sm:text-base">Quick approval process</span>
               </li>
             </ul>
-            <button 
+            <button
               onClick={() => navigate('/new-connection')}
-              className="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+              className="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition"
+            >
               Apply Now
             </button>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 sm:p-8 border-t-4 border-green-500">
             <div className="bg-green-500/10 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6">
               <i className="fa-solid fa-credit-card text-green-600 text-xl sm:text-2xl"></i>
@@ -100,27 +58,20 @@ const QuickActions = () => {
               Pay Water Bill
             </h3>
             <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
-              Multiple convenient payment options available. Pay your bill
-              securely online anytime, anywhere.
+              Multiple convenient payment options available. Pay your bill securely online anytime, anywhere.
             </p>
             <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
               <li className="flex items-start">
                 <i className="fa-solid fa-check text-green-600 mr-2 sm:mr-3 mt-1"></i>
-                <span className="text-gray-700 text-sm sm:text-base">
-                  M-Pesa & Bank payments
-                </span>
+                <span className="text-gray-700 text-sm sm:text-base">M-Pesa & Bank payments</span>
               </li>
               <li className="flex items-start">
                 <i className="fa-solid fa-check text-green-600 mr-2 sm:mr-3 mt-1"></i>
-                <span className="text-gray-700 text-sm sm:text-base">
-                  View payment history
-                </span>
+                <span className="text-gray-700 text-sm sm:text-base">View payment history</span>
               </li>
               <li className="flex items-start">
                 <i className="fa-solid fa-check text-green-600 mr-2 sm:mr-3 mt-1"></i>
-                <span className="text-gray-700 text-sm sm:text-base">
-                  Instant confirmation
-                </span>
+                <span className="text-gray-700 text-sm sm:text-base">Instant confirmation</span>
               </li>
             </ul>
             <a href="/payment" className="block w-full bg-green-600 text-white py-3 rounded-lg font-bold hover:bg-green-700 transition text-center">
@@ -128,7 +79,6 @@ const QuickActions = () => {
             </a>
           </div>
 
-          {/* Card 3 */}
           <div id="report-issue" className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 sm:p-8 border-t-4 border-orange-500">
             <div className="bg-orange-500/10 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6">
               <i className="fa-solid fa-exclamation-triangle text-orange-600 text-xl sm:text-2xl"></i>
@@ -137,27 +87,20 @@ const QuickActions = () => {
               Report Leak / Complaint
             </h3>
             <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
-              Report water leaks, burst pipes, or service issues. Our team
-              responds promptly to all reports.
+              Report water leaks, burst pipes, or service issues. Our team responds promptly to all reports.
             </p>
             <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
               <li className="flex items-start">
                 <i className="fa-solid fa-check text-orange-600 mr-2 sm:mr-3 mt-1"></i>
-                <span className="text-gray-700 text-sm sm:text-base">
-                  24/7 reporting available
-                </span>
+                <span className="text-gray-700 text-sm sm:text-base">24/7 reporting available</span>
               </li>
               <li className="flex items-start">
                 <i className="fa-solid fa-check text-orange-600 mr-2 sm:mr-3 mt-1"></i>
-                <span className="text-gray-700 text-sm sm:text-base">
-                  Real-time tracking
-                </span>
+                <span className="text-gray-700 text-sm sm:text-base">Real-time tracking</span>
               </li>
               <li className="flex items-start">
                 <i className="fa-solid fa-check text-orange-600 mr-2 sm:mr-3 mt-1"></i>
-                <span className="text-gray-700 text-sm sm:text-base">
-                  Priority emergency response
-                </span>
+                <span className="text-gray-700 text-sm sm:text-base">Priority emergency response</span>
               </li>
             </ul>
             <button
@@ -179,7 +122,7 @@ const QuickActions = () => {
                     <p className="text-sm text-gray-600">Supervisor Mr Kitheka</p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254714370990" aria-label="Call Muguga supervisor at +254 714 370 990" className="text-primary font-medium">Call</a>
-                      <a href="mailto:info@kikuyuwater.co.ke?subject=[MUGUGA]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Muguga" aria-label="Email Muguga supervisor" className="text-primary font-medium">Email</a>
+                      <a href="mailto:kikuyuwater@yahoo.com?subject=[MUGUGA]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Muguga" aria-label="Email Muguga supervisor" className="text-primary font-medium">Email</a>
                     </div>
                     <div className="mt-2">
                       <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('-1.2480,36.6460')}`} target="_blank" rel="noopener noreferrer" className="text-primary text-sm">Get Directions</a>
@@ -190,7 +133,7 @@ const QuickActions = () => {
                     <p className="text-sm text-gray-600">Supervisor Mr Peter</p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254722731026" aria-label="Call Karai supervisor at +254 722 731 026" className="text-primary font-medium">Call</a>
-                      <a href="mailto:info@kikuyuwater.co.ke?subject=[KARAI]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Karai" aria-label="Email Karai supervisor" className="text-primary font-medium">Email</a>
+                      <a href="mailto:kikuyuwater@yahoo.com?subject=[KARAI]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Karai" aria-label="Email Karai supervisor" className="text-primary font-medium">Email</a>
                     </div>
                     <div className="mt-2">
                       <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('-1.2842811962849203,36.64692348056176')}`} target="_blank" rel="noopener noreferrer" className="text-primary text-sm">Get Directions</a>
@@ -201,7 +144,7 @@ const QuickActions = () => {
                     <p className="text-sm text-gray-600">Supervisor Mr Wilfred </p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254717684692" aria-label="Call Kikuyu supervisor at +254 717 684 692" className="text-primary font-medium">Call</a>
-                      <a href="mailto:info@kikuyuwater.co.ke?subject=[KIKUYU]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Kikuyu" aria-label="Email Kikuyu supervisor" className="text-primary font-medium">Email</a>
+                      <a href="mailto:kikuyuwater@yahoo.com?subject=[KIKUYU]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Kikuyu" aria-label="Email Kikuyu supervisor" className="text-primary font-medium">Email</a>
                     </div>
                     <div className="mt-2">
                       <a href="https://maps.app.goo.gl/CBovJGFaVMCbXzRP7" target="_blank" rel="noopener noreferrer" className="text-primary text-sm">Get Directions</a>
@@ -212,7 +155,7 @@ const QuickActions = () => {
                     <p className="text-sm text-gray-600">Supervisor Mr Ngatia</p>
                     <div className="mt-2 flex items-center space-x-3">
                       <a href="tel:+254724705173" aria-label="Call Kabete supervisor at +254 724 705 173" className="text-primary font-medium">Call</a>
-                      <a href="mailto:info@kikuyuwater.co.ke?subject=[KABETE]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Kabete" aria-label="Email Kabete supervisor" className="text-primary font-medium">Email</a>
+                      <a href="mailto:kikuyuwater@yahoo.com?subject=[KABETE]%20Service%20Issue%20Report&amp;body=Office%20Location:%20Kabete" aria-label="Email Kabete supervisor" className="text-primary font-medium">Email</a>
                     </div>
                     <div className="mt-2">
                       <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('-1.219807659777915,36.714799290289534')}`} target="_blank" rel="noopener noreferrer" className="text-primary text-sm">Get Directions</a>

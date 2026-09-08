@@ -7,7 +7,7 @@ const ConnectionSection = () => {
             Connection & Activation Charges
           </h2>
           <p className="text-xl text-gray-600">
-            Fees for new water connections and service activation (Effective: 15th July 2025 - 14th July 2026)
+            Fees for new water connections and service activation (Effective: 7th August 2026 - 14th July 2027)
           </p>
         </div>
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200">

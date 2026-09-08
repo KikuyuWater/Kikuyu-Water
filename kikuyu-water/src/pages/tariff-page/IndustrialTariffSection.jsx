@@ -11,7 +11,7 @@ const IndustrialTariffSection = () => {
             Commercial / Industrial / Government / Institutions
           </h2>
           <p className="text-xl text-gray-600">
-            Official water charges for businesses, industries, and institutions (Effective: 15th July 2025 - 14th July 2026)
+            Official water charges for businesses, industries, and institutions (Effective: 7th August 2026 - 14th July 2027)
           </p>
         </div>
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200">

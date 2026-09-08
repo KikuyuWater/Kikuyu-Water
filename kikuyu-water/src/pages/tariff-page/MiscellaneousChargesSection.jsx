@@ -65,7 +65,7 @@ const MiscellaneousChargesSection = () => {
             Miscellaneous Charges
           </h2>
           <p className="text-xl text-gray-600">
-            Additional fees and deposits (Effective: 15th July 2025 - 14th July 2026)
+            Additional fees and deposits (Effective: 7th August 2026 - 14th July 2027)
           </p>
         </div>
 
