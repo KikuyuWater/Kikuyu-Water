@@ -46,10 +46,12 @@ const DepartmentsOverviewSection = () => {
               ))}
             </div>
             <div className="border-t border-gray-100 pt-3 sm:pt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0">
-              <div className="flex items-center">
-                <i className="fa-solid fa-user-tie text-gray-400 mr-2"></i>
-                <span className="text-xs sm:text-sm text-gray-600">Head: {dept.head}</span>
-              </div>
+              {dept.head && (
+                <div className="flex items-center">
+                  <i className="fa-solid fa-user-tie text-gray-400 mr-2"></i>
+                  <span className="text-xs sm:text-sm text-gray-600">Head: {dept.head}</span>
+                </div>
+              )}
               <Link
                 to={`/departments/${dept.id}`}
                 className="text-primary font-bold flex items-center hover:underline text-sm sm:text-base"

@@ -49,38 +49,40 @@ const CareersPage = () => {
           </div>
 
           {activeJobs.length > 0 ? (
-            <div className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden">
-              {activeJobs.map((job, index) => (
-                <a
-                  key={job.id}
-                  href={job.documentUrl}
-                  download
-                  className={`flex items-center justify-between p-6 hover:bg-gray-50 transition group ${
-                    index !== activeJobs.length - 1 ? "border-b border-gray-100" : ""
-                  }`}
-                >
-                  <div className="flex items-center gap-4 flex-1">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <i className="fa-solid fa-file-pdf text-primary text-xl"></i>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-lg font-bold text-gray-900 group-hover:text-primary transition mb-2">
-                        {job.title}
-                      </h3>
-                      <div className="flex items-center gap-6 text-sm text-gray-600">
-                        <span className="flex items-center gap-1">
+            <div className="space-y-8">
+              {activeJobs.map((job) => (
+                <article key={job.id} className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-lg">
+                  <div className="flex flex-col gap-5 border-b border-gray-200 p-6 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900">{job.company}</h3>
+                      <p className="mb-3 mt-1 text-base font-medium text-gray-700">{job.title}</p>
+                      <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-600">
+                        <span className="flex items-center gap-2">
                           <i className="fa-solid fa-location-dot text-primary"></i>
                           {job.location}
                         </span>
-                        <span className="flex items-center gap-1">
+                        <span className="flex items-center gap-2">
                           <i className="fa-solid fa-calendar text-primary"></i>
                           Deadline: {formatDate(job.deadline)}
                         </span>
                       </div>
                     </div>
+                    <a
+                      href={job.applyDocumentUrl}
+                      className="inline-flex min-h-11 items-center justify-center rounded bg-primary px-5 py-3 text-sm font-bold text-white transition hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                    >
+                      APPLY NOW
+                    </a>
                   </div>
-                  <i className="fa-solid fa-download text-2xl text-gray-400 group-hover:text-primary transition ml-4"></i>
-                </a>
+                  <h4 className="border-b border-gray-200 px-6 py-4 text-lg font-bold text-gray-900">
+                    KIKUYU WATER COMPANY LIMITED ADVERT
+                  </h4>
+                  <iframe
+                    title={`${job.company} ${job.title} vacancy advertisement`}
+                    src={job.documentUrl}
+                    className="block h-[80vh] min-h-[520px] max-h-[960px] w-full bg-gray-100"
+                  />
+                </article>
               ))}
             </div>
           ) : (

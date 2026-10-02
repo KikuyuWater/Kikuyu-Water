@@ -157,9 +157,11 @@ const ManagementTeam = () => {
 
                 {/* Card Content */}
                 <div className="p-3 text-center">
-                  <h3 className={`text-base font-bold mb-0.5 text-${department.theme.color}`}>
-                    {department.head}
-                  </h3>
+                  {department.head && (
+                    <h3 className={`text-base font-bold mb-0.5 text-${department.theme.color}`}>
+                      {department.head}
+                    </h3>
+                  )}
                   <p className="text-sm font-semibold text-gray-600 mb-1">
                     {department.title}
                   </p>

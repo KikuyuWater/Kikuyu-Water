@@ -19,7 +19,6 @@ const Departments = [
       "Emergency repairs",
       "Quality assurance",
     ],
-    head: "Paul Gichuki",
     email: "technicalm@kikuyuwater.co.ke",
   },
   {

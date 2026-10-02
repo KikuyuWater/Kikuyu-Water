@@ -55,7 +55,7 @@ const OrganizationalStructure = () => {
                   {dept.title.replace(" Department", "")}
                 </h4>
                 <div className="text-center mb-4 pb-4 border-b border-gray-200">
-                  <p className="text-sm font-semibold text-primary">{dept.head}</p>
+                  {dept.head && <p className="text-sm font-semibold text-primary">{dept.head}</p>}
                   <p className="text-xs text-gray-500">Department Head</p>
                 </div>
                 

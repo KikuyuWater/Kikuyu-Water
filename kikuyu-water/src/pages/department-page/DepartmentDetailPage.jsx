@@ -130,7 +130,9 @@ const DepartmentDetailPage = () => {
                     </div>
                   )}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{department.head}</h3>
+                {department.head && (
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{department.head}</h3>
+                )}
                 <p className="text-sm text-gray-600 mb-4">Department Head</p>
                 <div className="space-y-2 text-sm text-gray-600">
                   <a href={`mailto:${department.email}`} className="flex items-center justify-center hover:text-primary transition">
