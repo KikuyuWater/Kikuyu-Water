@@ -23,6 +23,7 @@ import PublicationsPage from "./pages/PublicationsPage";
 import NoticesPage from "./pages/NoticesPage";
 import MwamutoToiletWaterPage from "./pages/MwamutoToiletWaterPage";
 import MediaPressPage from "./pages/MediaPressPage";
+import WaterSupplySchedulesPage from "./pages/WaterSupplySchedulesPage";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/mwamuto-toilet-water" element={<MwamutoToiletWaterPage />} />
         <Route path="/media-press" element={<MediaPressPage />} />
+        <Route path="/water-supply-schedules" element={<WaterSupplySchedulesPage />} />
         <Route path="*" element={<Maintenance />} />
       </Routes>
     </>
