@@ -76,6 +76,27 @@ const Footer = () => {
                   </a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="/documents/water-supply/Ondiri_Borehole_Rationing_Program.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition"
+                >
+                  <i className="fa-solid fa-eye mr-2"></i>
+                  View Water Supply Schedule
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/documents/water-supply/Ondiri_Borehole_Rationing_Program.pdf"
+                  download="Ondiri_Borehole_Rationing_Program.pdf"
+                  className="text-gray-400 hover:text-white transition"
+                >
+                  <i className="fa-solid fa-download mr-2"></i>
+                  Download Water Supply Schedule
+                </a>
+              </li>
             </ul>
           </div>
 
