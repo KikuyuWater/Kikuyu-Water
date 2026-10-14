@@ -1,6 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navigation from "./layouts/Navigation";
+import ScrollToTop from "./components/ScrollToTop";
 import AboutPage from "./pages/about-page";
 import LandingPage from "./pages/landing-page/LandingPage";
 import Maintenance from "./components/Error";
@@ -20,8 +21,8 @@ import GalleryPage from "./pages/GalleryPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import PublicationsPage from "./pages/PublicationsPage";
 import NoticesPage from "./pages/NoticesPage";
-import FAQsPage from "./pages/FAQsPage";
-import ReportIssuePage from "./pages/ReportIssuePage";
+import MwamutoToiletWaterPage from "./pages/MwamutoToiletWaterPage";
+import MediaPressPage from "./pages/MediaPressPage";
 
 function App() {
   return (
@@ -45,9 +46,9 @@ function App() {
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/publications" element={<PublicationsPage />} />
         <Route path="/notices" element={<NoticesPage />} />
-        <Route path="/faqs" element={<FAQsPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
-        <Route path="/report-issue" element={<ReportIssuePage />} />
+        <Route path="/mwamuto-toilet-water" element={<MwamutoToiletWaterPage />} />
+        <Route path="/media-press" element={<MediaPressPage />} />
         <Route path="*" element={<Maintenance />} />
       </Routes>
     </>

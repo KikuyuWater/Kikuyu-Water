@@ -80,9 +80,6 @@ const PublicationsPage = () => {
               <p className="text-gray-700 mb-6">
                 Current job openings and internship opportunities.
               </p>
-              <div className="bg-gray-50 rounded-xl p-4 text-gray-600 text-sm">
-                No vacancies are available at the moment.
-              </div>
               <a
                 href="/careers"
                 className="mt-6 inline-flex items-center justify-center w-full bg-green-600 text-white px-4 py-3 rounded-lg font-bold hover:bg-green-700 transition"
