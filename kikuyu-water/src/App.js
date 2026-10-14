@@ -28,6 +28,7 @@ function App() {
   return (
     <>
       <Navigation />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
